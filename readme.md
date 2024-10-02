@@ -1,7 +1,6 @@
 # UQ PUG
 
-Welcome to the UQ Python User Group's monthly gathering. Our next is on the 1st of August, feel free to add your questions in advance below.
-
+Welcome to the UQ Python User Group. We meet monthly, and our is on the 3rd of October. # Feel free to submit your questions in advance
 
 ## About us
 ### Who are we?
@@ -21,7 +20,9 @@ Each month, we gather at UQ Central Library to help solve each other's problems 
 
 Bring along your python questions, problems, conundrums, opinions and victories to share with the group. We'll try our best to help you out!
 
-We currently use HedgeDoc, a collaborative markdown editor, so you can share your code easily. You can access this very page by going to the short link here: [bit.ly/uqpug](https://bit.ly/uqpug). To add your questions, press the pencil in the top write corner and simply type them in!
+## This repo
+
+In this repo we contain the notebooks from our sessions (currently since Oct 24) and details from specific demonstrations.
 
 ## General Resources
 
