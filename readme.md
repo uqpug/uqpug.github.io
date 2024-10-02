@@ -33,5 +33,5 @@ Here are a few links to some general resources.
 - [PyPI](https://pypi.org/), the python package repository
 - [Anaconda](https://www.anaconda.com/), an environment manager with python applications (e.g. Spyder) available
 - [UQ Training Sessions](https://web.library.uq.edu.au/library-services/training)
-- Library training email - [training@library.uq.edu.au](training@library.uq.edu.au)
+- Library training email - [training@library.uq.edu.au](mailto:training@library.uq.edu.au)
 - [Online courses](https://au.linkedin.com/learning/) with LinkedIn Learning (use [UQ credentials](https://web.library.uq.edu.au/library-services/training/linkedin-learning-online-courses))
