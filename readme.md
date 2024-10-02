@@ -13,7 +13,7 @@ We are a **gathering for Python users of any proficiency**, to help each other s
 - Every **first Thursday of the month** from **10:00 am** to 11:30am
 - In-person at UQ Central Library 12-N109
 - Find the next gathering on the [UQ Library Training Page](https://web.library.uq.edu.au/library-services/training#keyword=Python%20User%20Group;campus=;weekstart=) and book in through StudentHub
-- Contact us at [training@library.uq.edu.au](training@library.uq.edu.au) for any questions or support
+- Contact us at [mailto:training@library.uq.edu.au](training@library.uq.edu.au) for any questions or support
 
 ## How it works
 
