@@ -1,6 +1,6 @@
-# UQ PUG
+# UQ Python User Group
 
-Welcome to the UQ Python User Group. We meet monthly, and our is on the 3rd of October. # Feel free to submit your questions in advance
+Welcome to the UQ Python User Group. We meet monthly, and our next gathering is on the 3rd of October.
 
 ## About us
 ### Who are we?
