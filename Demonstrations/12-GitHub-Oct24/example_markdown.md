@@ -1,3 +1,3 @@
 # Example markdown
 
-This is an exaple
+This is an example
