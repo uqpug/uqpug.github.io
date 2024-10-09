@@ -1,0 +1,22 @@
+project:
+  type: website
+  render:
+    - readme.md
+    - Session_notebooks/*
+
+website:
+  title: "Python User Group"
+  sidebar:
+    contents:
+      - text: Home
+        href: readme.md
+      - auto: Session_notebooks
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
