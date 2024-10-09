@@ -1,0 +1,96 @@
+[
+  {
+    "objectID": "Session_notebooks/12-Oct24.html",
+    "href": "Session_notebooks/12-Oct24.html",
+    "title": "2024 October 3rd – UQ PUG 10",
+    "section": "",
+    "text": "Welcome to UQ Python User Group! Check out our general info for how we work and what we do. Below you’ll find the details of this month’s gathering.",
+    "crumbs": [
+      "Session Notebooks",
+      "2024 October 3<sup>rd</sup> -- UQ PUG 10"
+    ]
+  },
+  {
+    "objectID": "Session_notebooks/12-Oct24.html#overview",
+    "href": "Session_notebooks/12-Oct24.html#overview",
+    "title": "2024 October 3rd – UQ PUG 10",
+    "section": "Overview",
+    "text": "Overview\nThis month we will be discussing Version Control with GitHub, as well as testing out VSCode Liveshare!\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
+    "crumbs": [
+      "Session Notebooks",
+      "2024 October 3<sup>rd</sup> -- UQ PUG 10"
+    ]
+  },
+  {
+    "objectID": "Session_notebooks/12-Oct24.html#introduce-yourself",
+    "href": "Session_notebooks/12-Oct24.html#introduce-yourself",
+    "title": "2024 October 3rd – UQ PUG 10",
+    "section": "Introduce yourself",
+    "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nPrakash Rai\nFrom home\nJust learning from scratch\n\n\nStéphane Guillou\nUQ Library\nFor fun!\n\n\nIsmael Khan\nUQ GET\nHelp and learn\n\n\nCameron West\nUQ Library / SMP\nTo help (and learn)\n\n\nLuke\nLibrary\nTo learn and try to help\n\n\nShaochen\nUQ GET\nLearn and help\n\n\nElizabeth Zhu",
+    "crumbs": [
+      "Session Notebooks",
+      "2024 October 3<sup>rd</sup> -- UQ PUG 10"
+    ]
+  },
+  {
+    "objectID": "Session_notebooks/12-Oct24.html#questions",
+    "href": "Session_notebooks/12-Oct24.html#questions",
+    "title": "2024 October 3rd – UQ PUG 10",
+    "section": "Questions",
+    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion 1: What do we use Python for? | Ismael\n\nLuke: finds genAI to be more helpful with Python than R. Usually use Python and R for data processing.\nCam: graphing with matplotlib for the most part.\nIsmael: matplotlib, pandas, numpy…\nPrakash: wants to learn more about both R and Python\nElizabeth: text analysis, deep learning, machine learning, sentiment analysis… in the communication between industry and investors\n\n\n\n# Put any code you'd like to run here!\n\n2\n\n\n\n\nQuestion 2: Python for trading/investments? | Elizabeth\n\nModule for creating User Interfaces: PySide6, which uses Qt.\n\nhttps://pypi.org/project/PySide6/\nsimilar to PyQt\n\n\n\n# Put any code you'd like to run here! CTRL + ENTER will run the cell\n\n\n\nNext month: PUG at ResBaz!\nWe will be at ResBaz QLD 2024, at ACU, for a larger meetup with other communities of practice! Please join us on Thursday the 7th of October at 11 am.\n\nWebsite: https://resbaz.github.io/resbaz2024qld/\nVolunteer: https://docs.google.com/forms/d/e/1FAIpQLSd689WEt6ZJPmd-833S7DaHjthJlvcNmm6qSfePuqnxiyrg6Q/viewform\n\n\n# Put any code you'd like to run here!\n\n\n\nQuestion 4: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\n\nQuestion 5: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!",
+    "crumbs": [
+      "Session Notebooks",
+      "2024 October 3<sup>rd</sup> -- UQ PUG 10"
+    ]
+  },
+  {
+    "objectID": "readme.html",
+    "href": "readme.html",
+    "title": "UQ Python User Group",
+    "section": "",
+    "text": "Welcome to the UQ Python User Group. We meet monthly, and our next gathering is on the 3rd of October.\n\n\n\n\nWe are a gathering for Python users of any proficiency, to help each other solve problems, share resources and tips, discover new features and hang out as a friendly community.\n\n\n\n\nEvery first Thursday of the month from 10:00 am to 11:30am\nIn-person at UQ Central Library 12-N109\nFind the next gathering on the UQ Library Training Page and book in through StudentHub\nContact us at training@library.uq.edu.au for any questions or support\n\n\n\n\n\nEach month, we gather at UQ Central Library to help solve each other’s problems and discover new features. We begin with a brief demonstration before diving into group discussion.\nBring along your python questions, problems, conundrums, opinions and victories to share with the group. We’ll try our best to help you out!\n\n\n\nIn this repo we contain the notebooks from our sessions (currently since Oct 24) and details from specific demonstrations.\n\n\n\nHere are a few links to some general resources.\n\nPython Documentation\nPyPI, the python package repository\nAnaconda, an environment manager with python applications (e.g. Spyder) available\nUQ Training Sessions\nLibrary training email - training@library.uq.edu.au\nOnline courses with LinkedIn Learning (use UQ credentials)",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "readme.html#about-us",
+    "href": "readme.html#about-us",
+    "title": "UQ Python User Group",
+    "section": "",
+    "text": "We are a gathering for Python users of any proficiency, to help each other solve problems, share resources and tips, discover new features and hang out as a friendly community.\n\n\n\n\nEvery first Thursday of the month from 10:00 am to 11:30am\nIn-person at UQ Central Library 12-N109\nFind the next gathering on the UQ Library Training Page and book in through StudentHub\nContact us at training@library.uq.edu.au for any questions or support",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "readme.html#how-it-works",
+    "href": "readme.html#how-it-works",
+    "title": "UQ Python User Group",
+    "section": "",
+    "text": "Each month, we gather at UQ Central Library to help solve each other’s problems and discover new features. We begin with a brief demonstration before diving into group discussion.\nBring along your python questions, problems, conundrums, opinions and victories to share with the group. We’ll try our best to help you out!",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "readme.html#this-repo",
+    "href": "readme.html#this-repo",
+    "title": "UQ Python User Group",
+    "section": "",
+    "text": "In this repo we contain the notebooks from our sessions (currently since Oct 24) and details from specific demonstrations.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "readme.html#general-resources",
+    "href": "readme.html#general-resources",
+    "title": "UQ Python User Group",
+    "section": "",
+    "text": "Here are a few links to some general resources.\n\nPython Documentation\nPyPI, the python package repository\nAnaconda, an environment manager with python applications (e.g. Spyder) available\nUQ Training Sessions\nLibrary training email - training@library.uq.edu.au\nOnline courses with LinkedIn Learning (use UQ credentials)",
+    "crumbs": [
+      "Home"
+    ]
+  }
+]
