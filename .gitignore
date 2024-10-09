@@ -1,1 +1,6 @@
+# Local
 dev/
+
+# Quarto
+/.quarto/
+/_site/
