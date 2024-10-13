@@ -1,1 +1,1 @@
-Sitemap: https://camwest5.github.io/PUG/sitemap.xml
+Sitemap: https://uqpug.github.io/sitemap.xml
