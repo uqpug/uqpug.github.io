@@ -44,6 +44,13 @@
     ]
   },
   {
+    "objectID": "readme.html",
+    "href": "readme.html",
+    "title": "UQ Python User Group",
+    "section": "",
+    "text": "UQ Python User Group\nWelcome to the UQ Python User Group. We are a gathering for Python users of any proficiency, to help each other solve problems, share resources and tips, discover new features and hang out as a friendly community.\nWe meet monthly on the first Thursday of the month, at 10:00am, at the Unviersity of Queensland.\nYou’ve found the GitHub repository for the UQ Python User Group’s website. If you’d like general information about the group, please visit our website.\nIf you’re interested in accessing files, you’ve come to the right place:\n\nFor each session’s Jupyter notebook, go to Session_notebooks\nFor each session’s demonstration, go to Demonstrations\n\nContact training@library.uq.edu.au for any particular queries."
+  },
+  {
     "objectID": "Session_notebooks/12-Oct24.html",
     "href": "Session_notebooks/12-Oct24.html",
     "title": "2024 October 3rd – UQ PUG 12",
