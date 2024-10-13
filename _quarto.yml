@@ -5,7 +5,7 @@ project:
     - Session_notebooks/*
 
 website:
-  title: "Python User Group"
+  title: "UQ Python User Group"
   sidebar:
     contents:
       - text: Home
