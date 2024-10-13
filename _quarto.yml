@@ -1,7 +1,7 @@
 project:
   type: website
   render:
-    - readme.md
+    - index.md
     - Session_notebooks/*
 
 website:
