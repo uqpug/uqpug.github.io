@@ -8,8 +8,8 @@ website:
   title: "UQ Python User Group"
   sidebar:
     contents:
-      - text: General information
-        href: index.md
+      - href: index.md 
+        text: General information
       - auto: Session_notebooks
 
 format:
