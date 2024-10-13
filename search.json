@@ -44,11 +44,54 @@
     ]
   },
   {
-    "objectID": "readme.html",
-    "href": "readme.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "UQ Python User Group",
     "section": "",
-    "text": "UQ Python User Group\nWelcome to the UQ Python User Group. We are a gathering for Python users of any proficiency, to help each other solve problems, share resources and tips, discover new features and hang out as a friendly community.\nWe meet monthly on the first Thursday of the month, at 10:00am, at the Unviersity of Queensland.\nYou’ve found the GitHub repository for the UQ Python User Group’s website. If you’d like general information about the group, please visit our website.\nIf you’re interested in accessing files, you’ve come to the right place:\n\nFor each session’s Jupyter notebook, go to Session_notebooks\nFor each session’s demonstration, go to Demonstrations\n\nContact training@library.uq.edu.au for any particular queries."
+    "text": "Welcome to the UQ Python User Group. We meet monthly, and our next gathering is on the 7th of November. Normally we meet at UQ, but this month we are meeting at ACU, coinciding with ResBaz.",
+    "crumbs": [
+      "General information"
+    ]
+  },
+  {
+    "objectID": "index.html#about-us",
+    "href": "index.html#about-us",
+    "title": "UQ Python User Group",
+    "section": "About us",
+    "text": "About us\n\nWho are we?\nWe are a gathering for Python users of any proficiency, to help each other solve problems, share resources and tips, discover new features and hang out as a friendly community.\n\n\nWhen do we meet?\n\nEvery first Thursday of the month from 10:00 am to 11:30am\nIn-person at UQ Central Library 12-N109\nFind the next gathering on the UQ Library Training Page and book in through StudentHub\nContact us at training@library.uq.edu.au for any questions or support",
+    "crumbs": [
+      "General information"
+    ]
+  },
+  {
+    "objectID": "index.html#how-it-works",
+    "href": "index.html#how-it-works",
+    "title": "UQ Python User Group",
+    "section": "How it works",
+    "text": "How it works\nEach month, we gather at UQ Central Library to help solve each other’s problems and discover new features. We begin with a brief demonstration before diving into group discussion.\nBring along your python questions, problems, conundrums, opinions and victories to share with the group. We’ll try our best to help you out!",
+    "crumbs": [
+      "General information"
+    ]
+  },
+  {
+    "objectID": "index.html#this-website",
+    "href": "index.html#this-website",
+    "title": "UQ Python User Group",
+    "section": "This website",
+    "text": "This website\nOn this website we contain the notebooks from our sessions (currently since Oct 24) and details from specific demonstrations.",
+    "crumbs": [
+      "General information"
+    ]
+  },
+  {
+    "objectID": "index.html#general-resources",
+    "href": "index.html#general-resources",
+    "title": "UQ Python User Group",
+    "section": "General Resources",
+    "text": "General Resources\nHere are a few links to some general resources.\n\nPython Documentation\nPyPI, the python package repository\nAnaconda, an environment manager with python applications (e.g. Spyder) available\nUQ Training Sessions\nLibrary training email - training@library.uq.edu.au\nOnline courses with LinkedIn Learning (use UQ credentials)",
+    "crumbs": [
+      "General information"
+    ]
   },
   {
     "objectID": "Session_notebooks/12-Oct24.html",
