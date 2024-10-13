@@ -23,9 +23,9 @@ Each month, we gather at UQ Central Library to help solve each other's problems 
 
 Bring along your python questions, problems, conundrums, opinions and victories to share with the group. We'll try our best to help you out!
 
-## This repo
+## This website
 
-In this repo we contain the notebooks from our sessions (currently since Oct 24) and details from specific demonstrations.
+On this website we contain the notebooks from our sessions (currently since Oct 24) and details from specific demonstrations.
 
 ## General Resources
 
