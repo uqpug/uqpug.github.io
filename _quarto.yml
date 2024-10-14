@@ -2,7 +2,8 @@ project:
   type: website
   render:
     - index.md
-    - Session_notebooks/*
+    - "Current notebooks/*"
+    - "Archive - 2023/*"
 
 website:
   title: "UQ Python User Group"
@@ -10,7 +11,7 @@ website:
     contents:
       - href: index.md 
         text: General information
-      - auto: Session_notebooks
+      - auto: "Current notebooks"
       - auto: "Archive - 2023"
 
 format:
