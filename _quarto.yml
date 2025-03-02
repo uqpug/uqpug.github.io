@@ -2,7 +2,8 @@ project:
   type: website
   render:
     - index.md
-    - "Current notebooks/*"
+    - "Current notebooks - 2025/*"
+    - "Archvie - 2024/*"
     - "Archive - 2023/*"
 
 website:
@@ -11,7 +12,8 @@ website:
     contents:
       - href: index.md 
         text: General information
-      - auto: "Current notebooks"
+      - auto: "Current notebooks - 2025"
+      - auto: "Archive - 2024"
       - auto: "Archive - 2023"
 
 format:
