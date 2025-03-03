@@ -2,7 +2,7 @@
 title: "UQ Python User Group"
 ---
 
-Welcome to the UQ Python User Group. We meet monthly, and our next gathering is on the 7th of November. Normally we meet at UQ, but **this month we are meeting at ACU**, coinciding with [ResBaz](https://resbaz.github.io/resbaz2024qld/).
+Welcome to the UQ Python User Group. We meet monthly, and our next gathering is on the 6th of March. We meet in room 12-N109 (Central Library).
 
 ## About us
 

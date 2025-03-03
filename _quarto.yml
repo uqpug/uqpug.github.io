@@ -3,7 +3,7 @@ project:
   render:
     - index.md
     - "Current notebooks - 2025/*"
-    - "Archvie - 2024/*"
+    - "Archive - 2024/*"
     - "Archive - 2023/*"
 
 website:
