@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>apr24 – UQ Python User Group</title>
+<title>jul24 – UQ Python User Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -35,10 +69,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-659650fc26dc25888fc1474f317bb8ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-8647a4a42273f773479d27c00df3f9ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Current notebooks/05-Feb24.html">Current notebooks</a></li><li class="breadcrumb-item"><a href="../Current notebooks/07-Apr24.html">2024 Apr 11<sup>th</sup> – UQ PUG 7</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Archive - 2024/05-Feb24.html">Archive - 2024</a></li><li class="breadcrumb-item"><a href="../Archive - 2024/09-Jul24.html">2024 July 4<sup>th</sup> – UQ PUG 9</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Current notebooks</span></a>
+ <span class="menu-text">Current notebooks - 2025</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -122,50 +156,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Current notebooks/05-Feb24.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2024 Feb 7<sup>th</sup> – UQ PUG 5</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Current notebooks/06-Mar24.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2024 Mar 7<sup>th</sup> – UQ PUG 6</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Current notebooks/07-Apr24.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">2024 Apr 11<sup>th</sup> – UQ PUG 7</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Current notebooks/08-May24.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2024 May 2<sup>nd</sup> – UQ PUG 8</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Current notebooks/09-Jul24.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2024 July 4<sup>th</sup> – UQ PUG 9</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Current notebooks/12-Oct24.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2024 Oct 3<sup>rd</sup> – UQ PUG 12</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Current notebooks/13-Nov24.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2024 Nov 7<sup>th</sup> – UQ PUG 13</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Current notebooks/14-Dec24.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2024 Dec 5<sup>th</sup> – UQ PUG 14</span></a>
+  <a href="../Current notebooks - 2025/16-Mar25.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2025 Mar 6<sup>th</sup> – UQ PUG 16</span></a>
   </div>
 </li>
       </ul>
@@ -173,12 +165,71 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Archive - 2023</span></a>
+ <span class="menu-text">Archive - 2024</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Archive - 2024/05-Feb24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2024 Feb 7<sup>th</sup> – UQ PUG 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Archive - 2024/06-Mar24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2024 Mar 7<sup>th</sup> – UQ PUG 6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Archive - 2024/07-Apr24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2024 Apr 11<sup>th</sup> – UQ PUG 7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Archive - 2024/08-May24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2024 May 2<sup>nd</sup> – UQ PUG 8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Archive - 2024/09-Jul24.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">2024 July 4<sup>th</sup> – UQ PUG 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Archive - 2024/12-Oct24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2024 Oct 3<sup>rd</sup> – UQ PUG 12</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Archive - 2024/13-Nov24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2024 Nov 7<sup>th</sup> – UQ PUG 13</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Archive - 2024/14-Dec24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2024 Dec 5<sup>th</sup> – UQ PUG 14</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Archive - 2023</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Archive - 2023/1-Sep23.html" class="sidebar-item-text sidebar-link">
@@ -215,7 +266,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#apr-11th-uq-pug-7" id="toc-apr-11th-uq-pug-7" class="nav-link active" data-scroll-target="#apr-11th-uq-pug-7">2024 Apr 11<sup>th</sup> – UQ PUG 7</a>
+  <li><a href="#july-4th-uq-pug-9" id="toc-july-4th-uq-pug-9" class="nav-link active" data-scroll-target="#july-4th-uq-pug-9">2024 July 4<sup>th</sup> – UQ PUG 9</a>
   <ul class="collapse">
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a>
   <ul class="collapse">
@@ -229,17 +280,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Current notebooks/05-Feb24.html">Current notebooks</a></li><li class="breadcrumb-item"><a href="../Current notebooks/07-Apr24.html">2024 Apr 11<sup>th</sup> – UQ PUG 7</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Archive - 2024/05-Feb24.html">Archive - 2024</a></li><li class="breadcrumb-item"><a href="../Archive - 2024/09-Jul24.html">2024 July 4<sup>th</sup> – UQ PUG 9</a></li></ol></nav></header>
 
 
 
 
-<section id="apr-11th-uq-pug-7" class="level1">
-<h1>2024 Apr 11<sup>th</sup> – UQ PUG 7</h1>
-<p>Welcome to UQ Python User Group! Check out our <a href="https://app.noteable.io/f/c84cf34f-03eb-48eb-aff4-ccf80b013b5c/UQ-PUG-General-Info.ipynb?cellID=1e2cf356">general information</a> for details about who we are and what we do.</p>
-<p>This month we discussed a basic introduction to Web Scraping using <code>requests</code> and <code>BeautifulSoup</code>.</p>
+<section id="july-4th-uq-pug-9" class="level1">
+<h1>2024 July 4<sup>th</sup> – UQ PUG 9</h1>
+<p>Welcome to UQ Python User Group! Check out our general info above for how we work and what we do. Below you’ll find the details of this month’s gathering, and below that last month’s.</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This month we will be discussing <strong>functions and modules</strong> - specifically, how to start using them and when they might help!</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="structure" class="level3">
 <h3 class="anchored" data-anchor-id="structure">Structure</h3>
 <ol type="1">
@@ -263,11 +315,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="introduce-yourself" class="level2">
 <h2 class="anchored" data-anchor-id="introduce-yourself">Introduce yourself</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>What’s your name?</th>
@@ -279,42 +326,12 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Cameron West</td>
 <td>UQ Library / SMP</td>
-<td>To help, share and learn</td>
+<td>To help</td>
 </tr>
 <tr class="even">
-<td>Nicholas Wiggins</td>
-<td>UQ Library</td>
-<td>To help and Learn</td>
-</tr>
-<tr class="odd">
-<td>Theophilus Mensah</td>
-<td>QAAFI</td>
-<td>To learn and share</td>
-</tr>
-<tr class="even">
+<td>Zoe</td>
+<td>UQ</td>
 <td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>David Chau</td>
-<td>QAAFI</td>
-<td>For Fun</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Julia Wood</td>
-<td>UQ HABS</td>
-<td>to learn and meet other python users</td>
-</tr>
-<tr class="even">
-<td>Thu Luong Le</td>
-<td>ComArts School</td>
-<td>To learn about web scraping</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -322,9 +339,9 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 </tr>
 <tr class="even">
-<td>Tommy Nguyen</td>
-<td>UQ ADP</td>
-<td>To Learn about Web Scraping + meet others</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -332,21 +349,46 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 </tr>
 <tr class="even">
-<td>Ryan Leung</td>
-<td>SOE</td>
-<td>Learn python</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
-<td>Lydeth</td>
-<td>Business school</td>
-<td>I do have to pass my CSSE7030 course which is centered around Python and get myself closer to Python?</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
-<td>Jay</td>
-<td>UQ EAIT</td>
-<td>Learn python and have some inspiration</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
 <td></td>
 <td></td>
 <td></td>
