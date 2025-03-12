@@ -37,3 +37,6 @@ Here are a few links to some general resources.
 - [UQ Training Sessions](https://web.library.uq.edu.au/library-services/training)
 - Library training email - [training@library.uq.edu.au](mailto:training@library.uq.edu.au)
 - [Online courses](https://au.linkedin.com/learning/) with LinkedIn Learning (use [UQ credentials](https://web.library.uq.edu.au/library-services/training/linkedin-learning-online-courses))
+
+
+[For admin](googlec027a6a2057eb177.html)
