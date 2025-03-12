@@ -5,6 +5,7 @@ project:
     - "Current notebooks - 2025/*"
     - "Archive - 2024/*"
     - "Archive - 2023/*"
+    - googlec027a6a2057eb177.html
 
 website:
   title: "UQ Python User Group"
