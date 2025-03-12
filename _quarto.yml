@@ -16,6 +16,8 @@ website:
       - auto: "Current notebooks - 2025"
       - auto: "Archive - 2024"
       - auto: "Archive - 2023"
+      - href: googlec027a6a2057eb177.html
+        text: ""
 
 format:
   html:
