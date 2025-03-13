@@ -2,6 +2,7 @@ project:
   type: website
   render:
     - index.md
+    - "Demonstrations/!(2024)"
     - "Current notebooks - 2025/*"
     - "Archive - 2024/*"
     - "Archive - 2023/*"
@@ -13,6 +14,7 @@ website:
     contents:
       - href: index.md 
         text: General information
+      - auto: "Demonstrations"
       - auto: "Current notebooks - 2025"
       - auto: "Archive - 2024"
       - auto: "Archive - 2023"
