@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2023 Oct 5th – UQ PUG 2 – UQ Python User Group</title>
+<title>The most popular Python modules – UQ Python User Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,22 +57,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8647a4a42273f773479d27c00df3f9ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-8647a4a42273f773479d27c00df3f9ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -101,8 +101,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -114,7 +143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Archive - 2023/1-Sep23.html">Archive - 2023</a></li><li class="breadcrumb-item"><a href="../Archive - 2023/2-Oct23.html">2023 Oct 5<sup>th</sup> – UQ PUG 2</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Demonstrations</li><li class="breadcrumb-item"><a href="../../Demonstrations/top_modules/top_modules.html">Top Modules</a></li><li class="breadcrumb-item"><a href="../../Demonstrations/top_modules/top_modules.html">The most popular Python modules</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -129,7 +158,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">UQ Python User Group</a> 
+      <a href="../../">UQ Python User Group</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -141,7 +170,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">General information</span></a>
   </div>
 </li>
@@ -156,16 +185,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Top Modules</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Demonstrations/top_modules/top_modules.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Demonstrations/top_modules/top_modules.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">The most popular Python modules</span></a>
   </div>
 </li>
@@ -184,7 +213,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Current notebooks - 2025/16-Mar25.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Current notebooks - 2025/16-Mar25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025 Mar 6<sup>th</sup> – UQ PUG 16</span></a>
   </div>
 </li>
@@ -201,49 +230,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Archive - 2024/05-Feb24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Archive - 2024/05-Feb24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 Feb 7<sup>th</sup> – UQ PUG 5</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Archive - 2024/06-Mar24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Archive - 2024/06-Mar24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 Mar 7<sup>th</sup> – UQ PUG 6</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Archive - 2024/07-Apr24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Archive - 2024/07-Apr24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 Apr 11<sup>th</sup> – UQ PUG 7</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Archive - 2024/08-May24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Archive - 2024/08-May24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 May 2<sup>nd</sup> – UQ PUG 8</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Archive - 2024/09-Jul24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Archive - 2024/09-Jul24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 July 4<sup>th</sup> – UQ PUG 9</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Archive - 2024/12-Oct24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Archive - 2024/12-Oct24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 Oct 3<sup>rd</sup> – UQ PUG 12</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Archive - 2024/13-Nov24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Archive - 2024/13-Nov24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 Nov 7<sup>th</sup> – UQ PUG 13</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Archive - 2024/14-Dec24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Archive - 2024/14-Dec24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 Dec 5<sup>th</sup> – UQ PUG 14</span></a>
   </div>
 </li>
@@ -260,25 +289,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Archive - 2023/1-Sep23.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Archive - 2023/1-Sep23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2023 Sep 7<sup>th</sup> – UQ PUG 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Archive - 2023/2-Oct23.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../Archive - 2023/2-Oct23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2023 Oct 5<sup>th</sup> – UQ PUG 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Archive - 2023/3-Nov23.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Archive - 2023/3-Nov23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2023 Nov 2<sup>nd</sup> – UQ PUG 3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Archive - 2023/4-Dec23.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Archive - 2023/4-Dec23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2023 Dec 7<sup>th</sup> – UQ PUG 4</span></a>
   </div>
 </li>
@@ -294,27 +323,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#structure" id="toc-structure" class="nav-link active" data-scroll-target="#structure">Structure</a></li>
-  <li><a href="#this-months-presentation" id="toc-this-months-presentation" class="nav-link" data-scroll-target="#this-months-presentation">This month’s presentation</a></li>
-  <li><a href="#introduce-yourself" id="toc-introduce-yourself" class="nav-link" data-scroll-target="#introduce-yourself">Introduce yourself</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
-  <ul class="collapse">
-  <li><a href="#question-1---what-are-some-best-practices-or-the-correct-way-of-installing-python-for-the-first-time---annie" id="toc-question-1---what-are-some-best-practices-or-the-correct-way-of-installing-python-for-the-first-time---annie" class="nav-link" data-scroll-target="#question-1---what-are-some-best-practices-or-the-correct-way-of-installing-python-for-the-first-time---annie">Question 1 - What are some “best practices” or the “correct” way of installing Python for the first time - Annie</a></li>
-  <li><a href="#question-2---question---nida" id="toc-question-2---question---nida" class="nav-link" data-scroll-target="#question-2---question---nida">Question 2 - Question - Nida</a></li>
-  <li><a href="#question-3---should-you-always-be-using-venv-virtual-environments-for-every-new-project---annie" id="toc-question-3---should-you-always-be-using-venv-virtual-environments-for-every-new-project---annie" class="nav-link" data-scroll-target="#question-3---should-you-always-be-using-venv-virtual-environments-for-every-new-project---annie">Question 3 - should you always be using venv (virtual environments) for every new project? - Annie</a></li>
-  <li><a href="#question-4---where-does-one-find-packages-available-in-notable-e.g.-google-colab-doesnt-have-all-packages---annie" id="toc-question-4---where-does-one-find-packages-available-in-notable-e.g.-google-colab-doesnt-have-all-packages---annie" class="nav-link" data-scroll-target="#question-4---where-does-one-find-packages-available-in-notable-e.g.-google-colab-doesnt-have-all-packages---annie">Question 4 - where does one find packages available in Notable? e.g.&nbsp;google colab doesnt have all packages - Annie</a></li>
-  <li><a href="#question-5---why-does-it-sometimes-take-so-long-to-use-google-collab-i.e-when-we-have-to-re-run-everything-again-is-it-bcs-it-is-run-the-server-which-is-different-from-server-that-we-use-to-run-our-code-with-other-environment-do-we-have-place-to-store-our-.csv-file" id="toc-question-5---why-does-it-sometimes-take-so-long-to-use-google-collab-i.e-when-we-have-to-re-run-everything-again-is-it-bcs-it-is-run-the-server-which-is-different-from-server-that-we-use-to-run-our-code-with-other-environment-do-we-have-place-to-store-our-.csv-file" class="nav-link" data-scroll-target="#question-5---why-does-it-sometimes-take-so-long-to-use-google-collab-i.e-when-we-have-to-re-run-everything-again-is-it-bcs-it-is-run-the-server-which-is-different-from-server-that-we-use-to-run-our-code-with-other-environment-do-we-have-place-to-store-our-.csv-file">Question 5 - Why does it sometimes take so long to use google collab? (i.e when we have to re-run everything again) is it bcs it is run the server which is different from server that we use to run our code with other environment? do we have place to store our .csv file?</a></li>
-  <li><a href="#question-6---how-do-i-fix-an-indexerror-list-index-out-of-range--taneesha" id="toc-question-6---how-do-i-fix-an-indexerror-list-index-out-of-range--taneesha" class="nav-link" data-scroll-target="#question-6---how-do-i-fix-an-indexerror-list-index-out-of-range--taneesha">Question 6 - How do I fix an IndexError: list index out of range? -Taneesha</a></li>
-  </ul></li>
+  <li><a href="#requests" id="toc-requests" class="nav-link active" data-scroll-target="#requests"><code>requests</code></a></li>
+  <li><a href="#numpy" id="toc-numpy" class="nav-link" data-scroll-target="#numpy"><code>numpy</code></a></li>
+  <li><a href="#cryptography" id="toc-cryptography" class="nav-link" data-scroll-target="#cryptography"><code>cryptography</code></a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Archive - 2023/1-Sep23.html">Archive - 2023</a></li><li class="breadcrumb-item"><a href="../Archive - 2023/2-Oct23.html">2023 Oct 5<sup>th</sup> – UQ PUG 2</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Demonstrations</li><li class="breadcrumb-item"><a href="../../Demonstrations/top_modules/top_modules.html">Top Modules</a></li><li class="breadcrumb-item"><a href="../../Demonstrations/top_modules/top_modules.html">The most popular Python modules</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">2023 Oct 5<sup>th</sup> – UQ PUG 2</h1>
+<h1 class="title">The most popular Python modules</h1>
 </div>
 
 
@@ -331,218 +351,226 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Welcome to UQ Python User Group! Check out our <a href="https://app.noteable.io/f/c84cf34f-03eb-48eb-aff4-ccf80b013b5c/UQ-PUG-General-Info.ipynb?cellID=1e2cf356">general information</a> for details about who we are and what we do.</p>
-<section id="structure" class="level2">
-<h2 class="anchored" data-anchor-id="structure">Structure</h2>
-<ol type="1">
-<li>We start today by adding our names to the table below</li>
-<li>Add your questions to this page</li>
-<li>This month’s presentation</li>
-<li>Finally, we spend the rest of the session answering the questions you’ve brought!</li>
-</ol>
-</section>
-<section id="this-months-presentation" class="level2">
-<h2 class="anchored" data-anchor-id="this-months-presentation">This month’s presentation</h2>
-<p>https://forms.office.com/r/TTLGSAxS0k</p>
-<p>Join us for an informative presentation that delves into the world of Python Integrated Development Environments (IDEs). In this session, we will compare and contrast five popular Python development environments: Spyder, PyCharm, Visual Studio Code (VSCode), Google Colab, and the trusty Command Prompt.</p>
-<p>https://www.meetup.com/beginners-python-machine-learning/</p>
-</section>
-<section id="introduce-yourself" class="level2">
-<h2 class="anchored" data-anchor-id="introduce-yourself">Introduce yourself</h2>
+<p><em>According to PyPI’s <a href="https://hugovk.github.io/top-pypi-packages/">most downloaded packages</a> for February 2025</em></p>
+<p>There’s a lot of boring, utility packages. Let’s import the top 15,000, and look at the first 15</p>
+<div id="cell-3" class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"top-pypi-packages.csv"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><em>BORING</em>. For reference</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>What’s your name?</th>
-<th>Where are you from?</th>
-<th>Why are you here?</th>
+<th>Package(s)</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Luke</td>
-<td>Library</td>
-<td>To learn and attempt help</td>
+<td><code>boto3</code>, <code>botocore</code>, <code>aiobotocore</code> and <code>s3transfer</code></td>
+<td>These hook you into Amazon’s Web Service (AWS). Connects with a quick runtime. Machine learning, AI etc.</td>
 </tr>
 <tr class="even">
-<td>Mads</td>
-<td>EAIT</td>
-<td>Analyse data and hopefully get some help doing that</td>
+<td><code>urllib3</code>, <code>requests</code> and <code>certifi</code></td>
+<td>We’ll look at these first, they’re useful. For making HTTP (internet) requests. <code>certifi</code> is for certificates, used to be in requests.</td>
 </tr>
 <tr class="odd">
-<td>Taneesha</td>
-<td>School of the Environment: Conservation Science</td>
-<td>Learn python coding for ArcGIS</td>
+<td><code>charset-normalizer</code> and <code>idna</code></td>
+<td>For fixing/translating encodings</td>
 </tr>
 <tr class="even">
-<td>Cameron</td>
-<td>Library</td>
-<td>To learn and help!</td>
+<td><code>setuptools</code> and <code>packaging</code></td>
+<td>For package development</td>
 </tr>
 <tr class="odd">
-<td>Nida</td>
-<td>School of Chemistry &amp; Molecular Biosciences</td>
-<td>To learn more about python to work on molec bio data</td>
+<td><code>grpcio-status</code></td>
+<td>For using <a href="https://grpc.io/">GRPC</a>, used for connecting services.</td>
 </tr>
 <tr class="even">
-<td>Nick Wiggins</td>
-<td>Library</td>
-<td>Here to help and mostly to learn</td>
-</tr>
-<tr class="odd">
-<td>Annie</td>
-<td>SENV</td>
-<td>here to ask all the questions!</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
+<td><code>typing-extensions</code>, <code>python-dateutil</code> and <code>six</code></td>
+<td>Extensions to base Python libraries. <code>typing-extensions</code> adds <em>typing</em> to older versions of Python 3 (it’s a new thing). <code>python-dateutil</code> expands Python’s <code>datetime</code> module. <code>six</code> provides cross-compatibility between Python 2 and 3 (because <span class="math inline">\(2\times 3 = 6\)</span>).</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="questions" class="level2">
-<h2 class="anchored" data-anchor-id="questions">Questions</h2>
-<p>If you have any Python questions you’d like to explore with the group, please put them in a markdown cell, with any code you’d like us to run in a Python cell.</p>
-<section id="question-1---what-are-some-best-practices-or-the-correct-way-of-installing-python-for-the-first-time---annie" class="level3">
-<h3 class="anchored" data-anchor-id="question-1---what-are-some-best-practices-or-the-correct-way-of-installing-python-for-the-first-time---annie">Question 1 - What are some “best practices” or the “correct” way of installing Python for the first time - Annie</h3>
-<p>I frequently get “path” errors because I’m installed python somewhere and then the IDE can’t find the path to Python (I think), and many “hardcore” programmers don’t like Anaconda - they say it interferes with pip so what is the easiest both initially and later on down the line?</p>
-<p>Nick - I’m going to try installing Python and vsCode using these instructions (https://github.com/Oracen/python-intro), and put all the files into one folder as Luke suggested</p>
-<div id="06eb4a2b-b9f4-48d2-954d-837010fcebc4" class="cell" data-jupyter="{&quot;source_hidden&quot;:true}" data-noteable="{&quot;cell_type&quot;:&quot;python&quot;}" data-tags="[]">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Code for Q1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-5" class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> df.head(<span class="dv">15</span>)[<span class="st">"download_count"</span>].<span class="bu">sum</span>()</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Together, these packages been downloaded </span><span class="sc">{</span>count<span class="sc">}</span><span class="ss"> times in the last MONTH. That's 8.5 billion downloads!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="question-2---question---nida" class="level3">
-<h3 class="anchored" data-anchor-id="question-2---question---nida">Question 2 - Question - Nida</h3>
-<p>In Spyder, sometimes when we want to import a module (i.e a .py file that contains certain functions/dictionary), it gives this error:</p>
-<p>ModuleNotFoundError: No module named ‘translate’</p>
-<p>is this problem related to whether the file that we are trying to import is not saved in our working directory?</p>
-<p>How do we set that our working directory is in the place where we saved our file that we want to import as a module?</p>
-<p>I saw an Icon called “browse a working directory” in the top right of the Spyder, is this how we set our working directory? Or do we have to do sth else to change our working directory?</p>
-<p>Thank you so much</p>
-<div id="e75282d1-65af-4148-bb7c-883e2ef42f4b" class="cell" data-noteable="{&quot;cell_type&quot;:&quot;python&quot;}">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Access the system (using the module sys)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># This will display where you can put your modules</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sys.path)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># This will add another location to the path (another folder where you can load modules)</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>sys.path <span class="op">=</span> sys.path <span class="op">+</span> [<span class="st">'Location of your modules'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>It’s worth pointing out that a lot of these downloads could be automatic - scripts running and restarting, creating virtual environments every time etc.</p>
+<p>So far, the only ones I want to look at are <code>urllib3</code>/<code>requests</code>. Let’s look to the next 15</p>
+<div id="cell-7" class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df[<span class="dv">15</span>:<span class="dv">31</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>https://www.w3schools.com/python/python_ref_keywords.asp avoid to name your files or variables with these words or python will get confused!</p>
-<section id="luke-attempting-to-find-answers" class="level4">
-<h4 class="anchored" data-anchor-id="luke-attempting-to-find-answers">Luke attempting to find answers</h4>
-<p>The ‘translate’ module is causing a conflict - https://pypi.org/project/translate/</p>
-<p>This says you can do pip install to file path? - https://stackoverflow.com/questions/63790682/importing-custom-modules-py-files-into-virtual-environment#:~:text=You%20can%20create%20a%20setup.py%2C%20then%20install%20this,a%20module%20by%20pip%20pip%20install%20-e%20%2Fpath%2Fto%2Ffolder</p>
-<div id="ef4f2e63-79f9-49bd-ac1d-257e69237013" class="cell" data-executetime="{&quot;end_time&quot;:&quot;2023-10-05T01:04:16.834957+00:00&quot;,&quot;start_time&quot;:&quot;2023-10-05T01:04:16.680245+00:00&quot;}" data-jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}" data-noteable="{&quot;cell_type&quot;:&quot;python&quot;,&quot;output_collection_id&quot;:&quot;37c7e32c-f52c-4e34-97b8-22ab0d6e7e49&quot;}" data-tags="[]">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pip install translate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Aha! Here’s some more.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Package(s)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>numpy</code></td>
+<td>A numerical Python package. Powerful.</td>
+</tr>
+<tr class="even">
+<td><code>pyyaml</code>, <code>cffi</code> and <code>pycparser</code></td>
+<td>For connecting with other languages. <code>pyyaml</code> is a parser for YAML, yet another markup language. <code>cffi</code> is for interacting with C code, while <code>pycparser</code> parses it directly.</td>
+</tr>
+<tr class="odd">
+<td><code>s3fs</code></td>
+<td>More AWS.</td>
+</tr>
+<tr class="even">
+<td><code>pip</code> and <code>wheel</code></td>
+<td>For downloading packages and wheels. <code>pip</code> for packages, <code>wheel</code> for manipulating wheels.</td>
+</tr>
+<tr class="odd">
+<td><code>fsspec</code></td>
+<td>For file system management.</td>
+</tr>
+<tr class="even">
+<td><code>google-api-core</code></td>
+<td>For interacting with Google’s API</td>
+</tr>
+<tr class="odd">
+<td><code>cryptography</code> and <code>rsa</code></td>
+<td>For creating secret keys and decoding, etc. Fun!</td>
+</tr>
+<tr class="even">
+<td><code>pydantic</code></td>
+<td>For validating data - really, for making sure that your data fits the variables/types you expect.</td>
+</tr>
+<tr class="odd">
+<td><code>pandas</code></td>
+<td>For manipulating data. Glorified Excel.</td>
+</tr>
+<tr class="even">
+<td><code>attrs</code></td>
+<td>For improving classes. Fun, but a bit too advanced.</td>
+</tr>
+<tr class="odd">
+<td><code>markupsafe</code></td>
+<td>For creating strings that escape characters for HTML and XML</td>
+</tr>
+<tr class="even">
+<td><code>pyasn1</code></td>
+<td>Allows use of ASN.1 for managing network protocols</td>
+</tr>
+</tbody>
+</table>
+<p>A bit more variety! Today, we’ll look at the following packages from this top-30 list, in order:</p>
+<ul>
+<li><code>requests</code></li>
+<li><code>numpy</code></li>
+<li><code>cryptography</code></li>
+</ul>
+<section id="requests" class="level2">
+<h2 class="anchored" data-anchor-id="requests"><code>requests</code></h2>
+<p>The <code>requests</code> package lets you send HTTP requests. Typically, these are <code>GET</code>, for getting things, and <code>POST</code>, for sending them.</p>
+<div id="cell-10" class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> requests.get(<span class="st">"https://uqpug.github.io/"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>r</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-</section>
-<section id="question-3---should-you-always-be-using-venv-virtual-environments-for-every-new-project---annie" class="level3">
-<h3 class="anchored" data-anchor-id="question-3---should-you-always-be-using-venv-virtual-environments-for-every-new-project---annie">Question 3 - should you always be using venv (virtual environments) for every new project? - Annie</h3>
-<p>what are the pros and cons of venv?</p>
-<div id="a08854c2-97e4-46d4-9a45-8793ee3eca0c" class="cell" data-jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}" data-noteable="{&quot;cell_type&quot;:&quot;python&quot;}" data-tags="[]">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Code for Q3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Every HTTP request gets a status response. The code 200 means OK, so “&lt;Response [200]&gt;” means it worked.</p>
+<p>Our response has a lot of attributes. The main one is <code>r.text</code></p>
+<blockquote class="blockquote">
+<p>Note - if you’re pulling from an API, usually you’ll get JSON code in response. Don’t use <code>r.text</code> there, use <code>r.json()</code>.</p>
+</blockquote>
+<div id="cell-12" class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>r.text</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>This is the HTML for the website. If you want to webscrape, the next thing to do is import the <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a> package. We’ll leave it there.</p>
 </section>
-<section id="question-4---where-does-one-find-packages-available-in-notable-e.g.-google-colab-doesnt-have-all-packages---annie" class="level3">
-<h3 class="anchored" data-anchor-id="question-4---where-does-one-find-packages-available-in-notable-e.g.-google-colab-doesnt-have-all-packages---annie">Question 4 - where does one find packages available in Notable? e.g.&nbsp;google colab doesnt have all packages - Annie</h3>
-<p>Add more details here</p>
-<div id="c0f0d7c3-9428-4447-9ab0-b6477467739e" class="cell" data-executetime="{&quot;end_time&quot;:&quot;2023-10-05T01:30:36.785704+00:00&quot;,&quot;start_time&quot;:&quot;2023-10-05T01:30:36.056691+00:00&quot;}" data-jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}" data-noteable="{&quot;cell_type&quot;:&quot;python&quot;,&quot;output_collection_id&quot;:&quot;0443dddf-5f4a-445d-bb6f-6d6d3040cff6&quot;}" data-tags="[]">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Code for Q4</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">help</span>(<span class="st">'modules'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="numpy" class="level2">
+<h2 class="anchored" data-anchor-id="numpy"><code>numpy</code></h2>
+<p>The <code>numpy</code> package is huge. There’s far too much to cover. But we’ll take a look two basics.</p>
+<p>The first is arrays, a vector-like object that beats lists:</p>
+<div id="cell-15" class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="question-5---why-does-it-sometimes-take-so-long-to-use-google-collab-i.e-when-we-have-to-re-run-everything-again-is-it-bcs-it-is-run-the-server-which-is-different-from-server-that-we-use-to-run-our-code-with-other-environment-do-we-have-place-to-store-our-.csv-file" class="level3">
-<h3 class="anchored" data-anchor-id="question-5---why-does-it-sometimes-take-so-long-to-use-google-collab-i.e-when-we-have-to-re-run-everything-again-is-it-bcs-it-is-run-the-server-which-is-different-from-server-that-we-use-to-run-our-code-with-other-environment-do-we-have-place-to-store-our-.csv-file">Question 5 - Why does it sometimes take so long to use google collab? (i.e when we have to re-run everything again) is it bcs it is run the server which is different from server that we use to run our code with other environment? do we have place to store our .csv file?</h3>
-<div id="05f5f2f1-4784-446c-a556-aa61c14538a2" class="cell" data-jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}" data-noteable="{&quot;cell_type&quot;:&quot;python&quot;}" data-tags="[]">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Code for Q5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="question-6---how-do-i-fix-an-indexerror-list-index-out-of-range--taneesha" class="level3">
-<h3 class="anchored" data-anchor-id="question-6---how-do-i-fix-an-indexerror-list-index-out-of-range--taneesha">Question 6 - How do I fix an IndexError: list index out of range? -Taneesha</h3>
-<p>Writing python code in ArcGIS to loop through a number of geoprocessing tools</p>
-<div id="2ffa0916-298a-48c9-a6c6-2d6cc91b1ce5" class="cell" data-executetime="{&quot;end_time&quot;:&quot;2023-10-05T01:36:16.130864+00:00&quot;,&quot;start_time&quot;:&quot;2023-10-05T01:36:15.942585+00:00&quot;}" data-noteable="{&quot;cell_type&quot;:&quot;python&quot;,&quot;output_collection_id&quot;:&quot;e9e6980d-1f4d-4652-829f-457e21505183&quot;}">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>]</span>
+<div id="cell-16" class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>basic_list <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>letters <span class="op">=</span> [<span class="st">"a"</span>,<span class="st">"b"</span>]</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> numbers:</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(letters[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>basic_list <span class="op">*</span> <span class="dv">2</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># This is annoying!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Question 7 - do we have tools for running it line by line in spyder?</p>
-<p>Luke you mentioned you were interested in this - feel free to delete once you’ve seen this. https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/</p>
-<p>Thanks Jason. I have a playlist of YTs to work my way through currently. Found a channel where one of the videos I had some success with. This video - https://www.youtube.com/watch?v=wrD-fZvT6UI. So am trying more of his tutorials. Trying to do it without OpenAI API</p>
-
-
+<p>Why does it beat lists? Watch:</p>
+<div id="cell-18" class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]<span class="op">*</span><span class="dv">3</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>])<span class="op">*</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Arrays can be multidimensional - matrices or tensors!</p>
+<div id="cell-20" class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>top_row <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>bottom_row <span class="op">=</span> [<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>np.array([top_row, bottom_row])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Let’s make two matrices and multiply them, with matrix multiplication:</p>
+<p><span class="math display">\[\begin{pmatrix}1&amp;2&amp;3\\4&amp;5&amp;6\end{pmatrix}\begin{pmatrix}1&amp;2\\3&amp;4\\5&amp;6\end{pmatrix}\]</span></p>
+<p>We use the <code>@</code> symbol to denote matrix multiplication (with <code>numpy</code>)</p>
+<div id="cell-22" class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>],[<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]])</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">2</span>],[<span class="dv">3</span>,<span class="dv">4</span>],[<span class="dv">5</span>,<span class="dv">6</span>]])</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>A <span class="op">@</span> B</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can also create really long arrays. This is useful for graphing. Using <code>np.arange(start, stop, interaval)</code>, and <code>matplotlib.pyplot</code> to plot,</p>
+<p><span class="math display">\[ y = \frac{\cos(2π\times x)}{x} \]</span></p>
+<div id="cell-24" class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="fl">0.1</span>, <span class="dv">10</span>, <span class="fl">0.0001</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.sin(<span class="dv">2</span><span class="op">*</span>np.pi<span class="op">*</span>x) <span class="op">/</span> x</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>plt.plot(x,y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
+<section id="cryptography" class="level2">
+<h2 class="anchored" data-anchor-id="cryptography"><code>cryptography</code></h2>
+<p>For making secret keys that require tokens to decript!</p>
+<p>Basically, we use a key to encrypt our token,</p>
+<p><span class="math display">\[ \text{Secret} \xrightarrow{\text{Key}} \text{Token} \]</span></p>
+<p>Then use the same key to decrypt it.</p>
+<p><span class="math display">\[\text{Key} + \text{Token} = \text{Secret}\]</span></p>
+<p>We make a key that can be used to generate tokens (i.e.&nbsp;encrypted messages). Then, you use the same key to decode the message. Fernet is one technique to do it:</p>
+<div id="cell-26" class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> cryptography.fernet <span class="im">import</span> Fernet</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>key <span class="op">=</span> Fernet.generate_key()</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>key</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now that we have a key, we store it into a <code>Fernet</code> object. Then, we turn our secret into a token:</p>
+<div id="cell-28" class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Store the key</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> Fernet(key)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Encrypt our message</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>token <span class="op">=</span> f.encrypt(<span class="st">b"my secrets"</span>)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>token</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<blockquote class="blockquote">
+<p>The <code>b"...</code> means bytes, so its bytecoded.</p>
+</blockquote>
+<p>Finally, we use the key (stored in <code>f</code>) to decrypt the message from the token</p>
+<div id="cell-30" class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>f.decrypt(token)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->
