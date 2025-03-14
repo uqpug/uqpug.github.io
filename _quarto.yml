@@ -27,6 +27,3 @@ format:
       - default
       - custom.scss
     toc: true
-
-execute:
-  freeze: auto
