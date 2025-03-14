@@ -9,7 +9,9 @@ project:
     - googlec027a6a2057eb177.html
 
 website:
-  title: "UQ Python User Group"
+  title: "UQPUG (Python User Group)"
+  navbar:
+    search: true
   sidebar:
     contents:
       - href: index.md 
@@ -21,8 +23,9 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: 
+      - default
+      - custom.scss
     toc: true
 
 execute:
