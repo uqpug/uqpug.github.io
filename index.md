@@ -1,5 +1,5 @@
 ---
-title: "UQ Python User Group (UQ PUG)"
+title: "UQ Python User Group"
 ---
 
 Welcome to the UQ Python User Group (UQ PUG). We meet monthly, and our next gathering is on the 6th of March. We meet in room 12-N109 (Central Library).
