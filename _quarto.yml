@@ -3,9 +3,9 @@ project:
   render:
     - index.md
     - "Demonstrations/!(2024)"
-    - "Current notebooks - 2025/*"
-    - "Archive - 2024/*"
-    - "Archive - 2023/*"
+    - "2025 - Current notebooks/*"
+    - "2024 - Archive/*"
+    - "2023 - Archive/*"
     - googlec027a6a2057eb177.html
 
 website:
@@ -21,9 +21,9 @@ website:
       - href: index.md 
         text: General information
       - auto: "Demonstrations"
-      - auto: "Current notebooks - 2025"
-      - auto: "Archive - 2024"
-      - auto: "Archive - 2023"
+      - auto: "2025 - Current notebooks"
+      - auto: "2024 - Archive"
+      - auto: "2023 - Archive"
     
 
 format:
