@@ -1,342 +1,342 @@
 [
   {
-    "objectID": "Archive - 2023/4-Dec23.html",
-    "href": "Archive - 2023/4-Dec23.html",
+    "objectID": "2023 - Archive/4-Dec23.html",
+    "href": "2023 - Archive/4-Dec23.html",
     "title": "2023 Dec 7th – UQ PUG 4",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general information for details about who we are and what we do.",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Dec 7<sup>th</sup> -- UQ PUG 4"
     ]
   },
   {
-    "objectID": "Archive - 2023/4-Dec23.html#structure",
-    "href": "Archive - 2023/4-Dec23.html#structure",
+    "objectID": "2023 - Archive/4-Dec23.html#structure",
+    "href": "2023 - Archive/4-Dec23.html#structure",
     "title": "2023 Dec 7th – UQ PUG 4",
     "section": "Structure",
     "text": "Structure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Dec 7<sup>th</sup> -- UQ PUG 4"
     ]
   },
   {
-    "objectID": "Archive - 2023/4-Dec23.html#mailing-list",
-    "href": "Archive - 2023/4-Dec23.html#mailing-list",
+    "objectID": "2023 - Archive/4-Dec23.html#mailing-list",
+    "href": "2023 - Archive/4-Dec23.html#mailing-list",
     "title": "2023 Dec 7th – UQ PUG 4",
     "section": "Mailing list",
     "text": "Mailing list\nIf you would like to be on the mailing list and receive the latest PUG updates, please sign up here:\nhttps://forms.office.com/r/6qvfFX0qGr\nFeel free to send this link to anyone you think may benefit.",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Dec 7<sup>th</sup> -- UQ PUG 4"
     ]
   },
   {
-    "objectID": "Archive - 2023/4-Dec23.html#training-resources",
-    "href": "Archive - 2023/4-Dec23.html#training-resources",
+    "objectID": "2023 - Archive/4-Dec23.html#training-resources",
+    "href": "2023 - Archive/4-Dec23.html#training-resources",
     "title": "2023 Dec 7th – UQ PUG 4",
     "section": "Training Resources",
     "text": "Training Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Dec 7<sup>th</sup> -- UQ PUG 4"
     ]
   },
   {
-    "objectID": "Archive - 2023/4-Dec23.html#introduce-yourself",
-    "href": "Archive - 2023/4-Dec23.html#introduce-yourself",
+    "objectID": "2023 - Archive/4-Dec23.html#introduce-yourself",
+    "href": "2023 - Archive/4-Dec23.html#introduce-yourself",
     "title": "2023 Dec 7th – UQ PUG 4",
     "section": "Introduce yourself",
     "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nKaren\nUQ Busines School\nto learn\n\n\nCameron\nUQ Library\nTo help and learn\n\n\n\n\n\n\n\nPo-Yen\nUQ Business school\nGet some help and learn I guess :)\n\n\n\n\n\n\n\nSagar\nBangladesh\nLearn Python",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Dec 7<sup>th</sup> -- UQ PUG 4"
     ]
   },
   {
-    "objectID": "Archive - 2023/4-Dec23.html#questions",
-    "href": "Archive - 2023/4-Dec23.html#questions",
+    "objectID": "2023 - Archive/4-Dec23.html#questions",
+    "href": "2023 - Archive/4-Dec23.html#questions",
     "title": "2023 Dec 7th – UQ PUG 4",
     "section": "Questions",
     "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put them in a markdown cell, with any code you’d like us to run in a Python cell.\n\nQuestion 1 - Question - Name\nQuestion about the CycleGAN architecture. Po-Yen\n\n#I don't get the part under \"try\" and the part of \"except\"\n#I also find that onece I load TPU, I have to wait to use this engine\nimport tensorflow as tf\nfrom tensorflow import keras\nfrom tensorflow.keras import layers\nimport tensorflow_addons as tfa\n\nfrom kaggle_datasets import KaggleDatasets\nimport matplotlib.pyplot as plt\nimport numpy as np\n\ntry:\n    tpu = tf.distribute.cluster_resolver.TPUClusterResolver()\n    print('Device:', tpu.master())\n    tf.config.experimental_connect_to_cluster(tpu)\n    tf.tpu.experimental.initialize_tpu_system(tpu)\n    strategy = tf.distribute.experimental.TPUStrategy(tpu)\nexcept:\n    strategy = tf.distribute.get_strategy()\nprint('Number of replicas:', strategy.num_replicas_in_sync)\n\nAUTOTUNE = tf.data.experimental.AUTOTUNE\n    \nprint(tf.__version__)\n\n\na = 5\n\ntry:\n    \"apple\"**2\nexcept ValueError:\n    print(\"We're inside the valueerror section\")\nexcept TypeError:\n    print(\"We're inside the typeerror section\")",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Dec 7<sup>th</sup> -- UQ PUG 4"
     ]
   },
   {
-    "objectID": "Archive - 2023/2-Oct23.html",
-    "href": "Archive - 2023/2-Oct23.html",
+    "objectID": "2023 - Archive/2-Oct23.html",
+    "href": "2023 - Archive/2-Oct23.html",
     "title": "2023 Oct 5th – UQ PUG 2",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general information for details about who we are and what we do.",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Oct 5<sup>th</sup> -- UQ PUG 2"
     ]
   },
   {
-    "objectID": "Archive - 2023/2-Oct23.html#structure",
-    "href": "Archive - 2023/2-Oct23.html#structure",
+    "objectID": "2023 - Archive/2-Oct23.html#structure",
+    "href": "2023 - Archive/2-Oct23.html#structure",
     "title": "2023 Oct 5th – UQ PUG 2",
     "section": "Structure",
     "text": "Structure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Oct 5<sup>th</sup> -- UQ PUG 2"
     ]
   },
   {
-    "objectID": "Archive - 2023/2-Oct23.html#this-months-presentation",
-    "href": "Archive - 2023/2-Oct23.html#this-months-presentation",
+    "objectID": "2023 - Archive/2-Oct23.html#this-months-presentation",
+    "href": "2023 - Archive/2-Oct23.html#this-months-presentation",
     "title": "2023 Oct 5th – UQ PUG 2",
     "section": "This month’s presentation",
     "text": "This month’s presentation\nhttps://forms.office.com/r/TTLGSAxS0k\nJoin us for an informative presentation that delves into the world of Python Integrated Development Environments (IDEs). In this session, we will compare and contrast five popular Python development environments: Spyder, PyCharm, Visual Studio Code (VSCode), Google Colab, and the trusty Command Prompt.\nhttps://www.meetup.com/beginners-python-machine-learning/",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Oct 5<sup>th</sup> -- UQ PUG 2"
     ]
   },
   {
-    "objectID": "Archive - 2023/2-Oct23.html#introduce-yourself",
-    "href": "Archive - 2023/2-Oct23.html#introduce-yourself",
+    "objectID": "2023 - Archive/2-Oct23.html#introduce-yourself",
+    "href": "2023 - Archive/2-Oct23.html#introduce-yourself",
     "title": "2023 Oct 5th – UQ PUG 2",
     "section": "Introduce yourself",
     "text": "Introduce yourself\n\n\n\n\n\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nLuke\nLibrary\nTo learn and attempt help\n\n\nMads\nEAIT\nAnalyse data and hopefully get some help doing that\n\n\nTaneesha\nSchool of the Environment: Conservation Science\nLearn python coding for ArcGIS\n\n\nCameron\nLibrary\nTo learn and help!\n\n\nNida\nSchool of Chemistry & Molecular Biosciences\nTo learn more about python to work on molec bio data\n\n\nNick Wiggins\nLibrary\nHere to help and mostly to learn\n\n\nAnnie\nSENV\nhere to ask all the questions!",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Oct 5<sup>th</sup> -- UQ PUG 2"
     ]
   },
   {
-    "objectID": "Archive - 2023/2-Oct23.html#questions",
-    "href": "Archive - 2023/2-Oct23.html#questions",
+    "objectID": "2023 - Archive/2-Oct23.html#questions",
+    "href": "2023 - Archive/2-Oct23.html#questions",
     "title": "2023 Oct 5th – UQ PUG 2",
     "section": "Questions",
     "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put them in a markdown cell, with any code you’d like us to run in a Python cell.\n\nQuestion 1 - What are some “best practices” or the “correct” way of installing Python for the first time - Annie\nI frequently get “path” errors because I’m installed python somewhere and then the IDE can’t find the path to Python (I think), and many “hardcore” programmers don’t like Anaconda - they say it interferes with pip so what is the easiest both initially and later on down the line?\nNick - I’m going to try installing Python and vsCode using these instructions (https://github.com/Oracen/python-intro), and put all the files into one folder as Luke suggested\n\n## Code for Q1\n\n\n\nQuestion 2 - Question - Nida\nIn Spyder, sometimes when we want to import a module (i.e a .py file that contains certain functions/dictionary), it gives this error:\nModuleNotFoundError: No module named ‘translate’\nis this problem related to whether the file that we are trying to import is not saved in our working directory?\nHow do we set that our working directory is in the place where we saved our file that we want to import as a module?\nI saw an Icon called “browse a working directory” in the top right of the Spyder, is this how we set our working directory? Or do we have to do sth else to change our working directory?\nThank you so much\n\n# Access the system (using the module sys)\nimport sys\n\n# This will display where you can put your modules\nprint(sys.path)\n\n# This will add another location to the path (another folder where you can load modules)\nsys.path = sys.path + ['Location of your modules']\n\nhttps://www.w3schools.com/python/python_ref_keywords.asp avoid to name your files or variables with these words or python will get confused!\n\nLuke attempting to find answers\nThe ‘translate’ module is causing a conflict - https://pypi.org/project/translate/\nThis says you can do pip install to file path? - https://stackoverflow.com/questions/63790682/importing-custom-modules-py-files-into-virtual-environment#:~:text=You%20can%20create%20a%20setup.py%2C%20then%20install%20this,a%20module%20by%20pip%20pip%20install%20-e%20%2Fpath%2Fto%2Ffolder\n\npip install translate\n\n\n\n\nQuestion 3 - should you always be using venv (virtual environments) for every new project? - Annie\nwhat are the pros and cons of venv?\n\n## Code for Q3\n\n\n\nQuestion 4 - where does one find packages available in Notable? e.g. google colab doesnt have all packages - Annie\nAdd more details here\n\n## Code for Q4\nhelp('modules')\n\n\n\nQuestion 5 - Why does it sometimes take so long to use google collab? (i.e when we have to re-run everything again) is it bcs it is run the server which is different from server that we use to run our code with other environment? do we have place to store our .csv file?\n\n## Code for Q5\n\n\n\nQuestion 6 - How do I fix an IndexError: list index out of range? -Taneesha\nWriting python code in ArcGIS to loop through a number of geoprocessing tools\n\nnumbers = [0,1,2]\n\nletters = [\"a\",\"b\"]\n\nfor i in numbers:\n    print(letters[i])\n\nQuestion 7 - do we have tools for running it line by line in spyder?\nLuke you mentioned you were interested in this - feel free to delete once you’ve seen this. https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/\nThanks Jason. I have a playlist of YTs to work my way through currently. Found a channel where one of the videos I had some success with. This video - https://www.youtube.com/watch?v=wrD-fZvT6UI. So am trying more of his tutorials. Trying to do it without OpenAI API",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Oct 5<sup>th</sup> -- UQ PUG 2"
     ]
   },
   {
-    "objectID": "Archive - 2024/14-Dec24.html",
-    "href": "Archive - 2024/14-Dec24.html",
+    "objectID": "2024 - Archive/14-Dec24.html",
+    "href": "2024 - Archive/14-Dec24.html",
     "title": "2024 Dec 5th – UQ PUG 14",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general info for how we work and what we do. Below you’ll find the details of this month’s gathering.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Dec 5<sup>th</sup> -- UQ PUG 14"
     ]
   },
   {
-    "objectID": "Archive - 2024/14-Dec24.html#overview",
-    "href": "Archive - 2024/14-Dec24.html#overview",
+    "objectID": "2024 - Archive/14-Dec24.html#overview",
+    "href": "2024 - Archive/14-Dec24.html#overview",
     "title": "2024 Dec 5th – UQ PUG 14",
     "section": "Overview",
     "text": "Overview\nWelcome to the last PUG for the year! One final drop in session and catchup before Christmas.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Dec 5<sup>th</sup> -- UQ PUG 14"
     ]
   },
   {
-    "objectID": "Archive - 2024/14-Dec24.html#introduce-yourself",
-    "href": "Archive - 2024/14-Dec24.html#introduce-yourself",
+    "objectID": "2024 - Archive/14-Dec24.html#introduce-yourself",
+    "href": "2024 - Archive/14-Dec24.html#introduce-yourself",
     "title": "2024 Dec 5th – UQ PUG 14",
     "section": "Introduce yourself",
     "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library & Physics\nTo share and learn",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Dec 5<sup>th</sup> -- UQ PUG 14"
     ]
   },
   {
-    "objectID": "Archive - 2024/14-Dec24.html#questions",
-    "href": "Archive - 2024/14-Dec24.html#questions",
+    "objectID": "2024 - Archive/14-Dec24.html#questions",
+    "href": "2024 - Archive/14-Dec24.html#questions",
     "title": "2024 Dec 5th – UQ PUG 14",
     "section": "Questions",
     "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion 1 | Person\n\n# Put any code you'd like to run here!\n\nround(x := 5.6)\n\nx + 2\n\n7.6\n\n\n\nAnswers\n\n\n\nQuestion 2 | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here! CTRL + ENTER will run the cell\n\n\nAnswers\n\n\n\nQuestion 3: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\n\n\nQuestion 4: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\n\n\nQuestion 5: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Dec 5<sup>th</sup> -- UQ PUG 14"
     ]
   },
   {
-    "objectID": "Archive - 2024/12-Oct24.html",
-    "href": "Archive - 2024/12-Oct24.html",
+    "objectID": "2024 - Archive/12-Oct24.html",
+    "href": "2024 - Archive/12-Oct24.html",
     "title": "2024 Oct 3rd – UQ PUG 12",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general info for how we work and what we do. Below you’ll find the details of this month’s gathering.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Oct 3<sup>rd</sup> -- UQ PUG 12"
     ]
   },
   {
-    "objectID": "Archive - 2024/12-Oct24.html#overview",
-    "href": "Archive - 2024/12-Oct24.html#overview",
+    "objectID": "2024 - Archive/12-Oct24.html#overview",
+    "href": "2024 - Archive/12-Oct24.html#overview",
     "title": "2024 Oct 3rd – UQ PUG 12",
     "section": "Overview",
     "text": "Overview\nThis month we will be discussing Version Control with GitHub, as well as testing out VSCode Liveshare!\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Oct 3<sup>rd</sup> -- UQ PUG 12"
     ]
   },
   {
-    "objectID": "Archive - 2024/12-Oct24.html#introduce-yourself",
-    "href": "Archive - 2024/12-Oct24.html#introduce-yourself",
+    "objectID": "2024 - Archive/12-Oct24.html#introduce-yourself",
+    "href": "2024 - Archive/12-Oct24.html#introduce-yourself",
     "title": "2024 Oct 3rd – UQ PUG 12",
     "section": "Introduce yourself",
     "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nPrakash Rai\nFrom home\nJust learning from scratch\n\n\nStéphane Guillou\nUQ Library\nFor fun!\n\n\nIsmael Khan\nUQ GET\nHelp and learn\n\n\nCameron West\nUQ Library / SMP\nTo help (and learn)\n\n\nLuke\nLibrary\nTo learn and try to help\n\n\nShaochen\nUQ GET\nLearn and help\n\n\nElizabeth Zhu",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Oct 3<sup>rd</sup> -- UQ PUG 12"
     ]
   },
   {
-    "objectID": "Archive - 2024/12-Oct24.html#questions",
-    "href": "Archive - 2024/12-Oct24.html#questions",
+    "objectID": "2024 - Archive/12-Oct24.html#questions",
+    "href": "2024 - Archive/12-Oct24.html#questions",
     "title": "2024 Oct 3rd – UQ PUG 12",
     "section": "Questions",
     "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion 1: What do we use Python for? | Ismael\n\nLuke: finds genAI to be more helpful with Python than R. Usually use Python and R for data processing.\nCam: graphing with matplotlib for the most part.\nIsmael: matplotlib, pandas, numpy…\nPrakash: wants to learn more about both R and Python\nElizabeth: text analysis, deep learning, machine learning, sentiment analysis… in the communication between industry and investors\n\n\n\n# Put any code you'd like to run here!\n\n2\n\n\n\n\nQuestion 2: Python for trading/investments? | Elizabeth\n\nModule for creating User Interfaces: PySide6, which uses Qt.\n\nhttps://pypi.org/project/PySide6/\nsimilar to PyQt\n\n\n\n# Put any code you'd like to run here! CTRL + ENTER will run the cell\n\n\n\nNext month: PUG at ResBaz!\nWe will be at ResBaz QLD 2024, at ACU, for a larger meetup with other communities of practice! Please join us on Thursday the 7th of October at 11 am.\n\nWebsite: https://resbaz.github.io/resbaz2024qld/\nVolunteer: https://docs.google.com/forms/d/e/1FAIpQLSd689WEt6ZJPmd-833S7DaHjthJlvcNmm6qSfePuqnxiyrg6Q/viewform\n\n\n# Put any code you'd like to run here!\n\n\n\nQuestion 4: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\n\nQuestion 5: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Oct 3<sup>rd</sup> -- UQ PUG 12"
     ]
   },
   {
-    "objectID": "Archive - 2024/08-May24.html",
-    "href": "Archive - 2024/08-May24.html",
+    "objectID": "2024 - Archive/08-May24.html",
+    "href": "2024 - Archive/08-May24.html",
     "title": "2024 May 2nd – UQ PUG 8",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general info above for how we work and what we do. Below you’ll find the details of this month’s gathering, and below that last month’s.\n\n\n\n\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\n\nIf you would like to be on the mailing list and receive the latest PUG updates, please sign up here:\nhttps://forms.office.com/r/6qvfFX0qGr\nFeel free to send this link to anyone you think may benefit.\n\n\n\nWe offer Python training sessions and resources, you can find our introductory guide here.\n\n\n\n\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nJulia\nUQ HABS\nLearn & meet python users\n\n\nCameron\nUQ Library / SMP\nHelp and learn!",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 May 2<sup>nd</sup> -- UQ PUG 8"
     ]
   },
   {
-    "objectID": "Archive - 2024/08-May24.html#overview",
-    "href": "Archive - 2024/08-May24.html#overview",
+    "objectID": "2024 - Archive/08-May24.html#overview",
+    "href": "2024 - Archive/08-May24.html#overview",
     "title": "2024 May 2nd – UQ PUG 8",
     "section": "",
     "text": "We start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\n\nIf you would like to be on the mailing list and receive the latest PUG updates, please sign up here:\nhttps://forms.office.com/r/6qvfFX0qGr\nFeel free to send this link to anyone you think may benefit.\n\n\n\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 May 2<sup>nd</sup> -- UQ PUG 8"
     ]
   },
   {
-    "objectID": "Archive - 2024/08-May24.html#introduce-yourself",
-    "href": "Archive - 2024/08-May24.html#introduce-yourself",
+    "objectID": "2024 - Archive/08-May24.html#introduce-yourself",
+    "href": "2024 - Archive/08-May24.html#introduce-yourself",
     "title": "2024 May 2nd – UQ PUG 8",
     "section": "",
     "text": "What’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nJulia\nUQ HABS\nLearn & meet python users\n\n\nCameron\nUQ Library / SMP\nHelp and learn!",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 May 2<sup>nd</sup> -- UQ PUG 8"
     ]
   },
   {
-    "objectID": "Archive - 2024/06-Mar24.html",
-    "href": "Archive - 2024/06-Mar24.html",
+    "objectID": "2024 - Archive/06-Mar24.html",
+    "href": "2024 - Archive/06-Mar24.html",
     "title": "2024 Mar 7th – UQ PUG 6",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general information for details about who we are and what we do.\n\n\n\n\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\n\nIf you would like to be on the mailing list and receive the latest PUG updates, please sign up here:\nhttps://forms.office.com/r/6qvfFX0qGr\nFeel free to send this link to anyone you think may benefit.\n\n\n\nWe offer Python training sessions and resources, you can find our introductory guide here.\n\n\n\n\nToday we looked at the popular plotting package matplotlib. You can find the Jupyter notebook we worked from on our GitHub page.\n\n\n\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nNick Wiggins\nUQ Library\nHere to help (and learn!)\n\n\nCameron West\nUQ Library / SMP\nTo learn and help\n\n\n\n\n\n\n\nDennis\nSMP\nTo learn and get help\n\n\nKaren Fang\nUQ BEL\nTo learn\n\n\nValentina\nUQ Library\nHere to say hello!\n\n\nTheophilus Mensah\nQAAFI\nhere to learn\n\n\nY Allo\nSMP\nLearn this sofware\n\n\nSenn Oon\nUQ Library\nPlacement student observing!\n\n\nJay\nUQ\nto learn python\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\n\nwhen to use tuple and when to use list?\n## when we create a table using pandas DataFrame, we can create a tuple like below:\ndf = pd.DataFrame(columns=(\"number\", \"name\", \"major\"))\n\n## or a list like below:\ndf = pd.DataFrame(columns=[\"number\", \"name\", \"major\"])\n\n## so in what occassion are we using tuple & in what occassion are we using list? Thanks so much\n\n\n\nWhen you need to ensure that the elements shouldn’t change. Tuples cannot be edited (immutable), you can’t change their elements, so only when this is necessary.\nThey can be faster, since they are a constant size – according to StackOverflow\n\n\n\n\n\n\nI have tried matplotlib for making a single line graph, but I still don’t know how to use it for working with multiple data as follows\n# I have these Optical Density in 750nm data that show the growth curve for each species\nOD750_data = [[\"Species\",\"8 Dec 2023\",\"15 Dec 2023\", \"18 Dec 2023\"],\n            [\"Nannochloropsis\", 0.2615, 1.0385, 0.822],\n            [\"Phaeodactylum\", 0.208, 0.603, 0.499],\n            [\"Tisochrysis\", 0.1015, 0.135, 0.1265]]\ntable1 = tabulate(OD750_data)\nprint(table1)\n\ntable2 = tabulate(OD750_data,headers='firstrow')\nprint(table2)\n\n# how do I turn this table into line graphs with 3 growth curves for 3 species?\n\n\n\nGreat question Nida. Some of the difficulty lies in the data shape, the easiest way to use data for these things is in long form. I’ve used a few steps below\n\nTurn it into a pandas dataframe\nTransform it into three columns and nine rows with pd.melt (long form). Run print(OD750_data) to see this\nPlot each line by subsetting OD750_data[\"Species\"] ==. ```python import pandas as pd",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Mar 7<sup>th</sup> -- UQ PUG 6"
     ]
   },
   {
-    "objectID": "Archive - 2024/06-Mar24.html#overview",
-    "href": "Archive - 2024/06-Mar24.html#overview",
+    "objectID": "2024 - Archive/06-Mar24.html#overview",
+    "href": "2024 - Archive/06-Mar24.html#overview",
     "title": "2024 Mar 7th – UQ PUG 6",
     "section": "",
     "text": "We start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\n\nIf you would like to be on the mailing list and receive the latest PUG updates, please sign up here:\nhttps://forms.office.com/r/6qvfFX0qGr\nFeel free to send this link to anyone you think may benefit.\n\n\n\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Mar 7<sup>th</sup> -- UQ PUG 6"
     ]
   },
   {
-    "objectID": "Archive - 2024/06-Mar24.html#todays-presentation",
-    "href": "Archive - 2024/06-Mar24.html#todays-presentation",
+    "objectID": "2024 - Archive/06-Mar24.html#todays-presentation",
+    "href": "2024 - Archive/06-Mar24.html#todays-presentation",
     "title": "2024 Mar 7th – UQ PUG 6",
     "section": "",
     "text": "Today we looked at the popular plotting package matplotlib. You can find the Jupyter notebook we worked from on our GitHub page.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Mar 7<sup>th</sup> -- UQ PUG 6"
     ]
   },
   {
-    "objectID": "Archive - 2024/06-Mar24.html#introduce-yourself",
-    "href": "Archive - 2024/06-Mar24.html#introduce-yourself",
+    "objectID": "2024 - Archive/06-Mar24.html#introduce-yourself",
+    "href": "2024 - Archive/06-Mar24.html#introduce-yourself",
     "title": "2024 Mar 7th – UQ PUG 6",
     "section": "",
     "text": "What’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nNick Wiggins\nUQ Library\nHere to help (and learn!)\n\n\nCameron West\nUQ Library / SMP\nTo learn and help\n\n\n\n\n\n\n\nDennis\nSMP\nTo learn and get help\n\n\nKaren Fang\nUQ BEL\nTo learn\n\n\nValentina\nUQ Library\nHere to say hello!\n\n\nTheophilus Mensah\nQAAFI\nhere to learn\n\n\nY Allo\nSMP\nLearn this sofware\n\n\nSenn Oon\nUQ Library\nPlacement student observing!\n\n\nJay\nUQ\nto learn python",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Mar 7<sup>th</sup> -- UQ PUG 6"
     ]
   },
   {
-    "objectID": "Archive - 2024/06-Mar24.html#questions",
-    "href": "Archive - 2024/06-Mar24.html#questions",
+    "objectID": "2024 - Archive/06-Mar24.html#questions",
+    "href": "2024 - Archive/06-Mar24.html#questions",
     "title": "2024 Mar 7th – UQ PUG 6",
     "section": "",
     "text": "If you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\n\nwhen to use tuple and when to use list?\n## when we create a table using pandas DataFrame, we can create a tuple like below:\ndf = pd.DataFrame(columns=(\"number\", \"name\", \"major\"))\n\n## or a list like below:\ndf = pd.DataFrame(columns=[\"number\", \"name\", \"major\"])\n\n## so in what occassion are we using tuple & in what occassion are we using list? Thanks so much\n\n\n\nWhen you need to ensure that the elements shouldn’t change. Tuples cannot be edited (immutable), you can’t change their elements, so only when this is necessary.\nThey can be faster, since they are a constant size – according to StackOverflow\n\n\n\n\n\n\nI have tried matplotlib for making a single line graph, but I still don’t know how to use it for working with multiple data as follows\n# I have these Optical Density in 750nm data that show the growth curve for each species\nOD750_data = [[\"Species\",\"8 Dec 2023\",\"15 Dec 2023\", \"18 Dec 2023\"],\n            [\"Nannochloropsis\", 0.2615, 1.0385, 0.822],\n            [\"Phaeodactylum\", 0.208, 0.603, 0.499],\n            [\"Tisochrysis\", 0.1015, 0.135, 0.1265]]\ntable1 = tabulate(OD750_data)\nprint(table1)\n\ntable2 = tabulate(OD750_data,headers='firstrow')\nprint(table2)\n\n# how do I turn this table into line graphs with 3 growth curves for 3 species?\n\n\n\nGreat question Nida. Some of the difficulty lies in the data shape, the easiest way to use data for these things is in long form. I’ve used a few steps below\n\nTurn it into a pandas dataframe\nTransform it into three columns and nine rows with pd.melt (long form). Run print(OD750_data) to see this\nPlot each line by subsetting OD750_data[\"Species\"] ==. ```python import pandas as pd",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Mar 7<sup>th</sup> -- UQ PUG 6"
     ]
   },
   {
-    "objectID": "Current notebooks - 2025/16-Mar25.html",
-    "href": "Current notebooks - 2025/16-Mar25.html",
+    "objectID": "2025 - Current notebooks/16-Mar25.html",
+    "href": "2025 - Current notebooks/16-Mar25.html",
     "title": "2025 Mar 6th – UQ PUG 16",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general info for how we work and what we do. Below you’ll find the details of this month’s gathering.",
     "crumbs": [
-      "Current notebooks - 2025",
+      "2025 - Current notebooks",
       "2025 Mar 6<sup>th</sup> -- UQ PUG 16"
     ]
   },
   {
-    "objectID": "Current notebooks - 2025/16-Mar25.html#overview",
-    "href": "Current notebooks - 2025/16-Mar25.html#overview",
+    "objectID": "2025 - Current notebooks/16-Mar25.html#overview",
+    "href": "2025 - Current notebooks/16-Mar25.html#overview",
     "title": "2025 Mar 6th – UQ PUG 16",
     "section": "Overview",
     "text": "Overview\nWelcome to the second PUG for the year! This month we’ll look go through the most popular Python packages (by download) and explore their most useful features.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
-      "Current notebooks - 2025",
+      "2025 - Current notebooks",
       "2025 Mar 6<sup>th</sup> -- UQ PUG 16"
     ]
   },
   {
-    "objectID": "Current notebooks - 2025/16-Mar25.html#introduce-yourself",
-    "href": "Current notebooks - 2025/16-Mar25.html#introduce-yourself",
+    "objectID": "2025 - Current notebooks/16-Mar25.html#introduce-yourself",
+    "href": "2025 - Current notebooks/16-Mar25.html#introduce-yourself",
     "title": "2025 Mar 6th – UQ PUG 16",
     "section": "Introduce yourself",
     "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library & SMP\nTo share and learn\n\n\nJuddi\nSchool of Communication and Arts\n-\n\n\nDuncan\nSPPS\nTo learn more about Python\n\n\nElizabeth\n-\n-\n\n\nJohn\n-\n-\n\n\nTitus\n-\n-\n\n\nKrystie\n-\n-",
     "crumbs": [
-      "Current notebooks - 2025",
+      "2025 - Current notebooks",
       "2025 Mar 6<sup>th</sup> -- UQ PUG 16"
     ]
   },
   {
-    "objectID": "Current notebooks - 2025/16-Mar25.html#questions",
-    "href": "Current notebooks - 2025/16-Mar25.html#questions",
+    "objectID": "2025 - Current notebooks/16-Mar25.html#questions",
+    "href": "2025 - Current notebooks/16-Mar25.html#questions",
     "title": "2025 Mar 6th – UQ PUG 16",
     "section": "Questions",
     "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nAutomation packages | Duncan\nDo you have any ideas about which popular packages are useful for automation in windows?\n\n# To interact with the filesystem\nimport os\n\n# For copying/renaming/more complex operations\nimport shutil\n\n# To interact with spreadsheets\nimport pandas as pd\n\n# Folder full of spreadsheets\npath = r\"..\\Demonstrations\\top_modules\\spreadsheets\"\n\n# Returns a list of files at the specified folder\nfiles = os.listdir(path)\n\n# Looping will automate for you\nfor file in files:\n    full_path = os.path.join(path, file)\n\n    # Read in any file (using a 'with' means the file automatically closes)\n    with open(full_path) as f:\n        contents = f.read()\n\n    # Read in dataframes (e.g. .csv, .xlsx, see pd.read_... for the possibilities)\n    df = pd.read_csv(full_path)\n\n\nprint(f\"Using pandas' read_csv() function: \\n\\n{df}\")\nprint(f\"\\nUsing base python's open() and .read() functions: \\n\\n{contents[0:200]}\\n...\")\n\nUsing pandas' read_csv() function: \n\n       download_count        project\n0          1346601849          boto3\n1           670262655        urllib3\n2           609967137       botocore\n3           576250793       requests\n4           563169502        certifi\n...               ...            ...\n14995           25173        chilkat\n14996           25169       aioradio\n14997           25165        binilla\n14998           25160   testarchiver\n14999           25159  starlette-wtf\n\n[15000 rows x 2 columns]\n\nUsing base python's open() and .read() functions: \n\ndownload_count,project\n1346601849,boto3\n670262655,urllib3\n609967137,botocore\n576250793,requests\n563169502,certifi\n533963799,charset-normalizer\n515259652,setuptools\n512857052,idna\n492528430,grpcio-stat\n...\n\n\n\nAnswers\n\nSee code above\nAnswer 2\n…\n\n\n\n\nMatching company names | Elizabeth\nMatch names from data list\n\n# Before you start trying to use Python, try to write down by hand what the \n# algorithm would be.\n\n\nsentence = \"This is a long sentence with lots of words like Google, Rio and Tinto.\"\nprint(sentence)\n\n# Single string, single keyword:\nkeyword = \"Google\"\nmatched = keyword in sentence\n\nprint()\nprint(\"Single keyword\")\nprint(\"Is\", keyword, \"in my sentence?\", matched)\n\n# Single string, multiple keywords\nkeywords = [\"Google\", \"Amazon\"]\n\nprint()\nprint(\"Multiple keywords\")\n\nfor company in keywords:\n    matched = company in sentence\n    print(\"Is\", company, \"in my sentence?\", matched)\n\n\n# Single string, multiple companies with multiple keywords (note the nested keywords for RioTinto)\nkeywords = [[\"Google\"], [\"Amazon\"], [\"Rio-Tinto\", \"Rio\", \"Tinto\", \"RioTinto\", \"Rio Tinto\"]]\n\nprint()\nprint(\"Multiple companies with multiple keywords\")\nfor company in keywords:\n    for variant in company:  \n        matched = variant in sentence\n\n        if matched == True:\n            break\n    \n    print(\"Is\", company[0], \"in my sentence?\", matched)\n\nThis is a long sentence with lots of words like Google, Rio and Tinto.\n\nSingle keyword\nIs Google in my sentence? True\n\nMultiple keywords\nIs Google in my sentence? True\nIs Amazon in my sentence? False\n\nMultiple companies with multiple keywords\nIs Google in my sentence? True\nIs Amazon in my sentence? False\nIs Rio-Tinto in my sentence? True\n\n\n\n# Using string data\nimport pandas as pd\n\ndf = pd.read_csv(\"../Demonstrations/top_modules/spreadsheets/top-pypi-packages.csv\")\n\n# The column \"project\" is a string column\n\n# Let's make a list of keywords.\nkeywords = [\"boto\", \"py\"]\n\n# To check which entries match which keywords\nfor keyword in keywords:\n    matches = df[\"project\"].str.contains(keyword)\n    subset_with_keyword = df[matches == True]\n\n    print(\"The rows with\",keyword, \"are\")\n    print(subset_with_keyword)\n\nThe rows with boto are\n       download_count                             project\n0          1346601849                               boto3\n2           609967137                            botocore\n11          454054215                         aiobotocore\n554          16054951                         boto3-stubs\n566          15361139                      botocore-stubs\n...               ...                                 ...\n14971           25243      botocore-a-la-carte-greengrass\n14974           25236  botocore-a-la-carte-workspaces-web\n14977           25219       types-aiobotocore-securityhub\n14987           25185  types-aiobotocore-servicediscovery\n14991           25182     botocore-a-la-carte-iotsitewise\n\n[533 rows x 2 columns]\nThe rows with py are\n       download_count                        project\n12          453387776                python-dateutil\n15          381826344                          numpy\n16          360961023                         pyyaml\n23          283246117                       pydantic\n24          282364469                      pycparser\n...               ...                            ...\n14969           25252                pytest-splinter\n14972           25242    tencentcloud-sdk-python-acp\n14973           25241                        xrpl-py\n14984           25203               opening-hours-py\n14994           25174  tencentcloud-sdk-python-hasim\n\n[3275 rows x 2 columns]\n\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion 3: Is it possible using Phyton for Facebook data scraping? Particularly related to Posts and their interactions on public Facebook groups | Juddi\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\n# YOU COULD RUN INTO ISSUES AND GET BANNED WITH REQUESTS\nimport requests\n\nr = requests.get(\"https://www.facebook.com/groups/553828734993634/\")\n\ndata = r.content\n\n# MAYBE TRY SELENIUM (or the Python module)\n\n# Talk to Sam Hames\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion 5: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…",
     "crumbs": [
-      "Current notebooks - 2025",
+      "2025 - Current notebooks",
       "2025 Mar 6<sup>th</sup> -- UQ PUG 16"
     ]
   },
@@ -439,299 +439,299 @@
     ]
   },
   {
-    "objectID": "Archive - 2024/05-Feb24.html",
-    "href": "Archive - 2024/05-Feb24.html",
+    "objectID": "2024 - Archive/05-Feb24.html",
+    "href": "2024 - Archive/05-Feb24.html",
     "title": "2024 Feb 7th – UQ PUG 5",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general information for details about who we are and what we do.\n\n\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\n\nIf you would like to be on the mailing list and receive the latest PUG updates, please sign up here:\nhttps://forms.office.com/r/6qvfFX0qGr\nFeel free to send this link to anyone you think may benefit.\n\n\n\nWe offer Python training sessions and resources, you can find our introductory guide here.\n\n\n\n\n\n\n\n\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nNida\nSCMB\nlearning about python\n\n\nCameron West\nUQ Library / SMP\nTo help with Python!\n\n\nSonia\nColombia/Master of Business\nImproving Python Skills\n\n\nElizabeth\nLecturer of Finance, UQ Business School\nJust to learn about Python for my research projects\n\n\nLily\nUQ BA student\nto learn how to use python handling data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\n\nHow can we use AI coding tools such as chatGPT help us learn Python more efficiently?\n## Code for Q1\n\n\n\n\n\n\n\n\n\n\n\nAdd more details here\nI want to: check the first occurence of the letter M in my strings (that can be 200 characters long, that’s why I don’t want to do it manually)\nsuppose I have this strings: aminoacid_seq = ‘SSSSATTVMHSSIVLATVLFVAIASASKTRELCMKSLEHAKVGTSKEAKQDGIDLYKHMFEHYPAMKKYFKHRENYTPADVQKDPFFIKQGQNILLACHVLCATYDDRETFDAYVGELMARHERDHVKVPNDVWNHFWEHFIEFLGSKTTLDEPTKHAWQEIGKEFSHEISHHGRHSVRDHCMNSLEYIAIGDKEHQKQNGIDLYKHMFEHYPHMRKAFKGRENFTKEDVQKDAFFVNKDTRFCWPFVCCDSSYDDEPTFDYFVDALMDRHIKDDIHLPQEQWHEFWKLFAEYLNEKSHQHLTEAEKHAWSTIGEDFAHEADKHAKAEKDHHEGEHKEEHH’\nIf I use this code:\nM_loc = aminoacids_seq[0].find(‘M’) print(M_loc) print(len(aminoacids_seq[0]))\nam I correct?\n# -*- coding: utf-8 -*-\n\"\"\"\nCreated on Thu Feb  1 10:56:35 2024\n\n@author: uqcwest5\n\"\"\"\n\n# Initial problem\n\naminoacids_seq = 'SSSSATTVMHSSIVLATVLFVAIASASKTRELCMKSLEHAKVGTSKEAKQDGIDLYKHMFEHYPAMKKYFKHRENYTPADVQKDPFFIKQGQNILLACHVLCATYDDRETFDAYVGELMARHERDHVKVPNDVWNHFWEHFIEFLGSKTTLDEPTKHAWQEIGKEFSHEISHHGRHSVRDHCMNSLEYIAIGDKEHQKQNGIDLYKHMFEHYPHMRKAFKGRENFTKE*DVQKDAFFVNKDTRFCWPFVCCDSSYDDEPTFDYFVDALMDRHIKDDIHLPQEQWHEFWKLFAEYLNEKSHQHLTEAEKHAWSTIGEDFAHEADKHAKAEKDHHEGEHKEEHH'\n\nM_loc = aminoacids_seq.find('M')\nend_loc = aminoacids_seq.find('*')\n\naminoacids_seq[M_loc:end_loc + 1]\n\n# New problem\n# Count all the Ms\n# Turn every section between Ms into a separate substring\n\nimport pandas as pd\n\ncount_M = aminoacids_seq.count(\"M\")\n\nM_start = aminoacids_seq.find('M')\nM_end = aminoacids_seq.find('M', M_start + 1)\n\nproteins = [aminoacids_seq[M_start:M_end]]\n\nfor i in range(1, count_M):\n    M_start = M_end\n    M_end = aminoacids_seq.find('M', M_start + 1)\n    \n    proteins.append(aminoacids_seq[M_start:M_end])\n    \npd.Series(proteins).to_csv(\"proteins.csv\")\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdd more details here\n## Code for Q3\n\n\n\n\n\n\n\n\n\n\n\nAdd more details here\n## Code for Q4\ncorrect_ORF = []        \nfor seq in protseq_true:\n    m_pos = seq.find(\"M\")  \n    m_end_seq = seq[m_pos:]\n    if len(m_end_seq) &gt; 100:\n        print(m_end_seq)\n        print(len(m_end_seq))\n        correct_ORF.append(m_end_seq)\n        \n# fyi\nprotseq_true = ['CTIVFKRVCGVSAARLTPCGTGTSTDVVYRAFDIYNDKVAGFAKFLKTNCCRFQEKDEDDNLIDSYFVVKRHTFSNYQHEETIYNLLKDCPAVAKHDFFKFRIDGDMVPHISRQRLTKYTMADLVYALRHFDEGNCDTLKEILVTYNCCDDDYFNKKDWYDFVENPDILRVYANLGERVRQALLKTVQFCDAMRNAGIVGVLTLDNQDLNGNWYDFGDFIQTTPGSGVPVVDSYYSLLMPILTLTRALTAESHVDTDLTKPYIKWDLLKYDFTEERLKLFDRYFKYWDQTYHPNCVNCLDDRCILHCANFNVLFSTVFPPTSFGPLVRKIFVDGVPFVVSTGYHFRELGVVHNQDVNLHSSRLSFKELLVYAADPAMHAASGNLLLDKRTTCFSVAALTNNVAFQTVKPGNFNKDFYDFAVSKGFFKEGSSVELKHFFFAQDGNAAISDYDYYRYNLPTMCDIRQLLFVVEVVDKYFDCYDGGCINANQVIVNNLDKSAGFPFNKWGKARLYYDSMSYEDQDALFAYTKRNVIPTITQMNLKYAISAKNRARTVAGVSICSTMTNRQFHQKLLKSIAATRGATVVIGTSKFYGGWHNMLKTVYSDVENPHLMGWDYPKCDRAMPNMLRIMASLVLARKHTTCCSLSHRFYRLANECAQVLSEMVMCGGSLYVKPGGTSSGDATTAYANSVFNICQAVTANVNALLSTDGNKIADKYVRNLQHRLYECLYRNRDVDTDFVNEFYAYLRKHFSMMILSDDAVVCFNSTYASQGLVASIKNFKSVLYYQNNVFMSEAKCWTETDLTKGPHEFCSQHTMLVKQGDDYVYLPYPDPSRILGAGCFVDDIVKTDGTLMIERFVSLAIDAYPLTKHPNQEYADVFHLYLQYIRKLHDELTGHMLDMYSVMLTNDNTSRYWEPEFYEAMYTPHTVLQAVGACVLCNSQTSLRCGACIRRPFLCCKCCYDHVISTSHKLVLSVNPYVCNAPGCDVTDVTQLYLGGMSYYCKSHKPPISFPLCANGQVFGLYKNTCVGSDNVTDFNAIATCDWTNAGDYILANTCTERLKLFAAETLKATEETFKLSYGIATVREVLSDRELHLSWEVGKPRPPLNRNYVFTGYRVTKNSKVQIGEYTFEKGDYGDAVVYRGTTTYKLNVGDYFVLTSHTVMPLSAPTLVPQEHYVRITGLYPTLNISDEFSSNVANYQKVGMQKYSTLQGPPGTGKSHFAIGLALYYPSARIVYTACSHAAVDALCEKALKYLPIDKCSRIIPARARVECFDKFKVNSTLEQYVFCTVNALPETTADIVVFDEISMATNYDLSVVNARLRAKHYVYIGDPAQLPAPRTLLTKGTLEPEYFNSVCRLMKTIGPDMFLGTCRRCPAEIVDTVSALVYDNKLKAHKDKSAQCFKMFYKGVITHDVSSAINRPQIGVVREFLTRNPAWRKAVFISPYNSQNAVASKILGLPTQTVDSSQGSEYDYVIFTQTTETAHSCNVNRFNVAITRAKVGILCIMSDRDLYDKLQFTSLEIPRRNVATLQAENVTGLFKDCSKVITGLHPTQAPTHLSVDTKFKTEGLCVDIPGIPKDMTYRRLISMMGFKMNYQVNGYPNMFITREEAIRHVRAWIGFDVEGCHATREAVGTNLPLQLGFSTGVNLVAVPTGYVDTPNNTDFSRVSAKPPPGDQFKHLIPLMYKGLPWNVVRIKIVQMLSDTLKNLSDRVVFVLWAHGFELTSMKYFVKIGPERTCCLCDRRATCFSTASDTYACWHHSIGFDYVYNPFMIDVQQWGFTGNLQSNHDLYCQVHGNAHVASCDAIMTRCLAVHECFVKRVDWTIEYPIIGDELKINAACRKVQHMVVKAALLADKFPVLHDIGNPKAIKCVPQADVEWKFYDAQPCSDKAYKIEELFYSYATHSDKFTDGVCLFWNCNVDRYPANSIVCRFDTRVLSNLNLPGCDGGSLYVNKHAFHTPAFDKSAFVNLKQLPFFYYSDSPCESHGKQVVSDIDYVPLKSATCITRCNLGGAVCRHHANEYRLYLDAYNMMISAGFSLWVYKQFDTYNLWNTFTRLQSLENVAFNVVNKGHFDGQQGEVPVSIINNTVYTKVDGVDVELFENKTTLPVNVAFELWAKRNIKPVPEVKILNNLGVDIAANTVIWDYKRDAPAHISTIGVCSMTDIAKKPTETICAPLTVFFDGRVDGQVDLFRNARNGVLITEGSVKGLQPSVGPKQASLNGVTLIGEAVKTQFNYYKKVDGVVQQLPETYFTQSRNLQEFKPRSQMEIDFLELAMDEFIERYKLEGYAFEHIVYGDFSHSQLGGLHLLIGLAKRFKESPFELEDFIPMDSTVKNYFITDAQTGSSKCVCSVIDLLLDDFVEIIKSQDLSVVSKVVKVTIDYTEISFMLWCKDGHVETFYPKLQSSQAWQPGVAMPNLYKMQRMLLEKCDLQNYGDSATLPKGIMMNVAKYTQLCQYLNTLTLAVPYNMRVIHFGAGSDKGVAPGTAVLRQWLPTGTLLVDSDLNDFVSDADSTLIGDCATVHTANKWDLIISDMYDPKTKNVTKENDSKEGFFTYICGFIQQKLALGGSVAIKITEHSWNADLYKLMGHFAWWTAFVTNVNASSSEAFLIGCNYLGKPREQIDGYVMHANYIFWRNTNPIQLSSYSLFDMSKFPLKLRGTAVMSLKEGQINDMILSLLSKGRLIIRENNRVVISSDVLVNN', 'ASAQRSQITLHINELMDLFMRIFTIGTVTLKQGEIKDATPSDFVRATATIPIQASLPFGWLIVGVALLAVFQSASKIITLKKRWQLALSKGVHFVCNLLLLFVTVYSHLLLVAAGLEAPFLYLYALVYFLQSINFVRIIMRLWLCWKCRSKNPLLYDANYFLCWHTNCYDYCIPYNSVTSSIVITSGDGTTSPISEHDYQIGGYTEKWESGVKDCVVLHSYFTSDYYQLYSTQLSTDTGVEHVTFFIYNKIVDEPEEHVQIHTIDGSSGVVNPVMEPIYDEPTTTTSVPL', 'TNMKIILFLALITLATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKFALTCFSTQFAFACPDGVKHVYQLRARSVSPKLFIRQEEVQELYSPIFLIVAAIVFITLCFTLKRKTE', 'PKGKMESLVPGFNEKTHVQLSLPVLQVRDVLVRGFGDSVEEVLSEARQHLKDGTCGLVEVEKGVLPQLEQPYVFIKRSDARTAPHGHVMVELVAELEGIQYGRSGETLGVLVPHVGEIPVAYRKVLLRKNGNKGAGGHSYGADLKSFDLGDELGTDPYEDFQENWNTKHSSGVTRELMRELNGGAYTRYVDNNFCGPDGYPLECIKDLLARAGKASCTLSEQLDFIDTKRGVYCCREHEHEIAWYTERSEKSYELQTPFEIKLAKKFDTFNGECPNFVFPLNSIIKTIQPRVEKKKLDGFMGRIRSVYPVASPNECNQMCLSTLMKCDHCGETSWQTGDFVKATCEFCGTENLTKEGATTCGYLPQNAVVKIYCPACHNSEVGPEHSLAEYHNESGLKTILRKGGRTIAFGGCVFSYVGCHNKCAYWVPRASANIGCNHTGVVGEGSEGLNDNLLEILQKEKVNINIVGDFKLNEEIAIILASFSASTSAFVETVKGLDYKAFKQIVESCGNFKVTKGKAKKGAWNIGEQKSILSPLYAFASEAARVVRSIFSRTLETAQNSVRVLQKAAITILDGISQYSLRLIDAMMFTSDLATNNLVVMAYITGGVVQLTSQWLTNIFGTVYEKLKPVLDWLEEKFKEGVEFLRDGWEIVKFISTCACEIVGGQIVTCAKEIKESVQTFFKLVNKFLALCADSIIIGGAKLKALNLGETFVTHSKGLYRKCVKSREETGLLMPLKAPKEIIFLEGETLPTEVLTEEVVLKTGDLQPLEQPTSEAVEAPLVGTPVCINGLMLLEIKDTEKYCALAPNMMVTNNTFTLKGGAPTKVTFGDDTVIEVQGYKSVNITFELDERIDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDLDEWSMATYYLFDESGEFKLASHMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPLEFGATSAALQPEEEQEEDWLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTPVVQTIEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVVNAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYENFNQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSEKQVEQKIAEIPKEEVKPFITESKPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLLLYIDINGNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLTAVVIPTKKAGGTTEMLAKALRKVPTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGTVSWNLREMLAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSKTTVASLINTLNDLNETLVTMPLGYVTHGLNLEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSSSKTPEEHFIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYYTSNPTTFHLDGEVITFDNLKTLLSLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKTFYVLPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKKWKYPQVNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQDAYYRARAGEAANFCALILAYCNKTVGELGDVRETMSYLFQHANLDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSYEQFKKGVQIPCTCGKQATKYLVQQESPFVMMSAPPAQYELKHGTFTCASEYTGNYQCGHYKHITSKETLYCIDGALLTKSSEYKGPITDVFYKENSYTTTIKPVTYKLDGVVCTEIDPKLDNYYKKDNSYFTEQPIDLVPNQPYPNASFDNFKFVCDNIKFADDLNQLTGYKKPASRELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVWHVNNATNKATYKPNTWCIRCLWSTKPVETSNSFDVLKSEDAQGMDNLACEDLKPVSEEVVENPTIQKDVLECNVKTTEVVGDIILKPANNSLKITEEVGHTDLMAAYVDNSSLTIKKPNELSRVLGLKTLATHGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRCLNRVCTNYMPYFFTLLLQLCTFTRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYLKSPNFSKLINIIIWFLLLSVCLGSLIYSTAALGVLMSNLGMPSYCTGYREGYLNSTNVTIATYCTGSIPCSVCLSGLDSLDTYPSLETIQITISSFKWDLTAFGLVAEWFLAYILFTRFFYVLGLAAIMQLFFSYFAVHFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHVVDGCNSSTCMMCYKRNRATRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCAGSTFISDEVARDLSLQFKRPINPTDQSSYIVDSVTVKNGSIHLYFDKAGQKTYERHSLSHFVNLDNLRANNTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALVSDVGDSAEVAVKMFDAYVNTFSSTFNVPMEKLKTLVATAEAELAKNVSLDNVLSTFISAARQGFVDSDVETKDVVECLKLSHQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHINAQVAKSHNIALIWNVKDFMSLSEQLRKQIRSAAKKNNLPFKLTCATTRQVVNVVTTKIALKGGKIVNNWLKQLIKVTLVFLFVAAIFYLITPVHVMSKHTDFSSEIIGYKAIDGGVTRDIASTDTCFANKHADFDTWFSQRGGSYTNDKACPLIAAVITREVGFVVPGLPGTILRTTNGDFLHFLPRVFSAVGNICYTPSKLIEYTDFATSACVLAAECTIFKDASGKPVPYCYDTNVLEGSVAYESLRPDTRYVLMDGSIIQFPNTYLEGSVRVVTTFDSEYCRHGTCERSEAGVCVSTSGRWVLNNDYYRSLPGVFCGVDAVNLLTNMFTPLIQPIGALDISASIVAGGIVAIVVTCLAYYFMRFRRAFGEYSHVVAFNTLLFLMSFTVLCLTPVYSFLPGVYSVIYLYLTFYLTNDVSFLAHIQWMVMFTPLVPFWITIAYIICISTKHFYWFFSNYLKRRVVFNGVSFSTFEEAALCTFLLNKEMYLKLRSDVLLPLTQYNRYLALYNKYKYFSGAMDTTSYREAACCHLAKALNDFSNSGSDVLYQPPQTSITSAVLQSGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGHSMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFCYMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYEPLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQSAVKRTIKGTHHWLLLTILTSLLVLVQSTQWSLFFFLYENAFLPFAMGIIAMSAFAMMFVKHKHAFLCLFLLPSLATVAYFNMVYMPASWVMRIMTWLDMVDTSLSGFKLKDCVMYASAVVLLILMTARTVYDDGARRVWTLMNVLTLVYKVYYGNALDQAISMWALIISVTSNYSGVVTTVMFLARGIVFMCVEYCPIFFITGNTLQCIMLVYCFLGYFCTCYFGLFCLLNRYFRLTLGVYDYLVSTQEFRYMNSQGLLPPKNSIDAFKLNIKLLGVGGKPCIKVATVQSKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLLSMQGAVDINKLCEEMLDNRATLQAIASEFSSLPSYAAFATAQEAYEQAVANGDSEVVLKKLKKSLNVAKSEFDRDAAMQRKLEKMADQAMTQMYKQARSEDKRAKVTSAMQTMLFTMLRKLDNDALNNIINNARDGCVPLNIIPLTTAAKLMVVIPDYNTYKNTCDGTTFTYASALWEIQQVVDADSKIVQLSEISMDNSPNLAWPLIVTALRANSAVKLQNNELSPVALRQMSCAAGTTQTACTDDNALAYYNTTKGGRFVLALLSDLQDLKWARFPKSDGTGTIYTELEPPCRFVTDTPKGPKVKYLYFIKGLNNLNRGMVLGSLAATVRLQAGNATEVPANSTVLSFCAFAVDAAKAYKDYLASGGQPITNCVKMLCTHTGTGQAITVTPEANMDQESFGGASCCLYCRCHIDHPNPKGFCDLKGKYVQIPTTCANDPVGFTLKNTVCTVCGMWKGYGCSCDQLREPMLQSADAQSFLNGFAV', 'LEKTTELLFLVMFLLTTKRTMFVFLVLLPLVSSQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVNNATNVVIKVCEFQFCNDPFLGVYYHKNNKSWMESEFRVYSSANNCTFEYVSQPFLMDLEGKQGNFKNLREFVFKNIDGYFKIYSKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKCTLKSFTVEKGIYQTSNFRVQPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFLPFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYSTGSNVFQTRAGCLIGAEHVNNSYECDIPIGAGICASYQTQTNSPRRARSVASQSIIAYTMSLGAENSVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQIYKTPPIKDFGGFNFSQILPDPSKPSKRSFIEDLLFNKVTLADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHDGKAHFPREGVFVSNGTHWFVTQRNFYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPLQPELDSFKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIKWPWYIWLGFIAGLIAIVMVTIMLCCMTSCCSCLKGCCSCGSCCKFDEDDSEPVLKGVKLHYT', 'RSCCFRFHLNEQTKMSDNGPQNQRNAPRITFGGPSDSTGSNQNGERSGARSKQRRPQGLPNNTASWFTALTQHGKEDLKFPRGQGVPINTNSSPDDQIGYYRRATRRIRGGDGKMKDLSPRWYFYYLGTGPEAGLPYGANKDGIIWVATEGALNTPKDHIGTRNPANNAAIVLQLPQGTTLPKGFYAEGSRGGSQASSRSSSRSRNSSRNSTPGSSRGTSPARMAGNGGDAALALLLLDRLNQLESKMSGKGQQQQGQTVTKKSAAEASKKPRQKRTATKAYNVTQAFGRRGPEQTQGNFGDQELIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGTWLTYTGAIKLDDKDPNFKDQVILLNKHIDAYKTFPPTEPKKDKKKKADETQALPQRQKKQQTVTLLPAADLDDFSKQLQQSMSSADSTQA', 'TACTCLKNIRTCRINTPSRSKLICMNSNRDFCAVNILIKNSNLVRSICSWCYNTDTTKRTWCNVKNLKCLWITDSISSVSNVSAKLLERQKLFVRLSKNTCAC', 'FGCCCKRYYVQGNTTISCIVDNVVECIIIQLSKHSEKHCLHSTSNFCPLVLRSSLFIHLGHSLISHLFQLTLHGCITVKFRFSHIQRLLQLFKNNFRITISNSLLISFLSSSKSCI', 'FRYWLQSFYDSICHNTGELIYFCTEFNCIGRALLIKYFINPFIKFKSDIHTLVTLHFYHSVITKSNLCWCTAFECEGIVCYHHIRCKGTVLFCVFDFEQHKPVNTNWCTNQWSFNSFTSRLF', 'FLFTNIPGTFFSFSFCNFKITTGFNNLFECFIIQTFHSFHKSTCGSRKRCQNNGDLFIKFKVTNNIDVDFLFLEYFKKVVIKTFGTFSNNTCMVTTYVSASTWNPIGTLVMATNIREHTASKGNSATTLTKNGFQARFIMVFGKTMLRSYF', 'IRRPSPYLLLITLLMLLLKSVNFNFVMIHFWVFITTKTTKVGWKVSSEFILVRIIALLNMSLSLFLWTLKENRVISKILGNLCLRILMVILKYILSTRLLI', 'SSGLNELNIILVFLFGTLILAMADSNGTITVEELKKLLEQWNLVIGFLFLTWICLLQFAYANRNRFLYIIKLIFLWLLWPVTLACFVLAAVYRINWITGGIAIAMACLVGLMWLSYFIASFRLFARTRSMWSFNPETNILLNVPLHGTILTRPLLESELVIGAVILRGHLRIAGHHLGRCDIKDLPKEITVATSRTLSYYKLGASQRVAGDSGFAAYSRYRIGNYKLNTDHSSSSDNIALLVQ', 'TNMKFLVFLGIITTVAAFHQECSLQSCTQHQPYVVDDPCPIHFYSKWYIRVGARKSAPLIELCVDEAGSKSPIQYIDIGNYTVSCLPFTINCQEPKLGSLVVRCSFYEDFLEYHDVRVVLDFI', 'TNKLKCLIMDPKISEMHPALRLVDPQIQLAVTRMENAVGRDQNNVGPKVYPIILRLGSPLSLNMARKTLNSLEDKAFQLTPIAVQMTKLATTEELPDEFVVVTVK', 'SVPCLISSWSPKFPWVCSGPRLPKACVTLYALVAVRFCRGFLEASAADFLVTVWPCCCWPLPDILLSSWFNLSSSSKARAASPPLPAILAGEVPLLLPGVEFLELLRLRDEEREEA', 'RTATWLEVFVPGVITLTPPKEHGVMSRISSVCGSRTASVVSAMSLPNCWKGRNFLLDSVRTPVPVKPLKLKLTHLFLTKLVDFLGPQTVAGACRSSKESTTTLYGW', 'AAIRSVWPTSSVIFKLLFAGLSIMSPTTSVVFTLHSRTSFCMVGFSTTSSETGFRSSQARLSIPCASSDFSTSNEFDVSTGFVLQRQRIHQVFGLYVALLVALLTCQTIGLCNNLAPFLKEGV', 'PCTSITVSSPKVTFVGAPPLSVKVLFVTIILGARAQYFSVSLISSNISPLIQTGVPTNGASTASLVGCSNGCKSPVFKTTSSVNTSVGSVSPSKKIISFGAFRGMSRPVSSLDLTHFLYNPFECVTNVSPKFKALSLAPPIMIESAHKAKNLFTSLKNV']\n\n\n\n\n\n\n\n\n\n\n\nAdd more details here\n\n\n\n\n\n\n\n\n\n\n\n\nAdd more details here\n## Code for Q6",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Feb 7<sup>th</sup> -- UQ PUG 5"
     ]
   },
   {
-    "objectID": "Archive - 2024/05-Feb24.html#structure",
-    "href": "Archive - 2024/05-Feb24.html#structure",
+    "objectID": "2024 - Archive/05-Feb24.html#structure",
+    "href": "2024 - Archive/05-Feb24.html#structure",
     "title": "2024 Feb 7th – UQ PUG 5",
     "section": "",
     "text": "We start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Feb 7<sup>th</sup> -- UQ PUG 5"
     ]
   },
   {
-    "objectID": "Archive - 2024/05-Feb24.html#mailing-list",
-    "href": "Archive - 2024/05-Feb24.html#mailing-list",
+    "objectID": "2024 - Archive/05-Feb24.html#mailing-list",
+    "href": "2024 - Archive/05-Feb24.html#mailing-list",
     "title": "2024 Feb 7th – UQ PUG 5",
     "section": "",
     "text": "If you would like to be on the mailing list and receive the latest PUG updates, please sign up here:\nhttps://forms.office.com/r/6qvfFX0qGr\nFeel free to send this link to anyone you think may benefit.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Feb 7<sup>th</sup> -- UQ PUG 5"
     ]
   },
   {
-    "objectID": "Archive - 2024/05-Feb24.html#training-resources",
-    "href": "Archive - 2024/05-Feb24.html#training-resources",
+    "objectID": "2024 - Archive/05-Feb24.html#training-resources",
+    "href": "2024 - Archive/05-Feb24.html#training-resources",
     "title": "2024 Feb 7th – UQ PUG 5",
     "section": "",
     "text": "We offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Feb 7<sup>th</sup> -- UQ PUG 5"
     ]
   },
   {
-    "objectID": "Archive - 2024/05-Feb24.html#introduce-yourself",
-    "href": "Archive - 2024/05-Feb24.html#introduce-yourself",
+    "objectID": "2024 - Archive/05-Feb24.html#introduce-yourself",
+    "href": "2024 - Archive/05-Feb24.html#introduce-yourself",
     "title": "2024 Feb 7th – UQ PUG 5",
     "section": "",
     "text": "What’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nNida\nSCMB\nlearning about python\n\n\nCameron West\nUQ Library / SMP\nTo help with Python!\n\n\nSonia\nColombia/Master of Business\nImproving Python Skills\n\n\nElizabeth\nLecturer of Finance, UQ Business School\nJust to learn about Python for my research projects\n\n\nLily\nUQ BA student\nto learn how to use python handling data",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Feb 7<sup>th</sup> -- UQ PUG 5"
     ]
   },
   {
-    "objectID": "Archive - 2024/05-Feb24.html#questions",
-    "href": "Archive - 2024/05-Feb24.html#questions",
+    "objectID": "2024 - Archive/05-Feb24.html#questions",
+    "href": "2024 - Archive/05-Feb24.html#questions",
     "title": "2024 Feb 7th – UQ PUG 5",
     "section": "",
     "text": "If you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\n\nHow can we use AI coding tools such as chatGPT help us learn Python more efficiently?\n## Code for Q1\n\n\n\n\n\n\n\n\n\n\n\nAdd more details here\nI want to: check the first occurence of the letter M in my strings (that can be 200 characters long, that’s why I don’t want to do it manually)\nsuppose I have this strings: aminoacid_seq = ‘SSSSATTVMHSSIVLATVLFVAIASASKTRELCMKSLEHAKVGTSKEAKQDGIDLYKHMFEHYPAMKKYFKHRENYTPADVQKDPFFIKQGQNILLACHVLCATYDDRETFDAYVGELMARHERDHVKVPNDVWNHFWEHFIEFLGSKTTLDEPTKHAWQEIGKEFSHEISHHGRHSVRDHCMNSLEYIAIGDKEHQKQNGIDLYKHMFEHYPHMRKAFKGRENFTKEDVQKDAFFVNKDTRFCWPFVCCDSSYDDEPTFDYFVDALMDRHIKDDIHLPQEQWHEFWKLFAEYLNEKSHQHLTEAEKHAWSTIGEDFAHEADKHAKAEKDHHEGEHKEEHH’\nIf I use this code:\nM_loc = aminoacids_seq[0].find(‘M’) print(M_loc) print(len(aminoacids_seq[0]))\nam I correct?\n# -*- coding: utf-8 -*-\n\"\"\"\nCreated on Thu Feb  1 10:56:35 2024\n\n@author: uqcwest5\n\"\"\"\n\n# Initial problem\n\naminoacids_seq = 'SSSSATTVMHSSIVLATVLFVAIASASKTRELCMKSLEHAKVGTSKEAKQDGIDLYKHMFEHYPAMKKYFKHRENYTPADVQKDPFFIKQGQNILLACHVLCATYDDRETFDAYVGELMARHERDHVKVPNDVWNHFWEHFIEFLGSKTTLDEPTKHAWQEIGKEFSHEISHHGRHSVRDHCMNSLEYIAIGDKEHQKQNGIDLYKHMFEHYPHMRKAFKGRENFTKE*DVQKDAFFVNKDTRFCWPFVCCDSSYDDEPTFDYFVDALMDRHIKDDIHLPQEQWHEFWKLFAEYLNEKSHQHLTEAEKHAWSTIGEDFAHEADKHAKAEKDHHEGEHKEEHH'\n\nM_loc = aminoacids_seq.find('M')\nend_loc = aminoacids_seq.find('*')\n\naminoacids_seq[M_loc:end_loc + 1]\n\n# New problem\n# Count all the Ms\n# Turn every section between Ms into a separate substring\n\nimport pandas as pd\n\ncount_M = aminoacids_seq.count(\"M\")\n\nM_start = aminoacids_seq.find('M')\nM_end = aminoacids_seq.find('M', M_start + 1)\n\nproteins = [aminoacids_seq[M_start:M_end]]\n\nfor i in range(1, count_M):\n    M_start = M_end\n    M_end = aminoacids_seq.find('M', M_start + 1)\n    \n    proteins.append(aminoacids_seq[M_start:M_end])\n    \npd.Series(proteins).to_csv(\"proteins.csv\")\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdd more details here\n## Code for Q3\n\n\n\n\n\n\n\n\n\n\n\nAdd more details here\n## Code for Q4\ncorrect_ORF = []        \nfor seq in protseq_true:\n    m_pos = seq.find(\"M\")  \n    m_end_seq = seq[m_pos:]\n    if len(m_end_seq) &gt; 100:\n        print(m_end_seq)\n        print(len(m_end_seq))\n        correct_ORF.append(m_end_seq)\n        \n# fyi\nprotseq_true = ['CTIVFKRVCGVSAARLTPCGTGTSTDVVYRAFDIYNDKVAGFAKFLKTNCCRFQEKDEDDNLIDSYFVVKRHTFSNYQHEETIYNLLKDCPAVAKHDFFKFRIDGDMVPHISRQRLTKYTMADLVYALRHFDEGNCDTLKEILVTYNCCDDDYFNKKDWYDFVENPDILRVYANLGERVRQALLKTVQFCDAMRNAGIVGVLTLDNQDLNGNWYDFGDFIQTTPGSGVPVVDSYYSLLMPILTLTRALTAESHVDTDLTKPYIKWDLLKYDFTEERLKLFDRYFKYWDQTYHPNCVNCLDDRCILHCANFNVLFSTVFPPTSFGPLVRKIFVDGVPFVVSTGYHFRELGVVHNQDVNLHSSRLSFKELLVYAADPAMHAASGNLLLDKRTTCFSVAALTNNVAFQTVKPGNFNKDFYDFAVSKGFFKEGSSVELKHFFFAQDGNAAISDYDYYRYNLPTMCDIRQLLFVVEVVDKYFDCYDGGCINANQVIVNNLDKSAGFPFNKWGKARLYYDSMSYEDQDALFAYTKRNVIPTITQMNLKYAISAKNRARTVAGVSICSTMTNRQFHQKLLKSIAATRGATVVIGTSKFYGGWHNMLKTVYSDVENPHLMGWDYPKCDRAMPNMLRIMASLVLARKHTTCCSLSHRFYRLANECAQVLSEMVMCGGSLYVKPGGTSSGDATTAYANSVFNICQAVTANVNALLSTDGNKIADKYVRNLQHRLYECLYRNRDVDTDFVNEFYAYLRKHFSMMILSDDAVVCFNSTYASQGLVASIKNFKSVLYYQNNVFMSEAKCWTETDLTKGPHEFCSQHTMLVKQGDDYVYLPYPDPSRILGAGCFVDDIVKTDGTLMIERFVSLAIDAYPLTKHPNQEYADVFHLYLQYIRKLHDELTGHMLDMYSVMLTNDNTSRYWEPEFYEAMYTPHTVLQAVGACVLCNSQTSLRCGACIRRPFLCCKCCYDHVISTSHKLVLSVNPYVCNAPGCDVTDVTQLYLGGMSYYCKSHKPPISFPLCANGQVFGLYKNTCVGSDNVTDFNAIATCDWTNAGDYILANTCTERLKLFAAETLKATEETFKLSYGIATVREVLSDRELHLSWEVGKPRPPLNRNYVFTGYRVTKNSKVQIGEYTFEKGDYGDAVVYRGTTTYKLNVGDYFVLTSHTVMPLSAPTLVPQEHYVRITGLYPTLNISDEFSSNVANYQKVGMQKYSTLQGPPGTGKSHFAIGLALYYPSARIVYTACSHAAVDALCEKALKYLPIDKCSRIIPARARVECFDKFKVNSTLEQYVFCTVNALPETTADIVVFDEISMATNYDLSVVNARLRAKHYVYIGDPAQLPAPRTLLTKGTLEPEYFNSVCRLMKTIGPDMFLGTCRRCPAEIVDTVSALVYDNKLKAHKDKSAQCFKMFYKGVITHDVSSAINRPQIGVVREFLTRNPAWRKAVFISPYNSQNAVASKILGLPTQTVDSSQGSEYDYVIFTQTTETAHSCNVNRFNVAITRAKVGILCIMSDRDLYDKLQFTSLEIPRRNVATLQAENVTGLFKDCSKVITGLHPTQAPTHLSVDTKFKTEGLCVDIPGIPKDMTYRRLISMMGFKMNYQVNGYPNMFITREEAIRHVRAWIGFDVEGCHATREAVGTNLPLQLGFSTGVNLVAVPTGYVDTPNNTDFSRVSAKPPPGDQFKHLIPLMYKGLPWNVVRIKIVQMLSDTLKNLSDRVVFVLWAHGFELTSMKYFVKIGPERTCCLCDRRATCFSTASDTYACWHHSIGFDYVYNPFMIDVQQWGFTGNLQSNHDLYCQVHGNAHVASCDAIMTRCLAVHECFVKRVDWTIEYPIIGDELKINAACRKVQHMVVKAALLADKFPVLHDIGNPKAIKCVPQADVEWKFYDAQPCSDKAYKIEELFYSYATHSDKFTDGVCLFWNCNVDRYPANSIVCRFDTRVLSNLNLPGCDGGSLYVNKHAFHTPAFDKSAFVNLKQLPFFYYSDSPCESHGKQVVSDIDYVPLKSATCITRCNLGGAVCRHHANEYRLYLDAYNMMISAGFSLWVYKQFDTYNLWNTFTRLQSLENVAFNVVNKGHFDGQQGEVPVSIINNTVYTKVDGVDVELFENKTTLPVNVAFELWAKRNIKPVPEVKILNNLGVDIAANTVIWDYKRDAPAHISTIGVCSMTDIAKKPTETICAPLTVFFDGRVDGQVDLFRNARNGVLITEGSVKGLQPSVGPKQASLNGVTLIGEAVKTQFNYYKKVDGVVQQLPETYFTQSRNLQEFKPRSQMEIDFLELAMDEFIERYKLEGYAFEHIVYGDFSHSQLGGLHLLIGLAKRFKESPFELEDFIPMDSTVKNYFITDAQTGSSKCVCSVIDLLLDDFVEIIKSQDLSVVSKVVKVTIDYTEISFMLWCKDGHVETFYPKLQSSQAWQPGVAMPNLYKMQRMLLEKCDLQNYGDSATLPKGIMMNVAKYTQLCQYLNTLTLAVPYNMRVIHFGAGSDKGVAPGTAVLRQWLPTGTLLVDSDLNDFVSDADSTLIGDCATVHTANKWDLIISDMYDPKTKNVTKENDSKEGFFTYICGFIQQKLALGGSVAIKITEHSWNADLYKLMGHFAWWTAFVTNVNASSSEAFLIGCNYLGKPREQIDGYVMHANYIFWRNTNPIQLSSYSLFDMSKFPLKLRGTAVMSLKEGQINDMILSLLSKGRLIIRENNRVVISSDVLVNN', 'ASAQRSQITLHINELMDLFMRIFTIGTVTLKQGEIKDATPSDFVRATATIPIQASLPFGWLIVGVALLAVFQSASKIITLKKRWQLALSKGVHFVCNLLLLFVTVYSHLLLVAAGLEAPFLYLYALVYFLQSINFVRIIMRLWLCWKCRSKNPLLYDANYFLCWHTNCYDYCIPYNSVTSSIVITSGDGTTSPISEHDYQIGGYTEKWESGVKDCVVLHSYFTSDYYQLYSTQLSTDTGVEHVTFFIYNKIVDEPEEHVQIHTIDGSSGVVNPVMEPIYDEPTTTTSVPL', 'TNMKIILFLALITLATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKFALTCFSTQFAFACPDGVKHVYQLRARSVSPKLFIRQEEVQELYSPIFLIVAAIVFITLCFTLKRKTE', 'PKGKMESLVPGFNEKTHVQLSLPVLQVRDVLVRGFGDSVEEVLSEARQHLKDGTCGLVEVEKGVLPQLEQPYVFIKRSDARTAPHGHVMVELVAELEGIQYGRSGETLGVLVPHVGEIPVAYRKVLLRKNGNKGAGGHSYGADLKSFDLGDELGTDPYEDFQENWNTKHSSGVTRELMRELNGGAYTRYVDNNFCGPDGYPLECIKDLLARAGKASCTLSEQLDFIDTKRGVYCCREHEHEIAWYTERSEKSYELQTPFEIKLAKKFDTFNGECPNFVFPLNSIIKTIQPRVEKKKLDGFMGRIRSVYPVASPNECNQMCLSTLMKCDHCGETSWQTGDFVKATCEFCGTENLTKEGATTCGYLPQNAVVKIYCPACHNSEVGPEHSLAEYHNESGLKTILRKGGRTIAFGGCVFSYVGCHNKCAYWVPRASANIGCNHTGVVGEGSEGLNDNLLEILQKEKVNINIVGDFKLNEEIAIILASFSASTSAFVETVKGLDYKAFKQIVESCGNFKVTKGKAKKGAWNIGEQKSILSPLYAFASEAARVVRSIFSRTLETAQNSVRVLQKAAITILDGISQYSLRLIDAMMFTSDLATNNLVVMAYITGGVVQLTSQWLTNIFGTVYEKLKPVLDWLEEKFKEGVEFLRDGWEIVKFISTCACEIVGGQIVTCAKEIKESVQTFFKLVNKFLALCADSIIIGGAKLKALNLGETFVTHSKGLYRKCVKSREETGLLMPLKAPKEIIFLEGETLPTEVLTEEVVLKTGDLQPLEQPTSEAVEAPLVGTPVCINGLMLLEIKDTEKYCALAPNMMVTNNTFTLKGGAPTKVTFGDDTVIEVQGYKSVNITFELDERIDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDLDEWSMATYYLFDESGEFKLASHMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPLEFGATSAALQPEEEQEEDWLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTPVVQTIEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVVNAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYENFNQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSEKQVEQKIAEIPKEEVKPFITESKPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLLLYIDINGNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLTAVVIPTKKAGGTTEMLAKALRKVPTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGTVSWNLREMLAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSKTTVASLINTLNDLNETLVTMPLGYVTHGLNLEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSSSKTPEEHFIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYYTSNPTTFHLDGEVITFDNLKTLLSLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKTFYVLPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKKWKYPQVNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQDAYYRARAGEAANFCALILAYCNKTVGELGDVRETMSYLFQHANLDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSYEQFKKGVQIPCTCGKQATKYLVQQESPFVMMSAPPAQYELKHGTFTCASEYTGNYQCGHYKHITSKETLYCIDGALLTKSSEYKGPITDVFYKENSYTTTIKPVTYKLDGVVCTEIDPKLDNYYKKDNSYFTEQPIDLVPNQPYPNASFDNFKFVCDNIKFADDLNQLTGYKKPASRELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVWHVNNATNKATYKPNTWCIRCLWSTKPVETSNSFDVLKSEDAQGMDNLACEDLKPVSEEVVENPTIQKDVLECNVKTTEVVGDIILKPANNSLKITEEVGHTDLMAAYVDNSSLTIKKPNELSRVLGLKTLATHGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRCLNRVCTNYMPYFFTLLLQLCTFTRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYLKSPNFSKLINIIIWFLLLSVCLGSLIYSTAALGVLMSNLGMPSYCTGYREGYLNSTNVTIATYCTGSIPCSVCLSGLDSLDTYPSLETIQITISSFKWDLTAFGLVAEWFLAYILFTRFFYVLGLAAIMQLFFSYFAVHFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHVVDGCNSSTCMMCYKRNRATRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCAGSTFISDEVARDLSLQFKRPINPTDQSSYIVDSVTVKNGSIHLYFDKAGQKTYERHSLSHFVNLDNLRANNTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALVSDVGDSAEVAVKMFDAYVNTFSSTFNVPMEKLKTLVATAEAELAKNVSLDNVLSTFISAARQGFVDSDVETKDVVECLKLSHQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHINAQVAKSHNIALIWNVKDFMSLSEQLRKQIRSAAKKNNLPFKLTCATTRQVVNVVTTKIALKGGKIVNNWLKQLIKVTLVFLFVAAIFYLITPVHVMSKHTDFSSEIIGYKAIDGGVTRDIASTDTCFANKHADFDTWFSQRGGSYTNDKACPLIAAVITREVGFVVPGLPGTILRTTNGDFLHFLPRVFSAVGNICYTPSKLIEYTDFATSACVLAAECTIFKDASGKPVPYCYDTNVLEGSVAYESLRPDTRYVLMDGSIIQFPNTYLEGSVRVVTTFDSEYCRHGTCERSEAGVCVSTSGRWVLNNDYYRSLPGVFCGVDAVNLLTNMFTPLIQPIGALDISASIVAGGIVAIVVTCLAYYFMRFRRAFGEYSHVVAFNTLLFLMSFTVLCLTPVYSFLPGVYSVIYLYLTFYLTNDVSFLAHIQWMVMFTPLVPFWITIAYIICISTKHFYWFFSNYLKRRVVFNGVSFSTFEEAALCTFLLNKEMYLKLRSDVLLPLTQYNRYLALYNKYKYFSGAMDTTSYREAACCHLAKALNDFSNSGSDVLYQPPQTSITSAVLQSGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGHSMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFCYMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYEPLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQSAVKRTIKGTHHWLLLTILTSLLVLVQSTQWSLFFFLYENAFLPFAMGIIAMSAFAMMFVKHKHAFLCLFLLPSLATVAYFNMVYMPASWVMRIMTWLDMVDTSLSGFKLKDCVMYASAVVLLILMTARTVYDDGARRVWTLMNVLTLVYKVYYGNALDQAISMWALIISVTSNYSGVVTTVMFLARGIVFMCVEYCPIFFITGNTLQCIMLVYCFLGYFCTCYFGLFCLLNRYFRLTLGVYDYLVSTQEFRYMNSQGLLPPKNSIDAFKLNIKLLGVGGKPCIKVATVQSKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLLSMQGAVDINKLCEEMLDNRATLQAIASEFSSLPSYAAFATAQEAYEQAVANGDSEVVLKKLKKSLNVAKSEFDRDAAMQRKLEKMADQAMTQMYKQARSEDKRAKVTSAMQTMLFTMLRKLDNDALNNIINNARDGCVPLNIIPLTTAAKLMVVIPDYNTYKNTCDGTTFTYASALWEIQQVVDADSKIVQLSEISMDNSPNLAWPLIVTALRANSAVKLQNNELSPVALRQMSCAAGTTQTACTDDNALAYYNTTKGGRFVLALLSDLQDLKWARFPKSDGTGTIYTELEPPCRFVTDTPKGPKVKYLYFIKGLNNLNRGMVLGSLAATVRLQAGNATEVPANSTVLSFCAFAVDAAKAYKDYLASGGQPITNCVKMLCTHTGTGQAITVTPEANMDQESFGGASCCLYCRCHIDHPNPKGFCDLKGKYVQIPTTCANDPVGFTLKNTVCTVCGMWKGYGCSCDQLREPMLQSADAQSFLNGFAV', 'LEKTTELLFLVMFLLTTKRTMFVFLVLLPLVSSQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVNNATNVVIKVCEFQFCNDPFLGVYYHKNNKSWMESEFRVYSSANNCTFEYVSQPFLMDLEGKQGNFKNLREFVFKNIDGYFKIYSKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKCTLKSFTVEKGIYQTSNFRVQPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFLPFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYSTGSNVFQTRAGCLIGAEHVNNSYECDIPIGAGICASYQTQTNSPRRARSVASQSIIAYTMSLGAENSVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQIYKTPPIKDFGGFNFSQILPDPSKPSKRSFIEDLLFNKVTLADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHDGKAHFPREGVFVSNGTHWFVTQRNFYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPLQPELDSFKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIKWPWYIWLGFIAGLIAIVMVTIMLCCMTSCCSCLKGCCSCGSCCKFDEDDSEPVLKGVKLHYT', 'RSCCFRFHLNEQTKMSDNGPQNQRNAPRITFGGPSDSTGSNQNGERSGARSKQRRPQGLPNNTASWFTALTQHGKEDLKFPRGQGVPINTNSSPDDQIGYYRRATRRIRGGDGKMKDLSPRWYFYYLGTGPEAGLPYGANKDGIIWVATEGALNTPKDHIGTRNPANNAAIVLQLPQGTTLPKGFYAEGSRGGSQASSRSSSRSRNSSRNSTPGSSRGTSPARMAGNGGDAALALLLLDRLNQLESKMSGKGQQQQGQTVTKKSAAEASKKPRQKRTATKAYNVTQAFGRRGPEQTQGNFGDQELIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSGTWLTYTGAIKLDDKDPNFKDQVILLNKHIDAYKTFPPTEPKKDKKKKADETQALPQRQKKQQTVTLLPAADLDDFSKQLQQSMSSADSTQA', 'TACTCLKNIRTCRINTPSRSKLICMNSNRDFCAVNILIKNSNLVRSICSWCYNTDTTKRTWCNVKNLKCLWITDSISSVSNVSAKLLERQKLFVRLSKNTCAC', 'FGCCCKRYYVQGNTTISCIVDNVVECIIIQLSKHSEKHCLHSTSNFCPLVLRSSLFIHLGHSLISHLFQLTLHGCITVKFRFSHIQRLLQLFKNNFRITISNSLLISFLSSSKSCI', 'FRYWLQSFYDSICHNTGELIYFCTEFNCIGRALLIKYFINPFIKFKSDIHTLVTLHFYHSVITKSNLCWCTAFECEGIVCYHHIRCKGTVLFCVFDFEQHKPVNTNWCTNQWSFNSFTSRLF', 'FLFTNIPGTFFSFSFCNFKITTGFNNLFECFIIQTFHSFHKSTCGSRKRCQNNGDLFIKFKVTNNIDVDFLFLEYFKKVVIKTFGTFSNNTCMVTTYVSASTWNPIGTLVMATNIREHTASKGNSATTLTKNGFQARFIMVFGKTMLRSYF', 'IRRPSPYLLLITLLMLLLKSVNFNFVMIHFWVFITTKTTKVGWKVSSEFILVRIIALLNMSLSLFLWTLKENRVISKILGNLCLRILMVILKYILSTRLLI', 'SSGLNELNIILVFLFGTLILAMADSNGTITVEELKKLLEQWNLVIGFLFLTWICLLQFAYANRNRFLYIIKLIFLWLLWPVTLACFVLAAVYRINWITGGIAIAMACLVGLMWLSYFIASFRLFARTRSMWSFNPETNILLNVPLHGTILTRPLLESELVIGAVILRGHLRIAGHHLGRCDIKDLPKEITVATSRTLSYYKLGASQRVAGDSGFAAYSRYRIGNYKLNTDHSSSSDNIALLVQ', 'TNMKFLVFLGIITTVAAFHQECSLQSCTQHQPYVVDDPCPIHFYSKWYIRVGARKSAPLIELCVDEAGSKSPIQYIDIGNYTVSCLPFTINCQEPKLGSLVVRCSFYEDFLEYHDVRVVLDFI', 'TNKLKCLIMDPKISEMHPALRLVDPQIQLAVTRMENAVGRDQNNVGPKVYPIILRLGSPLSLNMARKTLNSLEDKAFQLTPIAVQMTKLATTEELPDEFVVVTVK', 'SVPCLISSWSPKFPWVCSGPRLPKACVTLYALVAVRFCRGFLEASAADFLVTVWPCCCWPLPDILLSSWFNLSSSSKARAASPPLPAILAGEVPLLLPGVEFLELLRLRDEEREEA', 'RTATWLEVFVPGVITLTPPKEHGVMSRISSVCGSRTASVVSAMSLPNCWKGRNFLLDSVRTPVPVKPLKLKLTHLFLTKLVDFLGPQTVAGACRSSKESTTTLYGW', 'AAIRSVWPTSSVIFKLLFAGLSIMSPTTSVVFTLHSRTSFCMVGFSTTSSETGFRSSQARLSIPCASSDFSTSNEFDVSTGFVLQRQRIHQVFGLYVALLVALLTCQTIGLCNNLAPFLKEGV', 'PCTSITVSSPKVTFVGAPPLSVKVLFVTIILGARAQYFSVSLISSNISPLIQTGVPTNGASTASLVGCSNGCKSPVFKTTSSVNTSVGSVSPSKKIISFGAFRGMSRPVSSLDLTHFLYNPFECVTNVSPKFKALSLAPPIMIESAHKAKNLFTSLKNV']\n\n\n\n\n\n\n\n\n\n\n\nAdd more details here\n\n\n\n\n\n\n\n\n\n\n\n\nAdd more details here\n## Code for Q6",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Feb 7<sup>th</sup> -- UQ PUG 5"
     ]
   },
   {
-    "objectID": "Archive - 2024/07-Apr24.html",
-    "href": "Archive - 2024/07-Apr24.html",
+    "objectID": "2024 - Archive/07-Apr24.html",
+    "href": "2024 - Archive/07-Apr24.html",
     "title": "2024 Apr 11th – UQ PUG 7",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general information for details about who we are and what we do.\nThis month we discussed a basic introduction to Web Scraping using requests and BeautifulSoup.\n\n\n\n\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\n\nIf you would like to be on the mailing list and receive the latest PUG updates, please sign up here:\nhttps://forms.office.com/r/6qvfFX0qGr\nFeel free to send this link to anyone you think may benefit.\n\n\n\nWe offer Python training sessions and resources, you can find our introductory guide here.\n\n\n\n\n\n\n\n\n\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron West\nUQ Library / SMP\nTo help, share and learn\n\n\nNicholas Wiggins\nUQ Library\nTo help and Learn\n\n\nTheophilus Mensah\nQAAFI\nTo learn and share\n\n\n\n\n\n\n\nDavid Chau\nQAAFI\nFor Fun\n\n\n\n\n\n\n\nJulia Wood\nUQ HABS\nto learn and meet other python users\n\n\nThu Luong Le\nComArts School\nTo learn about web scraping\n\n\n\n\n\n\n\nTommy Nguyen\nUQ ADP\nTo Learn about Web Scraping + meet others\n\n\n\n\n\n\n\nRyan Leung\nSOE\nLearn python\n\n\nLydeth\nBusiness school\nI do have to pass my CSSE7030 course which is centered around Python and get myself closer to Python?\n\n\nJay\nUQ EAIT\nLearn python and have some inspiration",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Apr 11<sup>th</sup> -- UQ PUG 7"
     ]
   },
   {
-    "objectID": "Archive - 2024/07-Apr24.html#overview",
-    "href": "Archive - 2024/07-Apr24.html#overview",
+    "objectID": "2024 - Archive/07-Apr24.html#overview",
+    "href": "2024 - Archive/07-Apr24.html#overview",
     "title": "2024 Apr 11th – UQ PUG 7",
     "section": "",
     "text": "We start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\n\nIf you would like to be on the mailing list and receive the latest PUG updates, please sign up here:\nhttps://forms.office.com/r/6qvfFX0qGr\nFeel free to send this link to anyone you think may benefit.\n\n\n\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Apr 11<sup>th</sup> -- UQ PUG 7"
     ]
   },
   {
-    "objectID": "Archive - 2024/07-Apr24.html#introduce-yourself",
-    "href": "Archive - 2024/07-Apr24.html#introduce-yourself",
+    "objectID": "2024 - Archive/07-Apr24.html#introduce-yourself",
+    "href": "2024 - Archive/07-Apr24.html#introduce-yourself",
     "title": "2024 Apr 11th – UQ PUG 7",
     "section": "",
     "text": "What’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron West\nUQ Library / SMP\nTo help, share and learn\n\n\nNicholas Wiggins\nUQ Library\nTo help and Learn\n\n\nTheophilus Mensah\nQAAFI\nTo learn and share\n\n\n\n\n\n\n\nDavid Chau\nQAAFI\nFor Fun\n\n\n\n\n\n\n\nJulia Wood\nUQ HABS\nto learn and meet other python users\n\n\nThu Luong Le\nComArts School\nTo learn about web scraping\n\n\n\n\n\n\n\nTommy Nguyen\nUQ ADP\nTo Learn about Web Scraping + meet others\n\n\n\n\n\n\n\nRyan Leung\nSOE\nLearn python\n\n\nLydeth\nBusiness school\nI do have to pass my CSSE7030 course which is centered around Python and get myself closer to Python?\n\n\nJay\nUQ EAIT\nLearn python and have some inspiration",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Apr 11<sup>th</sup> -- UQ PUG 7"
     ]
   },
   {
-    "objectID": "Archive - 2024/09-Jul24.html",
-    "href": "Archive - 2024/09-Jul24.html",
+    "objectID": "2024 - Archive/09-Jul24.html",
+    "href": "2024 - Archive/09-Jul24.html",
     "title": "2024 July 4th – UQ PUG 9",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general info above for how we work and what we do. Below you’ll find the details of this month’s gathering, and below that last month’s.\n\n\nThis month we will be discussing functions and modules - specifically, how to start using them and when they might help!\ndf = pd.read_csv(\"https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv\")\n\n\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\n\nIf you would like to be on the mailing list and receive the latest PUG updates, please sign up here:\nhttps://forms.office.com/r/6qvfFX0qGr\nFeel free to send this link to anyone you think may benefit.\n\n\n\nWe offer Python training sessions and resources, you can find our introductory guide here.\n\n\n\n\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron West\nUQ Library / SMP\nTo help\n\n\nZoe\nUQ",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 July 4<sup>th</sup> -- UQ PUG 9"
     ]
   },
   {
-    "objectID": "Archive - 2024/09-Jul24.html#overview",
-    "href": "Archive - 2024/09-Jul24.html#overview",
+    "objectID": "2024 - Archive/09-Jul24.html#overview",
+    "href": "2024 - Archive/09-Jul24.html#overview",
     "title": "2024 July 4th – UQ PUG 9",
     "section": "",
     "text": "This month we will be discussing functions and modules - specifically, how to start using them and when they might help!\ndf = pd.read_csv(\"https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv\")\n\n\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\n\nIf you would like to be on the mailing list and receive the latest PUG updates, please sign up here:\nhttps://forms.office.com/r/6qvfFX0qGr\nFeel free to send this link to anyone you think may benefit.\n\n\n\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 July 4<sup>th</sup> -- UQ PUG 9"
     ]
   },
   {
-    "objectID": "Archive - 2024/09-Jul24.html#introduce-yourself",
-    "href": "Archive - 2024/09-Jul24.html#introduce-yourself",
+    "objectID": "2024 - Archive/09-Jul24.html#introduce-yourself",
+    "href": "2024 - Archive/09-Jul24.html#introduce-yourself",
     "title": "2024 July 4th – UQ PUG 9",
     "section": "",
     "text": "What’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron West\nUQ Library / SMP\nTo help\n\n\nZoe\nUQ",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 July 4<sup>th</sup> -- UQ PUG 9"
     ]
   },
   {
-    "objectID": "Archive - 2024/13-Nov24.html",
-    "href": "Archive - 2024/13-Nov24.html",
+    "objectID": "2024 - Archive/13-Nov24.html",
+    "href": "2024 - Archive/13-Nov24.html",
     "title": "2024 Nov 7th – UQ PUG 13",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general info for how we work and what we do. Below you’ll find the details of this month’s gathering.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Nov 7<sup>th</sup> -- UQ PUG 13"
     ]
   },
   {
-    "objectID": "Archive - 2024/13-Nov24.html#overview",
-    "href": "Archive - 2024/13-Nov24.html#overview",
+    "objectID": "2024 - Archive/13-Nov24.html#overview",
+    "href": "2024 - Archive/13-Nov24.html#overview",
     "title": "2024 Nov 7th – UQ PUG 13",
     "section": "Overview",
     "text": "Overview\nThis month we will be discussing Collaborative User Groups (I know, it’s a bit meta, but we’re at ResBaz!), before our usual workshopping of each other’s questions.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Nov 7<sup>th</sup> -- UQ PUG 13"
     ]
   },
   {
-    "objectID": "Archive - 2024/13-Nov24.html#introduce-yourself",
-    "href": "Archive - 2024/13-Nov24.html#introduce-yourself",
+    "objectID": "2024 - Archive/13-Nov24.html#introduce-yourself",
+    "href": "2024 - Archive/13-Nov24.html#introduce-yourself",
     "title": "2024 Nov 7th – UQ PUG 13",
     "section": "Introduce yourself",
     "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library & Physics\nTo share and learn",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Nov 7<sup>th</sup> -- UQ PUG 13"
     ]
   },
   {
-    "objectID": "Archive - 2024/13-Nov24.html#questions",
-    "href": "Archive - 2024/13-Nov24.html#questions",
+    "objectID": "2024 - Archive/13-Nov24.html#questions",
+    "href": "2024 - Archive/13-Nov24.html#questions",
     "title": "2024 Nov 7th – UQ PUG 13",
     "section": "Questions",
     "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion 1: User group experience | Cameron\n\nWhat has worked / not worked for user groups that you have participated in / facilitated?\nIs there anywhere you think a user group could work at your institution?\n\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\n\n\nQuestion 2: What’s wrong with my code | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here! CTRL + ENTER will run the cell\n\nimprt pandas\n\n\n  Cell In[1], line 3\n    imprt pandas\n          ^\nSyntaxError: invalid syntax\n\n\n\n\n\n# Fix the typo\nimport pandas\nprint(\"worked!\")\n\nworked!\n\n\n\nAnswers\n\n\n\nQuestion 3: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\n\n\nQuestion 4: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\n\n\nQuestion 5: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers",
     "crumbs": [
-      "Archive - 2024",
+      "2024 - Archive",
       "2024 Nov 7<sup>th</sup> -- UQ PUG 13"
     ]
   },
   {
-    "objectID": "Archive - 2023/1-Sep23.html",
-    "href": "Archive - 2023/1-Sep23.html",
+    "objectID": "2023 - Archive/1-Sep23.html",
+    "href": "2023 - Archive/1-Sep23.html",
     "title": "2023 Sep 7th – UQ PUG 1",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general information for details about who we are and what we do.",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Sep 7<sup>th</sup> -- UQ PUG 1"
     ]
   },
   {
-    "objectID": "Archive - 2023/1-Sep23.html#structure",
-    "href": "Archive - 2023/1-Sep23.html#structure",
+    "objectID": "2023 - Archive/1-Sep23.html#structure",
+    "href": "2023 - Archive/1-Sep23.html#structure",
     "title": "2023 Sep 7th – UQ PUG 1",
     "section": "Structure",
     "text": "Structure\n\nWe will start today by having everyone add their names to this page.\nAdd your questions to this page.\nThis Month’s Presentation.\nFinally we will spend the rest of the session answering the questions you have brought!",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Sep 7<sup>th</sup> -- UQ PUG 1"
     ]
   },
   {
-    "objectID": "Archive - 2023/1-Sep23.html#this-months-presentation",
-    "href": "Archive - 2023/1-Sep23.html#this-months-presentation",
+    "objectID": "2023 - Archive/1-Sep23.html#this-months-presentation",
+    "href": "2023 - Archive/1-Sep23.html#this-months-presentation",
     "title": "2023 Sep 7th – UQ PUG 1",
     "section": "This month’s presentation",
     "text": "This month’s presentation\nWelcome to our first Python User Group gathering! This month, Luke and Cameron give an overview of the group, our vision and Noteable, the interactive collaborative notebook platform which can run markdown, Python, R and SQL.",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Sep 7<sup>th</sup> -- UQ PUG 1"
     ]
   },
   {
-    "objectID": "Archive - 2023/1-Sep23.html#introduce-yourself",
-    "href": "Archive - 2023/1-Sep23.html#introduce-yourself",
+    "objectID": "2023 - Archive/1-Sep23.html#introduce-yourself",
+    "href": "2023 - Archive/1-Sep23.html#introduce-yourself",
     "title": "2023 Sep 7th – UQ PUG 1",
     "section": "Introduce yourself",
     "text": "Introduce yourself\n\n\n\n\n\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nLuke\nLibrary\nLearn\n\n\nNick\nLibrary\nLearn\n\n\nValentina Urrutia Guada\nLibrary\nLearn\n\n\nNida\nSchool of Molecular Biology\n(1) Understanding the logic (in some codes) for bioinformatics and metagenomics application, (2) Learn how to visualize data in python that is hard to do in excel\n\n\nCameron\nLibrary\nLearn\n\n\nSam Hames\nSchool of Languages and Cultures\nCommunity\n\n\nNikhil\nSchool of EECS\nLearn\n\n\nPaul Vrbik\nEECS\nSupport\n\n\nJason Dail\nSENV\nLearn\n\n\nAnnie Nguyen\nSENV\nLearn :)",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Sep 7<sup>th</sup> -- UQ PUG 1"
     ]
   },
   {
-    "objectID": "Archive - 2023/1-Sep23.html#research-tools",
-    "href": "Archive - 2023/1-Sep23.html#research-tools",
+    "objectID": "2023 - Archive/1-Sep23.html#research-tools",
+    "href": "2023 - Archive/1-Sep23.html#research-tools",
     "title": "2023 Sep 7th – UQ PUG 1",
     "section": "Research tools",
     "text": "Research tools\nHere are a few links we shared around, mostly from Jason.\n\nto assist with academic citations\nhttps://researchrabbitapp.com/home helpful when making research collections, mapping concepts, and looking at the linkages between references\nhttps://consensus.app/\nhttps://chat.openai.com/\nhttps://article-summarizer.scholarcy.com/summarizer\nhttps://typeset.io/ AI assistant for reading and understanding papers\nhttps://www.listendata.com/2023/03/how-to-run-chatgpt-inside-excel.html (excel extension for chat GPT how-to)\nEECS tutor help: https://eecs.uq.edu.au/current-students/eecs-learning-centre-tutors",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Sep 7<sup>th</sup> -- UQ PUG 1"
     ]
   },
   {
-    "objectID": "Archive - 2023/1-Sep23.html#questions",
-    "href": "Archive - 2023/1-Sep23.html#questions",
+    "objectID": "2023 - Archive/1-Sep23.html#questions",
+    "href": "2023 - Archive/1-Sep23.html#questions",
     "title": "2023 Sep 7th – UQ PUG 1",
     "section": "Questions",
     "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put them in a markdown cell, with any code you’d like us to run in a Python cell.\n\nQuestion 1 - Finding substrings for COVID sequencing - Note that the formatting has not transferred correctly here Nida\nNida has a problem where she needs to identify specific substrings from a large sequence of characters (DNA sequence). Her code is below\nI just found out that the code:\ncovid_seq = getSequence('MN908947', 'genbank', DNA_Alphabet)\nis actually trying to get a DNA sequence of covid from genbank & will give output of a string containing 29,900 characters (that we can actually see by clicking on the EBI website below)\nit is use a function called \"getSequence\" with code: `def getSequence(entryId, dbName = ‘uniprotkb’, alphabet = Protein_Alphabet, format = ‘fasta’, debug: bool = True):\nif not isinstance(entryId, str): entryId = entryId.decode(“utf-8”)\nurl =‘http://www.ebi.ac.uk/Tools/dbfetch/dbfetch?style=raw&db=’ + dbName + ‘&format=’ + format + ‘&id=’ + entryId\ntry: if debug: print(‘DEBUG: Querying URL: {0}’.format(url))\ndata = urllib.request.urlopen(url).read() if format == ‘fasta’: return readFastaString(data.decode(“utf-8”), alphabet)[0]\nelse: return data.decode(“utf-8”)\nexcept urllib.error.HTTPError as ex: raise RuntimeError(ex.read())\n`#This function retrieves a single entry from a database (entryId: ID for entry e.g.’MN908947’, dbName: name of database e.g. ‘genbank’)\nonce we got that DNA string (consisting of only 4 types of characters-A/C/T/G), a biologist will translate them (into AminoAcid or Protein string, consisting 20 types of characters + asterisk/* , please see https://www.hgvs.org/mutnomen/codon.html). We’ll translate them using a dictionary (code not shown) and then we’ll split them based on * so that we can generate an output of a list of strings that is stored in a variable called “protseq” (see https://docs.google.com/document/d/1R22IGMfe9i1tYAlPK5ZSOikV-ON6xZVUq-C87xDMiLg/edit?usp=sharing )\nfinally, from that I need to find how many strings inside of that “protseq” that meet these criteria: 1) start with M 2) end with * 3) has length of &gt;=100 characters\nso, my question is actually: how to understand the logic behind the below code that is said to be able to do that job:\n#check first occurence of M in each string of that ‘protseq’ list &gt;&gt;where_M_in_protseq_1st-string = protseq[0].find(‘M’) print(where_M_in_protseq_1st-string) print(len(protseq[0]))\n#code to check whether each string in that ‘protseq’ start with M and &gt;= 100 &gt;&gt;cnt = 0\n\n\nfor i in protseq: &gt;if len(i) - i.find(“M”) &gt;= 100: &gt;&gt;cnt +=1\n\n\n\n\nprint(cnt)\n\n\n\n\nfor seq in protseq: &gt;m_pos = seq.find(“M”)\n&gt;m_end_seq = seq[m_pos:]\n\n\n\n\n\nif len(m_end_seq) &gt; 100: &gt;print(m_end_seq) &gt;print(len(m_end_seq))\n\n\n\nThe answer for this problem should be 8 strings inside 18 members of that protseq list will meet that criteria (so if we can end up getting 8 from that code we are correct)–&gt; (but I just hope that I can get it correct and understand how the code works)\nImportance: from that 8 strings, we can try 1 of them in a real protein database (called Uniprot-KB) and know what part of covid body that is likely to interact with human and causing disease\nThank you very much\n\nimport urllib\n\nclass Alphabet():\n    \"\"\" A minimal class for alphabets\n        Alphabets include DNA, RNA and Protein \"\"\"\n    def __init__(self, symbolString):\n        self.symbols = symbolString\n    def __len__(self):              # implements the \"len\" operator, e.g. \"len(Alphabet('XYZ'))\" results in 3\n        return len(self.symbols)    # will tell you the length of the symbols in an Alphabet instance\n    def __contains__(self, sym):    # implements the \"in\" operator, e.g. \"'A' in Alphabet('ACGT')\" results in True\n        return sym in self.symbols  # will tell you if 'A' is in the symbols in an Alphabet instance\n    def __iter__(self):             # method that allows us to iterate over all symbols, e.g. \"for sym in Alphabet('ACGT'): print sym\" prints A, C, G and T on separate lines\n        tsyms = tuple(self.symbols)\n        return tsyms.__iter__()\n    def __getitem__(self, ndx):\n        \"\"\" Retrieve the symbol(s) at the specified index (or slice of indices) \"\"\"\n        return self.symbols[ndx]\n    def index(self, sym):\n        \"\"\" Retrieve the index of the given symbol in the alphabet. \"\"\"\n        return self.symbols.index(sym)\n    def __str__(self):\n        return self.symbols\n\n\"\"\" Below we declare alphabet variables that are going to be available when\nthis module (this .py file) is imported \"\"\"\nDNA_Alphabet = Alphabet('ACGT')\nRNA_Alphabet = Alphabet('ACGU')\nProtein_Alphabet = Alphabet('ACDEFGHIKLMNPQRSTVWY')\nProtein_wX = Alphabet('ACDEFGHIKLMNPQRSTVWYX')\nProtein_wGAP = Alphabet('ACDEFGHIKLMNPQRSTVWY-')\n\n\ndef getSequence(entryId, dbName = 'uniprotkb', alphabet = Protein_Alphabet, format = 'fasta', debug: bool = True):\n    \"\"\" Retrieve a single entry from a database\n    entryId: ID for entry e.g. 'P63166' or 'SUMO1_MOUSE'\n    dbName: name of database e.g. 'uniprotkb' or 'pdb' or 'refseqn'; see http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/dbfetch.databases for available databases\n    format: file format specific to database e.g. 'fasta' or 'uniprot' for uniprotkb (see http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/dbfetch.databases)\n    See http://www.ebi.ac.uk/Tools/dbfetch/syntax.jsp for more info re URL syntax\n    \"\"\"\n    if not isinstance(entryId, str):\n        entryId = entryId.decode(\"utf-8\")\n    url ='http://www.ebi.ac.uk/Tools/dbfetch/dbfetch?style=raw&db=' + dbName + '&format=' + format + '&id=' + entryId\n    try:\n        if debug:\n            print('DEBUG: Querying URL: {0}'.format(url))\n        data = urllib.request.urlopen(url).read()\n        if format == 'fasta':\n            return readFastaString(data.decode(\"utf-8\"), alphabet)[0]\n        else:\n            return data.decode(\"utf-8\")\n    except urllib.error.HTTPError as ex:\n        raise RuntimeError(ex.read())\n\n\n# get the covid 19 genome (29kB)\ncovid_seq = getSequence('MN908947', 'genbank', DNA_Alphabet)\n# print(seq_no10)\n\n# get all the bases from covid_seq\n# translate all of those base into amino acid seq\n# in all reading frames (6)\n\n\n\n\n\ntr_f = [0, 1, 2]\n# translate protein\ncovid_AAseq = []\n\nfor i in tr_f:\n    #print(\"all ORF in fwd direction\", covid_seq.translateDNA(i, True))\n    seq10b=covid_seq.translateDNA(i, True)\n    protseq=seq10b.split(\"*\")\n    seq10br = covid_seq.translateDNA(i, False)\n    protseq.extend(seq10br.split(\"*\"))\nprint(str(protseq))\n#     print(protseq)\n#     for element in protseq:\n#         print(\"Individual value is\",element)\n# #for i in tr_f:\n#     print(\"all ORF in reverse direction\", covid_seq.translateDNA(i, False))\n    \n#NEXT STEP (for mapping the ORF that begins with M & calculate the len &gt; 100)\nORF = []\nfor i in protseq:\n    if i.startswith('M') == True:\n        ORF.append(i)\nprint('all of potential ORF', ORF)\n\nprint('length of all potential ORF')\nfor i in ORF:\n    print(i, \":\", len(i))\n\ntrue_ORF = []\nfor i in ORF:\n    if len(i) &gt; 100:\n        true_ORF.append(i)\nprint(true_ORF)\n\n# for i in protseq:\n#     if i == 'M': # and len(i) &gt; 100:\n#         ORF.append(i)\n# print(ORF)       \n \n\n\ncharacters = \"asjidowgeriogpjicnjjlaksdjalksdj*alskjdjjjjeosj   hjjjjl\"\n\n# We want to pick out \"jid\" and \"jic\"\nans = []\nfor k, c in enumerate(characters):\n    if c == \"j\":   # add abtrary number of constraints\n        ans.append(characters[k:k+3])\n    if c == \"*\":\n        break\n\nif len(ans[-1]) &lt; 3:\n    ans.pop()\n        \nprint(ans)\n\n\ncharacters = \"asjidowgeriogpjicneosjl\"",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Sep 7<sup>th</sup> -- UQ PUG 1"
     ]
   },
   {
-    "objectID": "Archive - 2023/3-Nov23.html",
-    "href": "Archive - 2023/3-Nov23.html",
+    "objectID": "2023 - Archive/3-Nov23.html",
+    "href": "2023 - Archive/3-Nov23.html",
     "title": "2023 Nov 2nd – UQ PUG 3",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general information for details about who we are and what we do.",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Nov 2<sup>nd</sup> -- UQ PUG 3"
     ]
   },
   {
-    "objectID": "Archive - 2023/3-Nov23.html#structure",
-    "href": "Archive - 2023/3-Nov23.html#structure",
+    "objectID": "2023 - Archive/3-Nov23.html#structure",
+    "href": "2023 - Archive/3-Nov23.html#structure",
     "title": "2023 Nov 2nd – UQ PUG 3",
     "section": "Structure",
     "text": "Structure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Nov 2<sup>nd</sup> -- UQ PUG 3"
     ]
   },
   {
-    "objectID": "Archive - 2023/3-Nov23.html#this-months-presentation",
-    "href": "Archive - 2023/3-Nov23.html#this-months-presentation",
+    "objectID": "2023 - Archive/3-Nov23.html#this-months-presentation",
+    "href": "2023 - Archive/3-Nov23.html#this-months-presentation",
     "title": "2023 Nov 2nd – UQ PUG 3",
     "section": "This month’s presentation",
     "text": "This month’s presentation\nOur first guest speaker for PUG will be Nikhil Jangamreddy, please make him feel welcome!\nToday, Nikhil presented about integrating ChatGPT with Python, demonstrating some applications.\nSome interesting tools explored/mentioned - ChatGPT (and the API) - Deeplearning.ai - poe - streamlit - langchain - Mistral - Seminal work: Attention Is All You Need",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Nov 2<sup>nd</sup> -- UQ PUG 3"
     ]
   },
   {
-    "objectID": "Archive - 2023/3-Nov23.html#introduce-yourself",
-    "href": "Archive - 2023/3-Nov23.html#introduce-yourself",
+    "objectID": "2023 - Archive/3-Nov23.html#introduce-yourself",
+    "href": "2023 - Archive/3-Nov23.html#introduce-yourself",
     "title": "2023 Nov 2nd – UQ PUG 3",
     "section": "Introduce yourself",
     "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron West\nUQ Library\nTo learn and help\n\n\nKaren Fang\nBusiness School\nTo learn :)\n\n\nNicholas Wiggins\nUQ Library\nLearn and help!\n\n\nNikhil\nEECS UQ\nLearn\n\n\nValentina Urrutia Guada\nUQ Library\nTo learn and help",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Nov 2<sup>nd</sup> -- UQ PUG 3"
     ]
   },
   {
-    "objectID": "Archive - 2023/3-Nov23.html#questions",
-    "href": "Archive - 2023/3-Nov23.html#questions",
+    "objectID": "2023 - Archive/3-Nov23.html#questions",
+    "href": "2023 - Archive/3-Nov23.html#questions",
     "title": "2023 Nov 2nd – UQ PUG 3",
     "section": "Questions",
     "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put them in a markdown cell, with any code you’d like us to run in a Python cell.\n\nQuestion 1 - Model installation Question -Karen\nFail to install the package\nhttps://allenai.github.io/scispacy/\nen_ner_bc5cdr_md\n\nSolution\nSee code below, we can install using the download link.\n\n# Example install\n!pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.3/en_ner_bc5cdr_md-0.5.3.tar.gz\n\n\n## How to install modules:\n!pip install #&lt;module url&gt; access this by copying the download link for the module\n\nimport spacy\n\n# Load the spaCy English language model\nnlp = spacy.load('&lt;module name&gt;')\n\n\n\n\nQuestion 2 - Question - Name\nAdd more details here\n\n## Code for Q2\n\n\n\nQuestion 3 - Question - Name\nAdd more details here\n\n## Code for Q3\n\n\n\nQuestion 4 - Question - Name\nAdd more details here\n\n## Code for Q4\n\n\n\nQuestion 5 - Question - Name\nAdd more details here\n\n## Code for Q5\n\n\n\nQuestion 6 - Question - Name\nAdd more details here\n\n## Code for Q6",
     "crumbs": [
-      "Archive - 2023",
+      "2023 - Archive",
       "2023 Nov 2<sup>nd</sup> -- UQ PUG 3"
     ]
   }
