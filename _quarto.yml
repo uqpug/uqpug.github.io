@@ -12,6 +12,7 @@ website:
   title: "UQ PUG"
   description: "UQ Python User Group"
   favicon: "python-logo-only.svg"
+  image: "python-logo_only.svg"
   navbar:
     search: true
   sidebar:
