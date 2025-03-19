@@ -4,3 +4,6 @@ dev/
 # Quarto
 /.quarto/
 /_site/
+
+# .venv
+.venv/
