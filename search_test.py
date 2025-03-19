@@ -5,8 +5,6 @@ KEY = "AIzaSyANpCNdOXG6s1ZFP1gZsbJ3f71LHfk-hio"
 ENGINE_ID = "71a072fcae628476a"
 TITLE = "UQ Python User Group (UQ PUG)"
 
-raise NotImplementedError()
-
 class NotFoundError(Exception):
     """Raised when TITLE is not found in searches"""
 
