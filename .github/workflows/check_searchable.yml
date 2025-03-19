@@ -5,14 +5,14 @@ name: check_google
 
 on:
   schedule:
-  - cron: '* * * * *'
+  - cron: '0 23 * * *'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  build:
+  build-and-run:
 
     runs-on: ubuntu-latest
 
