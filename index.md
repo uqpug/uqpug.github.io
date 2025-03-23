@@ -1,5 +1,17 @@
 ---
 title: "UQ Python User Group"
+format:
+  html:
+    include-in-header:
+    - text: |
+          <script type="application/ld+json">
+          {
+            "@context" : "https://schema.org",
+            "@type" : "WebSite",
+            "name" : "UQ Python User Group",
+            "url" : "https://uqpug.github.io/"
+          }
+          </script>
 ---
 
 Welcome to the UQ Python User Group (UQ PUG). We meet monthly, and our next gathering is on the 6th of March. We meet in room 12-N109 (Central Library).
