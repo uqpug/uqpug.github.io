@@ -3,7 +3,7 @@ import requests
 API_ROOT = r"https://www.googleapis.com/customsearch/v1?"
 KEY = "AIzaSyANpCNdOXG6s1ZFP1gZsbJ3f71LHfk-hio"
 ENGINE_ID = "71a072fcae628476a"
-TITLE = "UQ Python User Group (UQ PUG)"
+LINK = "https://uqpug.github.io/"
 
 class NotFoundError(Exception):
     """Raised when TITLE is not found in searches"""
@@ -20,13 +20,13 @@ for query in queries:
     content = r.json()
 
     for result in content["items"]:
-        if TITLE in result["title"]:
+        if LINK in result["link"]:
             print(f"Query '{query}' has PASSED")
             flag = True
             break    
     
     if flag == False:
-        raise NotFoundError(f"Page '{TITLE}' was not found with query '{query}'")
+        raise NotFoundError(f"Page '{LINK}' was not found with query '{query}'")
 
 
 
