@@ -385,7 +385,7 @@
     "href": "index.html#general-resources",
     "title": "UQ Python User Group",
     "section": "General Resources",
-    "text": "General Resources\nHere are a few links to some general resources.\n\nPython Documentation\nPyPI, the python package repository\nAnaconda, an environment manager with python applications (e.g. Spyder) available\nUQ Training Sessions\nLibrary training email - training@library.uq.edu.au\nOnline courses with LinkedIn Learning (use UQ credentials)\n\nFor admin",
+    "text": "General Resources\nHere are a few links to some general resources.\n\nPython Documentation\nPyPI, the python package repository\nAnaconda, an environment manager with python applications (e.g. Spyder) available\nUQ Training Sessions\nLibrary training email - training@library.uq.edu.au\nOnline courses with LinkedIn Learning (use UQ credentials)\n\n\nDatasets\nWe’ve also got a few datasets to play with. These get used in our library training sessions:\n\n\n\nDataset\nDescription\n\n\n\n\nBMI data\nFake BMI data for five people.\n\n\nPlayers 2024\nA dataset of 2024 soccer players’ clubs, heights and ages.\n\n\nGapminder\nInternational GDP, life expectancy and population statistics.\n\n\n\nFor admin",
     "crumbs": [
       "General information"
     ]
