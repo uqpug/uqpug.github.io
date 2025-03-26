@@ -50,5 +50,14 @@ Here are a few links to some general resources.
 - Library training email - [training@library.uq.edu.au](mailto:training@library.uq.edu.au)
 - [Online courses](https://au.linkedin.com/learning/) with LinkedIn Learning (use [UQ credentials](https://web.library.uq.edu.au/library-services/training/linkedin-learning-online-courses))
 
+### Datasets
+
+We've also got a few datasets to play with. These get used in our library training sessions:
+
+|Dataset|Description|
+| --- | --- |
+| [BMI data](datasets/BMI_data.csv) | Fake BMI data for five people. |
+| [Players 2024](datasets/Players2024.csv) | A dataset of 2024 soccer players' clubs, heights and ages. |
+| [Gapminder](datasets/gapminder.csv) | International GDP, life expectancy and population statistics. |
 
 [For admin](googlec027a6a2057eb177.html)
