@@ -312,7 +312,7 @@
     "href": "2025 - Current notebooks/18-May25.html#overview",
     "title": "2025 May 1st – UQ PUG 18",
     "section": "Overview",
-    "text": "Overview\nWelcome to the second PUG for the year!\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
+    "text": "Overview\nIn this PUG we’ll be discussing Python installations/environments/IDEs.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
       "2025 - Current notebooks",
       "2025 May 1<sup>st</sup> -- UQ PUG 18"
@@ -389,7 +389,43 @@
     "href": "Demonstrations/notebooks/notebooks.html",
     "title": "Jupyter notebooks",
     "section": "",
-    "text": "The basics\n\nCells (MD vs Python)\nDemo plots\n\nWhat is a kernel? Changing kernel.\nPlatforms - Jupyter notebook vs lab, colab, github codespaces, VS code\nExporting / converting / sharing",
+    "text": "The basics\n\nCells (MD vs Python)\nDemo plots\n\nWhat is a kernel? Changing kernel.\nPlatforms - Jupyter notebook vs lab, colab, github codespaces, VS code\nExporting / converting / sharing\n2 + 2\n\n4\nprint(\"Cell 2\")\n\nCell 2\nThe test is formatted based on special characters",
+    "crumbs": [
+      "Demonstrations",
+      "Notebooks",
+      "Jupyter notebooks"
+    ]
+  },
+  {
+    "objectID": "Demonstrations/notebooks/notebooks.html#heading-2",
+    "href": "Demonstrations/notebooks/notebooks.html#heading-2",
+    "title": "Jupyter notebooks",
+    "section": "Heading 2",
+    "text": "Heading 2\n\nHeading 3 …\nAsterisk for italics Two for bold Three for strong\n~tilde for strikethrough~\n\nfrom markdown import markdown\n\nmarkdown(\"**Boldtest**\")\n\n'&lt;p&gt;&lt;strong&gt;Boldtest&lt;/strong&gt;&lt;/p&gt;'",
+    "crumbs": [
+      "Demonstrations",
+      "Notebooks",
+      "Jupyter notebooks"
+    ]
+  },
+  {
+    "objectID": "Demonstrations/notebooks/notebooks.html#heading-2-1",
+    "href": "Demonstrations/notebooks/notebooks.html#heading-2-1",
+    "title": "Jupyter notebooks",
+    "section": "Heading 2",
+    "text": "Heading 2\n\nHeading 3 …\nAsterisk for italics Two for bold Three for strong\n~tilde for strikethrough~",
+    "crumbs": [
+      "Demonstrations",
+      "Notebooks",
+      "Jupyter notebooks"
+    ]
+  },
+  {
+    "objectID": "Demonstrations/notebooks/notebooks.html#maths-detour",
+    "href": "Demonstrations/notebooks/notebooks.html#maths-detour",
+    "title": "Jupyter notebooks",
+    "section": "Maths detour",
+    "text": "Maths detour\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nxs = np.linspace(-10,10,1000)\nys = np.sin(xs)\n\nplt.plot(xs, ys)",
     "crumbs": [
       "Demonstrations",
       "Notebooks",
@@ -510,7 +546,7 @@
     "href": "2025 - Current notebooks/17-Apr25.html#overview",
     "title": "2025 Apr 3rd – UQ PUG 17",
     "section": "Overview",
-    "text": "Overview\nWelcome to the second PUG for the year! This month we’re taking a look at Jupyter notebooks.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
+    "text": "Overview\nWelcome to the second PUG for the year! This month we’re taking a look at Jupyter notebooks.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.\n\n# Put any code you'd like to run here!\n\n# For simpler stuff:\nimport scipy.stats as stats\n\n# For more comprehensive modelling\nimport statsmodels.formula.api as smf\n\nimport pandas as pd\n\nimport matplotlib.pyplot as plt\n\n# Bring in my data\ndf = pd.read_csv(\"../datasets/gapminder.csv\")\n\ndf = df[df[\"country\"] == \"Australia\"]\ndf = df[[\"year\", \"pop\"]]\n\n# Perform OLS\nmodel = smf.ols(\"pop ~ year\", data = df)\n\nresults = model.fit()\nresults.summary()\n\nplt.plot(df[\"year\"], results.fittedvalues, \"r\")\nplt.plot(df[\"year\"], df[\"pop\"], \".\")\n\n\nAnswers\n\nYou might find this page useful - from our January training intensive\nThe statsmodels package is your friend here - see how I’ve used it above for an OLS regression. This page has a summary of the functions you can do",
     "crumbs": [
       "2025 - Current notebooks",
       "2025 Apr 3<sup>rd</sup> -- UQ PUG 17"
@@ -521,7 +557,7 @@
     "href": "2025 - Current notebooks/17-Apr25.html#introduce-yourself",
     "title": "2025 Apr 3rd – UQ PUG 17",
     "section": "Introduce yourself",
-    "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library & SMP\nTo share and learn",
+    "text": "Introduce yourself\n\n\n\n\n\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library & SMP\nTo share and learn\n\n\nAnne\nChina / School of the Environment\nInspired by friend\n\n\nHe Yang\nChina / School of the Envirnoment\nInspired by friend\n\n\nJessie\nFaculty of Health\nData analysis\n\n\nGeorgina\nVirology PhD\nearning about machine learning models in Pythonn\n\n\nDuncan\nSPPS\nData Analysis to support school academics/Learn to automate tasks in Winndows",
     "crumbs": [
       "2025 - Current notebooks",
       "2025 Apr 3<sup>rd</sup> -- UQ PUG 17"
@@ -532,7 +568,7 @@
     "href": "2025 - Current notebooks/17-Apr25.html#questions",
     "title": "2025 Apr 3rd – UQ PUG 17",
     "section": "Questions",
-    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…",
+    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nWhat are your Python use cases? | Cameron\nWhy do you want to / do use Python\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nSome question | Anne\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nHow do I run a regression model to check for regression to the mean on a data set in Excel/CSV? | Duncan\nAdd more details here, then press CTRL + ENTER when you’re done\n\n\nMarkdown in Python outputs | He Yang / Cameron\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n# ONce you've installed markdown\nfrom markdown import markdown\n\n\nAnswers\n\npip install markdown\nAnswer 2\n…\n\n\n\n\nWhere to start with machine learning? | Jessie\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\n\nAnswers\n\nStart with SciKit: https://scikit-learn.org\nThen try Keras: https://keras.io/\nPyTorch: https://pytorch.org/\n\nCheck those website for how to install (e.g. with conda or pip)\n\n\n\nPackaging modules | He Yang\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\nimport final_test_module.test_module as tm\n\ntm.test_function()\n\n\n\nHello!\n\n\n\nAnswers",
     "crumbs": [
       "2025 - Current notebooks",
       "2025 Apr 3<sup>rd</sup> -- UQ PUG 17"
