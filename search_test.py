@@ -11,8 +11,6 @@ class NotFoundError(Exception):
 queries = ["uq pug", "uq python user group"]
 
 for query in queries:
-    flag = False
-
     r = requests.get(API_ROOT+f"key={KEY}&cx={ENGINE_ID}&q={query}")
 
     r.raise_for_status()
@@ -22,10 +20,8 @@ for query in queries:
     for result in content["items"]:
         if LINK in result["link"]:
             print(f"Query '{query}' has PASSED")
-            flag = True
             break    
-    
-    if flag == False:
+    else:
         raise NotFoundError(f"Page '{LINK}' was not found with query '{query}'")
 
 
