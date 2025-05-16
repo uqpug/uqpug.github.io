@@ -15,11 +15,18 @@ website:
   image: "python-logo_only.svg"
   navbar:
     search: true
+    left:
+      - text: "About us"
+        href: index.md
+      - text: "UQ Library Technology Training"
+        href: https://uqlibrary.github.io/technology-training/
+      - text: "Other User Groups"
+        menu:
+          - text: "UQ R User Group"
+            href: https://uqrug.netlify.app/
   sidebar:
     collapse-level: 1
     contents:
-      - href: index.md 
-        text: General information
       - auto: "Demonstrations"
       - auto: "2025 - Current notebooks"
       - auto: "2024 - Archive"
