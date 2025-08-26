@@ -4,10 +4,11 @@ project:
   render:
     - index.md
     - "Demonstrations/!(2024)"
-    - "2025 - Current notebooks/*"
+    - "2025 - Current notebooks/!(unused)"    
     - "2024 - Archive/*"
     - "2023 - Archive/*"
     - googlec027a6a2057eb177.html
+    
 
 website:
   title: "UQ PUG"
