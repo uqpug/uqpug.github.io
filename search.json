@@ -324,291 +324,100 @@
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/unused/20-Jul25.html",
-    "href": "2025 - Current notebooks/unused/20-Jul25.html",
-    "title": "2025 July 3rd – UQ PUG 20",
+    "objectID": "2025 - Current notebooks/22-Oct25.html",
+    "href": "2025 - Current notebooks/22-Oct25.html",
+    "title": "2025 Oct 2nd – UQ PUG 22",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general info for how we work and what we do. Below you’ll find the details of this month’s gathering.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "Unused",
-      "2025 July 3<sup>rd</sup> -- UQ PUG 20"
+      "2025 Oct 2<sup>nd</sup> -- UQ PUG 22"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/unused/20-Jul25.html#overview",
-    "href": "2025 - Current notebooks/unused/20-Jul25.html#overview",
-    "title": "2025 July 3rd – UQ PUG 20",
+    "objectID": "2025 - Current notebooks/22-Oct25.html#overview",
+    "href": "2025 - Current notebooks/22-Oct25.html#overview",
+    "title": "2025 Oct 2nd – UQ PUG 22",
     "section": "Overview",
-    "text": "Overview\nStay tuned for details about this month’s presentation…\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
+    "text": "Overview\nWelcome to the October UQ PUG!.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nIf you’d like to receive regular updates and post questions during the month, join our Teams channel!\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "Unused",
-      "2025 July 3<sup>rd</sup> -- UQ PUG 20"
+      "2025 Oct 2<sup>nd</sup> -- UQ PUG 22"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/unused/20-Jul25.html#introduce-yourself",
-    "href": "2025 - Current notebooks/unused/20-Jul25.html#introduce-yourself",
-    "title": "2025 July 3rd – UQ PUG 20",
-    "section": "Introduce yourself",
-    "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library & SMP\nTo share and learn",
-    "crumbs": [
-      "About us",
-      "2025 - Current notebooks",
-      "Unused",
-      "2025 July 3<sup>rd</sup> -- UQ PUG 20"
-    ]
-  },
-  {
-    "objectID": "2025 - Current notebooks/unused/20-Jul25.html#questions",
-    "href": "2025 - Current notebooks/unused/20-Jul25.html#questions",
-    "title": "2025 July 3rd – UQ PUG 20",
-    "section": "Questions",
-    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…",
-    "crumbs": [
-      "About us",
-      "2025 - Current notebooks",
-      "Unused",
-      "2025 July 3<sup>rd</sup> -- UQ PUG 20"
-    ]
-  },
-  {
-    "objectID": "2025 - Current notebooks/unused/18-May25.html",
-    "href": "2025 - Current notebooks/unused/18-May25.html",
-    "title": "2025 May 1st – UQ PUG 18",
-    "section": "",
-    "text": "Welcome to UQ Python User Group! Check out our general info for how we work and what we do. Below you’ll find the details of this month’s gathering.",
-    "crumbs": [
-      "About us",
-      "2025 - Current notebooks",
-      "Unused",
-      "2025 May 1<sup>st</sup> -- UQ PUG 18"
-    ]
-  },
-  {
-    "objectID": "2025 - Current notebooks/unused/18-May25.html#overview",
-    "href": "2025 - Current notebooks/unused/18-May25.html#overview",
-    "title": "2025 May 1st – UQ PUG 18",
-    "section": "Overview",
-    "text": "Overview\nIn this PUG we’ll be discussing Python installations/environments/IDEs.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
-    "crumbs": [
-      "About us",
-      "2025 - Current notebooks",
-      "Unused",
-      "2025 May 1<sup>st</sup> -- UQ PUG 18"
-    ]
-  },
-  {
-    "objectID": "2025 - Current notebooks/unused/18-May25.html#introduce-yourself",
-    "href": "2025 - Current notebooks/unused/18-May25.html#introduce-yourself",
-    "title": "2025 May 1st – UQ PUG 18",
-    "section": "Introduce yourself",
-    "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library & SMP\nTo share and learn",
-    "crumbs": [
-      "About us",
-      "2025 - Current notebooks",
-      "Unused",
-      "2025 May 1<sup>st</sup> -- UQ PUG 18"
-    ]
-  },
-  {
-    "objectID": "2025 - Current notebooks/unused/18-May25.html#questions",
-    "href": "2025 - Current notebooks/unused/18-May25.html#questions",
-    "title": "2025 May 1st – UQ PUG 18",
-    "section": "Questions",
-    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…",
-    "crumbs": [
-      "About us",
-      "2025 - Current notebooks",
-      "Unused",
-      "2025 May 1<sup>st</sup> -- UQ PUG 18"
-    ]
-  },
-  {
-    "objectID": "2025 - Current notebooks/21-Sep25.html",
-    "href": "2025 - Current notebooks/21-Sep25.html",
-    "title": "2025 Sep 4th – UQ PUG 21",
-    "section": "",
-    "text": "Welcome to UQ Python User Group! Check out our general info for how we work and what we do. Below you’ll find the details of this month’s gathering.",
-    "crumbs": [
-      "About us",
-      "2025 - Current notebooks",
-      "2025 Sep 4<sup>th</sup> -- UQ PUG 21"
-    ]
-  },
-  {
-    "objectID": "2025 - Current notebooks/21-Sep25.html#overview",
-    "href": "2025 - Current notebooks/21-Sep25.html#overview",
-    "title": "2025 Sep 4th – UQ PUG 21",
-    "section": "Overview",
-    "text": "Overview\nWelcome to the September UQ PUG!. This month we’ll be discussing venv, Python’s virtual environment manager. It’s great and it’s simple and it’s complicated.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nIf you’d like to receive regular updates and post questions during the month, join our Teams channel!\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
-    "crumbs": [
-      "About us",
-      "2025 - Current notebooks",
-      "2025 Sep 4<sup>th</sup> -- UQ PUG 21"
-    ]
-  },
-  {
-    "objectID": "2025 - Current notebooks/21-Sep25.html#introduce-yourself",
-    "href": "2025 - Current notebooks/21-Sep25.html#introduce-yourself",
-    "title": "2025 Sep 4th – UQ PUG 21",
+    "objectID": "2025 - Current notebooks/22-Oct25.html#introduce-yourself",
+    "href": "2025 - Current notebooks/22-Oct25.html#introduce-yourself",
+    "title": "2025 Oct 2nd – UQ PUG 22",
     "section": "Introduce yourself",
     "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nName\nOrganisation/School\nReason for coming",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Sep 4<sup>th</sup> -- UQ PUG 21"
+      "2025 Oct 2<sup>nd</sup> -- UQ PUG 22"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/21-Sep25.html#questions",
-    "href": "2025 - Current notebooks/21-Sep25.html#questions",
-    "title": "2025 Sep 4th – UQ PUG 21",
+    "objectID": "2025 - Current notebooks/22-Oct25.html#questions",
+    "href": "2025 - Current notebooks/22-Oct25.html#questions",
+    "title": "2025 Oct 2nd – UQ PUG 22",
     "section": "Questions",
     "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Sep 4<sup>th</sup> -- UQ PUG 21"
+      "2025 Oct 2<sup>nd</sup> -- UQ PUG 22"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/16-Mar25.html",
-    "href": "2025 - Current notebooks/16-Mar25.html",
-    "title": "2025 Mar 6th – UQ PUG 16",
+    "objectID": "2025 - Current notebooks/17-Apr25.html",
+    "href": "2025 - Current notebooks/17-Apr25.html",
+    "title": "2025 Apr 3rd – UQ PUG 17",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general info for how we work and what we do. Below you’ll find the details of this month’s gathering.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Mar 6<sup>th</sup> -- UQ PUG 16"
+      "2025 Apr 3<sup>rd</sup> -- UQ PUG 17"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/16-Mar25.html#overview",
-    "href": "2025 - Current notebooks/16-Mar25.html#overview",
-    "title": "2025 Mar 6th – UQ PUG 16",
+    "objectID": "2025 - Current notebooks/17-Apr25.html#overview",
+    "href": "2025 - Current notebooks/17-Apr25.html#overview",
+    "title": "2025 Apr 3rd – UQ PUG 17",
     "section": "Overview",
-    "text": "Overview\nWelcome to the second PUG for the year! This month we’ll look go through the most popular Python packages (by download) and explore their most useful features.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
+    "text": "Overview\nWelcome to the second PUG for the year! This month we’re taking a look at Jupyter notebooks.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.\n\n# Put any code you'd like to run here!\n\n# For simpler stuff:\nimport scipy.stats as stats\n\n# For more comprehensive modelling\nimport statsmodels.formula.api as smf\n\nimport pandas as pd\n\nimport matplotlib.pyplot as plt\n\n# Bring in my data\ndf = pd.read_csv(\"../datasets/gapminder.csv\")\n\ndf = df[df[\"country\"] == \"Australia\"]\ndf = df[[\"year\", \"pop\"]]\n\n# Perform OLS\nmodel = smf.ols(\"pop ~ year\", data = df)\n\nresults = model.fit()\nresults.summary()\n\nplt.plot(df[\"year\"], results.fittedvalues, \"r\")\nplt.plot(df[\"year\"], df[\"pop\"], \".\")\n\n\nAnswers\n\nYou might find this page useful - from our January training intensive\nThe statsmodels package is your friend here - see how I’ve used it above for an OLS regression. This page has a summary of the functions you can do",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Mar 6<sup>th</sup> -- UQ PUG 16"
+      "2025 Apr 3<sup>rd</sup> -- UQ PUG 17"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/16-Mar25.html#introduce-yourself",
-    "href": "2025 - Current notebooks/16-Mar25.html#introduce-yourself",
-    "title": "2025 Mar 6th – UQ PUG 16",
+    "objectID": "2025 - Current notebooks/17-Apr25.html#introduce-yourself",
+    "href": "2025 - Current notebooks/17-Apr25.html#introduce-yourself",
+    "title": "2025 Apr 3rd – UQ PUG 17",
     "section": "Introduce yourself",
-    "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library & SMP\nTo share and learn\n\n\nJuddi\nSchool of Communication and Arts\n-\n\n\nDuncan\nSPPS\nTo learn more about Python\n\n\nElizabeth\n-\n-\n\n\nJohn\n-\n-\n\n\nTitus\n-\n-\n\n\nKrystie\n-\n-",
+    "text": "Introduce yourself\n\n\n\n\n\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library & SMP\nTo share and learn\n\n\nAnne\nChina / School of the Environment\nInspired by friend\n\n\nHe Yang\nChina / School of the Envirnoment\nInspired by friend\n\n\nJessie\nFaculty of Health\nData analysis\n\n\nGeorgina\nVirology PhD\nearning about machine learning models in Pythonn\n\n\nDuncan\nSPPS\nData Analysis to support school academics/Learn to automate tasks in Winndows",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Mar 6<sup>th</sup> -- UQ PUG 16"
+      "2025 Apr 3<sup>rd</sup> -- UQ PUG 17"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/16-Mar25.html#questions",
-    "href": "2025 - Current notebooks/16-Mar25.html#questions",
-    "title": "2025 Mar 6th – UQ PUG 16",
+    "objectID": "2025 - Current notebooks/17-Apr25.html#questions",
+    "href": "2025 - Current notebooks/17-Apr25.html#questions",
+    "title": "2025 Apr 3rd – UQ PUG 17",
     "section": "Questions",
-    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nAutomation packages | Duncan\nDo you have any ideas about which popular packages are useful for automation in windows?\n\n# To interact with the filesystem\nimport os\n\n# For copying/renaming/more complex operations\nimport shutil\n\n# To interact with spreadsheets\nimport pandas as pd\n\n# Folder full of spreadsheets\npath = r\"..\\Demonstrations\\top_modules\\spreadsheets\"\n\n# Returns a list of files at the specified folder\nfiles = os.listdir(path)\n\n# Looping will automate for you\nfor file in files:\n    full_path = os.path.join(path, file)\n\n    # Read in any file (using a 'with' means the file automatically closes)\n    with open(full_path) as f:\n        contents = f.read()\n\n    # Read in dataframes (e.g. .csv, .xlsx, see pd.read_... for the possibilities)\n    df = pd.read_csv(full_path)\n\n\nprint(f\"Using pandas' read_csv() function: \\n\\n{df}\")\nprint(f\"\\nUsing base python's open() and .read() functions: \\n\\n{contents[0:200]}\\n...\")\n\nUsing pandas' read_csv() function: \n\n       download_count        project\n0          1346601849          boto3\n1           670262655        urllib3\n2           609967137       botocore\n3           576250793       requests\n4           563169502        certifi\n...               ...            ...\n14995           25173        chilkat\n14996           25169       aioradio\n14997           25165        binilla\n14998           25160   testarchiver\n14999           25159  starlette-wtf\n\n[15000 rows x 2 columns]\n\nUsing base python's open() and .read() functions: \n\ndownload_count,project\n1346601849,boto3\n670262655,urllib3\n609967137,botocore\n576250793,requests\n563169502,certifi\n533963799,charset-normalizer\n515259652,setuptools\n512857052,idna\n492528430,grpcio-stat\n...\n\n\n\nAnswers\n\nSee code above\nAnswer 2\n…\n\n\n\n\nMatching company names | Elizabeth\nMatch names from data list\n\n# Before you start trying to use Python, try to write down by hand what the \n# algorithm would be.\n\n\nsentence = \"This is a long sentence with lots of words like Google, Rio and Tinto.\"\nprint(sentence)\n\n# Single string, single keyword:\nkeyword = \"Google\"\nmatched = keyword in sentence\n\nprint()\nprint(\"Single keyword\")\nprint(\"Is\", keyword, \"in my sentence?\", matched)\n\n# Single string, multiple keywords\nkeywords = [\"Google\", \"Amazon\"]\n\nprint()\nprint(\"Multiple keywords\")\n\nfor company in keywords:\n    matched = company in sentence\n    print(\"Is\", company, \"in my sentence?\", matched)\n\n\n# Single string, multiple companies with multiple keywords (note the nested keywords for RioTinto)\nkeywords = [[\"Google\"], [\"Amazon\"], [\"Rio-Tinto\", \"Rio\", \"Tinto\", \"RioTinto\", \"Rio Tinto\"]]\n\nprint()\nprint(\"Multiple companies with multiple keywords\")\nfor company in keywords:\n    for variant in company:  \n        matched = variant in sentence\n\n        if matched == True:\n            break\n    \n    print(\"Is\", company[0], \"in my sentence?\", matched)\n\nThis is a long sentence with lots of words like Google, Rio and Tinto.\n\nSingle keyword\nIs Google in my sentence? True\n\nMultiple keywords\nIs Google in my sentence? True\nIs Amazon in my sentence? False\n\nMultiple companies with multiple keywords\nIs Google in my sentence? True\nIs Amazon in my sentence? False\nIs Rio-Tinto in my sentence? True\n\n\n\n# Using string data\nimport pandas as pd\n\ndf = pd.read_csv(\"../Demonstrations/top_modules/spreadsheets/top-pypi-packages.csv\")\n\n# The column \"project\" is a string column\n\n# Let's make a list of keywords.\nkeywords = [\"boto\", \"py\"]\n\n# To check which entries match which keywords\nfor keyword in keywords:\n    matches = df[\"project\"].str.contains(keyword)\n    subset_with_keyword = df[matches == True]\n\n    print(\"The rows with\",keyword, \"are\")\n    print(subset_with_keyword)\n\nThe rows with boto are\n       download_count                             project\n0          1346601849                               boto3\n2           609967137                            botocore\n11          454054215                         aiobotocore\n554          16054951                         boto3-stubs\n566          15361139                      botocore-stubs\n...               ...                                 ...\n14971           25243      botocore-a-la-carte-greengrass\n14974           25236  botocore-a-la-carte-workspaces-web\n14977           25219       types-aiobotocore-securityhub\n14987           25185  types-aiobotocore-servicediscovery\n14991           25182     botocore-a-la-carte-iotsitewise\n\n[533 rows x 2 columns]\nThe rows with py are\n       download_count                        project\n12          453387776                python-dateutil\n15          381826344                          numpy\n16          360961023                         pyyaml\n23          283246117                       pydantic\n24          282364469                      pycparser\n...               ...                            ...\n14969           25252                pytest-splinter\n14972           25242    tencentcloud-sdk-python-acp\n14973           25241                        xrpl-py\n14984           25203               opening-hours-py\n14994           25174  tencentcloud-sdk-python-hasim\n\n[3275 rows x 2 columns]\n\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion 3: Is it possible using Phyton for Facebook data scraping? Particularly related to Posts and their interactions on public Facebook groups | Juddi\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\n# YOU COULD RUN INTO ISSUES AND GET BANNED WITH REQUESTS\nimport requests\n\nr = requests.get(\"https://www.facebook.com/groups/553828734993634/\")\n\ndata = r.content\n\n# MAYBE TRY SELENIUM (or the Python module)\n\n# Talk to Sam Hames\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion 5: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…",
+    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nWhat are your Python use cases? | Cameron\nWhy do you want to / do use Python\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nSome question | Anne\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nHow do I run a regression model to check for regression to the mean on a data set in Excel/CSV? | Duncan\nAdd more details here, then press CTRL + ENTER when you’re done\n\n\nMarkdown in Python outputs | He Yang / Cameron\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n# ONce you've installed markdown\nfrom markdown import markdown\n\n\nAnswers\n\npip install markdown\nAnswer 2\n…\n\n\n\n\nWhere to start with machine learning? | Jessie\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\n\nAnswers\n\nStart with SciKit: https://scikit-learn.org\nThen try Keras: https://keras.io/\nPyTorch: https://pytorch.org/\n\nCheck those website for how to install (e.g. with conda or pip)\n\n\n\nPackaging modules | He Yang\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\nimport final_test_module.test_module as tm\n\ntm.test_function()\n\n\n\nHello!\n\n\n\nAnswers",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Mar 6<sup>th</sup> -- UQ PUG 16"
+      "2025 Apr 3<sup>rd</sup> -- UQ PUG 17"
     ]
-  },
-  {
-    "objectID": "Demonstrations/notebooks/notebooks.html",
-    "href": "Demonstrations/notebooks/notebooks.html",
-    "title": "Jupyter notebooks",
-    "section": "",
-    "text": "The basics\n\nCells (MD vs Python)\nDemo plots\n\nWhat is a kernel? Changing kernel.\nPlatforms - Jupyter notebook vs lab, colab, github codespaces, VS code\nExporting / converting / sharing\n2 + 2\n\n4\nprint(\"Cell 2\")\n\nCell 2\nThe test is formatted based on special characters",
-    "crumbs": [
-      "About us",
-      "Demonstrations",
-      "Notebooks",
-      "Jupyter notebooks"
-    ]
-  },
-  {
-    "objectID": "Demonstrations/notebooks/notebooks.html#heading-2",
-    "href": "Demonstrations/notebooks/notebooks.html#heading-2",
-    "title": "Jupyter notebooks",
-    "section": "Heading 2",
-    "text": "Heading 2\n\nHeading 3 …\nAsterisk for italics Two for bold Three for strong\n~tilde for strikethrough~\n\nfrom markdown import markdown\n\nmarkdown(\"**Boldtest**\")\n\n'&lt;p&gt;&lt;strong&gt;Boldtest&lt;/strong&gt;&lt;/p&gt;'",
-    "crumbs": [
-      "About us",
-      "Demonstrations",
-      "Notebooks",
-      "Jupyter notebooks"
-    ]
-  },
-  {
-    "objectID": "Demonstrations/notebooks/notebooks.html#heading-2-1",
-    "href": "Demonstrations/notebooks/notebooks.html#heading-2-1",
-    "title": "Jupyter notebooks",
-    "section": "Heading 2",
-    "text": "Heading 2\n\nHeading 3 …\nAsterisk for italics Two for bold Three for strong\n~tilde for strikethrough~",
-    "crumbs": [
-      "About us",
-      "Demonstrations",
-      "Notebooks",
-      "Jupyter notebooks"
-    ]
-  },
-  {
-    "objectID": "Demonstrations/notebooks/notebooks.html#maths-detour",
-    "href": "Demonstrations/notebooks/notebooks.html#maths-detour",
-    "title": "Jupyter notebooks",
-    "section": "Maths detour",
-    "text": "Maths detour\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nxs = np.linspace(-10,10,1000)\nys = np.sin(xs)\n\nplt.plot(xs, ys)",
-    "crumbs": [
-      "About us",
-      "Demonstrations",
-      "Notebooks",
-      "Jupyter notebooks"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "UQ Python User Group",
-    "section": "",
-    "text": "Welcome to the UQ Python User Group (UQ PUG). We meet monthly, and our next gathering is on the 3rd of April. We meet in room 12-N109 (Central Library)."
-  },
-  {
-    "objectID": "index.html#about-us",
-    "href": "index.html#about-us",
-    "title": "UQ Python User Group",
-    "section": "About us",
-    "text": "About us\n\nWho are we?\nUQ PUG is a gathering for Python users of any proficiency, to help each other solve problems, share resources and tips, discover new features and hang out as a friendly community.\n\n\nWhen do we meet?\n\nEvery first Thursday of the month from 10:00 am to 11:30am\nIn-person at UQ Central Library 12-N109\nFind the next gathering on the UQ Library Training Page and book in through StudentHub\nContact us at training@library.uq.edu.au for any questions or support"
-  },
-  {
-    "objectID": "index.html#how-it-works",
-    "href": "index.html#how-it-works",
-    "title": "UQ Python User Group",
-    "section": "How it works",
-    "text": "How it works\nEach month, we gather at UQ Central Library to help solve each other’s problems and discover new features. We begin with a brief demonstration before diving into group discussion.\nBring along your python questions, problems, conundrums, opinions and victories to share with the group. We’ll try our best to help you out!"
-  },
-  {
-    "objectID": "index.html#this-website",
-    "href": "index.html#this-website",
-    "title": "UQ Python User Group",
-    "section": "This website",
-    "text": "This website\nOn this website we contain the notebooks from our sessions (currently since Oct 24) and details from specific demonstrations."
-  },
-  {
-    "objectID": "index.html#general-resources",
-    "href": "index.html#general-resources",
-    "title": "UQ Python User Group",
-    "section": "General Resources",
-    "text": "General Resources\nHere are a few links to some general resources.\n\nPython Documentation\nPyPI, the python package repository\nAnaconda, an environment manager with python applications (e.g. Spyder) available\nUQ Training Sessions\nLibrary training email - training@library.uq.edu.au\nOnline courses with LinkedIn Learning (use UQ credentials)\n\n\nDatasets\nWe’ve also got a few datasets to play with. These get used in our library training sessions:\n\n\n\nDataset\nDescription\n\n\n\n\nBMI data\nFake BMI data for five people.\n\n\nPlayers 2024\nA dataset of 2024 soccer players’ clubs, heights and ages.\n\n\nGapminder\nInternational GDP, life expectancy and population statistics.\n\n\n\nFor admin"
   },
   {
     "objectID": "Demonstrations/top_modules/top_modules.html",
@@ -663,151 +472,186 @@
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/17-Apr25.html",
-    "href": "2025 - Current notebooks/17-Apr25.html",
-    "title": "2025 Apr 3rd – UQ PUG 17",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "UQ Python User Group",
+    "section": "",
+    "text": "Welcome to the UQ Python User Group (UQ PUG). We meet monthly, and our next gathering is on the 3rd of April. We meet in room 12-N109 (Central Library)."
+  },
+  {
+    "objectID": "index.html#about-us",
+    "href": "index.html#about-us",
+    "title": "UQ Python User Group",
+    "section": "About us",
+    "text": "About us\n\nWho are we?\nUQ PUG is a gathering for Python users of any proficiency, to help each other solve problems, share resources and tips, discover new features and hang out as a friendly community.\n\n\nWhen do we meet?\n\nEvery first Thursday of the month from 10:00 am to 11:30am\nIn-person at UQ Central Library 12-N109\nFind the next gathering on the UQ Library Training Page and book in through StudentHub\nContact us at training@library.uq.edu.au for any questions or support"
+  },
+  {
+    "objectID": "index.html#how-it-works",
+    "href": "index.html#how-it-works",
+    "title": "UQ Python User Group",
+    "section": "How it works",
+    "text": "How it works\nEach month, we gather at UQ Central Library to help solve each other’s problems and discover new features. We begin with a brief demonstration before diving into group discussion.\nBring along your python questions, problems, conundrums, opinions and victories to share with the group. We’ll try our best to help you out!"
+  },
+  {
+    "objectID": "index.html#this-website",
+    "href": "index.html#this-website",
+    "title": "UQ Python User Group",
+    "section": "This website",
+    "text": "This website\nOn this website we contain the notebooks from our sessions (currently since Oct 24) and details from specific demonstrations."
+  },
+  {
+    "objectID": "index.html#general-resources",
+    "href": "index.html#general-resources",
+    "title": "UQ Python User Group",
+    "section": "General Resources",
+    "text": "General Resources\nHere are a few links to some general resources.\n\nPython Documentation\nPyPI, the python package repository\nAnaconda, an environment manager with python applications (e.g. Spyder) available\nUQ Training Sessions\nLibrary training email - training@library.uq.edu.au\nOnline courses with LinkedIn Learning (use UQ credentials)\n\n\nDatasets\nWe’ve also got a few datasets to play with. These get used in our library training sessions:\n\n\n\nDataset\nDescription\n\n\n\n\nBMI data\nFake BMI data for five people.\n\n\nPlayers 2024\nA dataset of 2024 soccer players’ clubs, heights and ages.\n\n\nGapminder\nInternational GDP, life expectancy and population statistics.\n\n\n\nFor admin"
+  },
+  {
+    "objectID": "Demonstrations/notebooks/notebooks.html",
+    "href": "Demonstrations/notebooks/notebooks.html",
+    "title": "Jupyter notebooks",
+    "section": "",
+    "text": "The basics\n\nCells (MD vs Python)\nDemo plots\n\nWhat is a kernel? Changing kernel.\nPlatforms - Jupyter notebook vs lab, colab, github codespaces, VS code\nExporting / converting / sharing\n2 + 2\n\n4\nprint(\"Cell 2\")\n\nCell 2\nThe test is formatted based on special characters",
+    "crumbs": [
+      "About us",
+      "Demonstrations",
+      "Notebooks",
+      "Jupyter notebooks"
+    ]
+  },
+  {
+    "objectID": "Demonstrations/notebooks/notebooks.html#heading-2",
+    "href": "Demonstrations/notebooks/notebooks.html#heading-2",
+    "title": "Jupyter notebooks",
+    "section": "Heading 2",
+    "text": "Heading 2\n\nHeading 3 …\nAsterisk for italics Two for bold Three for strong\n~tilde for strikethrough~\n\nfrom markdown import markdown\n\nmarkdown(\"**Boldtest**\")\n\n'&lt;p&gt;&lt;strong&gt;Boldtest&lt;/strong&gt;&lt;/p&gt;'",
+    "crumbs": [
+      "About us",
+      "Demonstrations",
+      "Notebooks",
+      "Jupyter notebooks"
+    ]
+  },
+  {
+    "objectID": "Demonstrations/notebooks/notebooks.html#heading-2-1",
+    "href": "Demonstrations/notebooks/notebooks.html#heading-2-1",
+    "title": "Jupyter notebooks",
+    "section": "Heading 2",
+    "text": "Heading 2\n\nHeading 3 …\nAsterisk for italics Two for bold Three for strong\n~tilde for strikethrough~",
+    "crumbs": [
+      "About us",
+      "Demonstrations",
+      "Notebooks",
+      "Jupyter notebooks"
+    ]
+  },
+  {
+    "objectID": "Demonstrations/notebooks/notebooks.html#maths-detour",
+    "href": "Demonstrations/notebooks/notebooks.html#maths-detour",
+    "title": "Jupyter notebooks",
+    "section": "Maths detour",
+    "text": "Maths detour\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nxs = np.linspace(-10,10,1000)\nys = np.sin(xs)\n\nplt.plot(xs, ys)",
+    "crumbs": [
+      "About us",
+      "Demonstrations",
+      "Notebooks",
+      "Jupyter notebooks"
+    ]
+  },
+  {
+    "objectID": "2025 - Current notebooks/16-Mar25.html",
+    "href": "2025 - Current notebooks/16-Mar25.html",
+    "title": "2025 Mar 6th – UQ PUG 16",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general info for how we work and what we do. Below you’ll find the details of this month’s gathering.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Apr 3<sup>rd</sup> -- UQ PUG 17"
+      "2025 Mar 6<sup>th</sup> -- UQ PUG 16"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/17-Apr25.html#overview",
-    "href": "2025 - Current notebooks/17-Apr25.html#overview",
-    "title": "2025 Apr 3rd – UQ PUG 17",
+    "objectID": "2025 - Current notebooks/16-Mar25.html#overview",
+    "href": "2025 - Current notebooks/16-Mar25.html#overview",
+    "title": "2025 Mar 6th – UQ PUG 16",
     "section": "Overview",
-    "text": "Overview\nWelcome to the second PUG for the year! This month we’re taking a look at Jupyter notebooks.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.\n\n# Put any code you'd like to run here!\n\n# For simpler stuff:\nimport scipy.stats as stats\n\n# For more comprehensive modelling\nimport statsmodels.formula.api as smf\n\nimport pandas as pd\n\nimport matplotlib.pyplot as plt\n\n# Bring in my data\ndf = pd.read_csv(\"../datasets/gapminder.csv\")\n\ndf = df[df[\"country\"] == \"Australia\"]\ndf = df[[\"year\", \"pop\"]]\n\n# Perform OLS\nmodel = smf.ols(\"pop ~ year\", data = df)\n\nresults = model.fit()\nresults.summary()\n\nplt.plot(df[\"year\"], results.fittedvalues, \"r\")\nplt.plot(df[\"year\"], df[\"pop\"], \".\")\n\n\nAnswers\n\nYou might find this page useful - from our January training intensive\nThe statsmodels package is your friend here - see how I’ve used it above for an OLS regression. This page has a summary of the functions you can do",
+    "text": "Overview\nWelcome to the second PUG for the year! This month we’ll look go through the most popular Python packages (by download) and explore their most useful features.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Apr 3<sup>rd</sup> -- UQ PUG 17"
+      "2025 Mar 6<sup>th</sup> -- UQ PUG 16"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/17-Apr25.html#introduce-yourself",
-    "href": "2025 - Current notebooks/17-Apr25.html#introduce-yourself",
-    "title": "2025 Apr 3rd – UQ PUG 17",
+    "objectID": "2025 - Current notebooks/16-Mar25.html#introduce-yourself",
+    "href": "2025 - Current notebooks/16-Mar25.html#introduce-yourself",
+    "title": "2025 Mar 6th – UQ PUG 16",
     "section": "Introduce yourself",
-    "text": "Introduce yourself\n\n\n\n\n\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library & SMP\nTo share and learn\n\n\nAnne\nChina / School of the Environment\nInspired by friend\n\n\nHe Yang\nChina / School of the Envirnoment\nInspired by friend\n\n\nJessie\nFaculty of Health\nData analysis\n\n\nGeorgina\nVirology PhD\nearning about machine learning models in Pythonn\n\n\nDuncan\nSPPS\nData Analysis to support school academics/Learn to automate tasks in Winndows",
+    "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library & SMP\nTo share and learn\n\n\nJuddi\nSchool of Communication and Arts\n-\n\n\nDuncan\nSPPS\nTo learn more about Python\n\n\nElizabeth\n-\n-\n\n\nJohn\n-\n-\n\n\nTitus\n-\n-\n\n\nKrystie\n-\n-",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Apr 3<sup>rd</sup> -- UQ PUG 17"
+      "2025 Mar 6<sup>th</sup> -- UQ PUG 16"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/17-Apr25.html#questions",
-    "href": "2025 - Current notebooks/17-Apr25.html#questions",
-    "title": "2025 Apr 3rd – UQ PUG 17",
+    "objectID": "2025 - Current notebooks/16-Mar25.html#questions",
+    "href": "2025 - Current notebooks/16-Mar25.html#questions",
+    "title": "2025 Mar 6th – UQ PUG 16",
     "section": "Questions",
-    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nWhat are your Python use cases? | Cameron\nWhy do you want to / do use Python\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nSome question | Anne\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nHow do I run a regression model to check for regression to the mean on a data set in Excel/CSV? | Duncan\nAdd more details here, then press CTRL + ENTER when you’re done\n\n\nMarkdown in Python outputs | He Yang / Cameron\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n# ONce you've installed markdown\nfrom markdown import markdown\n\n\nAnswers\n\npip install markdown\nAnswer 2\n…\n\n\n\n\nWhere to start with machine learning? | Jessie\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\n\nAnswers\n\nStart with SciKit: https://scikit-learn.org\nThen try Keras: https://keras.io/\nPyTorch: https://pytorch.org/\n\nCheck those website for how to install (e.g. with conda or pip)\n\n\n\nPackaging modules | He Yang\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\nimport final_test_module.test_module as tm\n\ntm.test_function()\n\n\n\nHello!\n\n\n\nAnswers",
+    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nAutomation packages | Duncan\nDo you have any ideas about which popular packages are useful for automation in windows?\n\n# To interact with the filesystem\nimport os\n\n# For copying/renaming/more complex operations\nimport shutil\n\n# To interact with spreadsheets\nimport pandas as pd\n\n# Folder full of spreadsheets\npath = r\"..\\Demonstrations\\top_modules\\spreadsheets\"\n\n# Returns a list of files at the specified folder\nfiles = os.listdir(path)\n\n# Looping will automate for you\nfor file in files:\n    full_path = os.path.join(path, file)\n\n    # Read in any file (using a 'with' means the file automatically closes)\n    with open(full_path) as f:\n        contents = f.read()\n\n    # Read in dataframes (e.g. .csv, .xlsx, see pd.read_... for the possibilities)\n    df = pd.read_csv(full_path)\n\n\nprint(f\"Using pandas' read_csv() function: \\n\\n{df}\")\nprint(f\"\\nUsing base python's open() and .read() functions: \\n\\n{contents[0:200]}\\n...\")\n\nUsing pandas' read_csv() function: \n\n       download_count        project\n0          1346601849          boto3\n1           670262655        urllib3\n2           609967137       botocore\n3           576250793       requests\n4           563169502        certifi\n...               ...            ...\n14995           25173        chilkat\n14996           25169       aioradio\n14997           25165        binilla\n14998           25160   testarchiver\n14999           25159  starlette-wtf\n\n[15000 rows x 2 columns]\n\nUsing base python's open() and .read() functions: \n\ndownload_count,project\n1346601849,boto3\n670262655,urllib3\n609967137,botocore\n576250793,requests\n563169502,certifi\n533963799,charset-normalizer\n515259652,setuptools\n512857052,idna\n492528430,grpcio-stat\n...\n\n\n\nAnswers\n\nSee code above\nAnswer 2\n…\n\n\n\n\nMatching company names | Elizabeth\nMatch names from data list\n\n# Before you start trying to use Python, try to write down by hand what the \n# algorithm would be.\n\n\nsentence = \"This is a long sentence with lots of words like Google, Rio and Tinto.\"\nprint(sentence)\n\n# Single string, single keyword:\nkeyword = \"Google\"\nmatched = keyword in sentence\n\nprint()\nprint(\"Single keyword\")\nprint(\"Is\", keyword, \"in my sentence?\", matched)\n\n# Single string, multiple keywords\nkeywords = [\"Google\", \"Amazon\"]\n\nprint()\nprint(\"Multiple keywords\")\n\nfor company in keywords:\n    matched = company in sentence\n    print(\"Is\", company, \"in my sentence?\", matched)\n\n\n# Single string, multiple companies with multiple keywords (note the nested keywords for RioTinto)\nkeywords = [[\"Google\"], [\"Amazon\"], [\"Rio-Tinto\", \"Rio\", \"Tinto\", \"RioTinto\", \"Rio Tinto\"]]\n\nprint()\nprint(\"Multiple companies with multiple keywords\")\nfor company in keywords:\n    for variant in company:  \n        matched = variant in sentence\n\n        if matched == True:\n            break\n    \n    print(\"Is\", company[0], \"in my sentence?\", matched)\n\nThis is a long sentence with lots of words like Google, Rio and Tinto.\n\nSingle keyword\nIs Google in my sentence? True\n\nMultiple keywords\nIs Google in my sentence? True\nIs Amazon in my sentence? False\n\nMultiple companies with multiple keywords\nIs Google in my sentence? True\nIs Amazon in my sentence? False\nIs Rio-Tinto in my sentence? True\n\n\n\n# Using string data\nimport pandas as pd\n\ndf = pd.read_csv(\"../Demonstrations/top_modules/spreadsheets/top-pypi-packages.csv\")\n\n# The column \"project\" is a string column\n\n# Let's make a list of keywords.\nkeywords = [\"boto\", \"py\"]\n\n# To check which entries match which keywords\nfor keyword in keywords:\n    matches = df[\"project\"].str.contains(keyword)\n    subset_with_keyword = df[matches == True]\n\n    print(\"The rows with\",keyword, \"are\")\n    print(subset_with_keyword)\n\nThe rows with boto are\n       download_count                             project\n0          1346601849                               boto3\n2           609967137                            botocore\n11          454054215                         aiobotocore\n554          16054951                         boto3-stubs\n566          15361139                      botocore-stubs\n...               ...                                 ...\n14971           25243      botocore-a-la-carte-greengrass\n14974           25236  botocore-a-la-carte-workspaces-web\n14977           25219       types-aiobotocore-securityhub\n14987           25185  types-aiobotocore-servicediscovery\n14991           25182     botocore-a-la-carte-iotsitewise\n\n[533 rows x 2 columns]\nThe rows with py are\n       download_count                        project\n12          453387776                python-dateutil\n15          381826344                          numpy\n16          360961023                         pyyaml\n23          283246117                       pydantic\n24          282364469                      pycparser\n...               ...                            ...\n14969           25252                pytest-splinter\n14972           25242    tencentcloud-sdk-python-acp\n14973           25241                        xrpl-py\n14984           25203               opening-hours-py\n14994           25174  tencentcloud-sdk-python-hasim\n\n[3275 rows x 2 columns]\n\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion 3: Is it possible using Phyton for Facebook data scraping? Particularly related to Posts and their interactions on public Facebook groups | Juddi\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\n# YOU COULD RUN INTO ISSUES AND GET BANNED WITH REQUESTS\nimport requests\n\nr = requests.get(\"https://www.facebook.com/groups/553828734993634/\")\n\ndata = r.content\n\n# MAYBE TRY SELENIUM (or the Python module)\n\n# Talk to Sam Hames\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion 5: Question | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Apr 3<sup>rd</sup> -- UQ PUG 17"
+      "2025 Mar 6<sup>th</sup> -- UQ PUG 16"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/22-Oct25.html",
-    "href": "2025 - Current notebooks/22-Oct25.html",
-    "title": "2025 Oct 2nd – UQ PUG 22",
+    "objectID": "2025 - Current notebooks/21-Sep25.html",
+    "href": "2025 - Current notebooks/21-Sep25.html",
+    "title": "2025 Sep 4th – UQ PUG 21",
     "section": "",
     "text": "Welcome to UQ Python User Group! Check out our general info for how we work and what we do. Below you’ll find the details of this month’s gathering.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Oct 2<sup>nd</sup> -- UQ PUG 22"
+      "2025 Sep 4<sup>th</sup> -- UQ PUG 21"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/22-Oct25.html#overview",
-    "href": "2025 - Current notebooks/22-Oct25.html#overview",
-    "title": "2025 Oct 2nd – UQ PUG 22",
+    "objectID": "2025 - Current notebooks/21-Sep25.html#overview",
+    "href": "2025 - Current notebooks/21-Sep25.html#overview",
+    "title": "2025 Sep 4th – UQ PUG 21",
     "section": "Overview",
-    "text": "Overview\nWelcome to the October UQ PUG!.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nIf you’d like to receive regular updates and post questions during the month, join our Teams channel!\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
+    "text": "Overview\nWelcome to the September UQ PUG!. This month we’ll be discussing venv, Python’s virtual environment manager. It’s great and it’s simple and it’s complicated.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nIf you’d like to receive regular updates and post questions during the month, join our Teams channel!\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Oct 2<sup>nd</sup> -- UQ PUG 22"
+      "2025 Sep 4<sup>th</sup> -- UQ PUG 21"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/22-Oct25.html#introduce-yourself",
-    "href": "2025 - Current notebooks/22-Oct25.html#introduce-yourself",
-    "title": "2025 Oct 2nd – UQ PUG 22",
+    "objectID": "2025 - Current notebooks/21-Sep25.html#introduce-yourself",
+    "href": "2025 - Current notebooks/21-Sep25.html#introduce-yourself",
+    "title": "2025 Sep 4th – UQ PUG 21",
     "section": "Introduce yourself",
     "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nName\nOrganisation/School\nReason for coming",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Oct 2<sup>nd</sup> -- UQ PUG 22"
+      "2025 Sep 4<sup>th</sup> -- UQ PUG 21"
     ]
   },
   {
-    "objectID": "2025 - Current notebooks/22-Oct25.html#questions",
-    "href": "2025 - Current notebooks/22-Oct25.html#questions",
-    "title": "2025 Oct 2nd – UQ PUG 22",
+    "objectID": "2025 - Current notebooks/21-Sep25.html#questions",
+    "href": "2025 - Current notebooks/21-Sep25.html#questions",
+    "title": "2025 Sep 4th – UQ PUG 21",
     "section": "Questions",
     "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
-      "2025 Oct 2<sup>nd</sup> -- UQ PUG 22"
-    ]
-  },
-  {
-    "objectID": "2025 - Current notebooks/unused/19-Jun25.html",
-    "href": "2025 - Current notebooks/unused/19-Jun25.html",
-    "title": "2025 July 5st – UQ PUG 19",
-    "section": "",
-    "text": "Welcome to UQ Python User Group! Check out our general info for how we work and what we do. Below you’ll find the details of this month’s gathering.",
-    "crumbs": [
-      "About us",
-      "2025 - Current notebooks",
-      "Unused",
-      "2025 July 5<sup>st</sup> -- UQ PUG 19"
-    ]
-  },
-  {
-    "objectID": "2025 - Current notebooks/unused/19-Jun25.html#overview",
-    "href": "2025 - Current notebooks/unused/19-Jun25.html#overview",
-    "title": "2025 July 5st – UQ PUG 19",
-    "section": "Overview",
-    "text": "Overview\nStay tuned for details about this month’s presentation…\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nWe have moved from a mailing list to a Teams channel! Opt-in to receive PUG updates\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
-    "crumbs": [
-      "About us",
-      "2025 - Current notebooks",
-      "Unused",
-      "2025 July 5<sup>st</sup> -- UQ PUG 19"
-    ]
-  },
-  {
-    "objectID": "2025 - Current notebooks/unused/19-Jun25.html#introduce-yourself",
-    "href": "2025 - Current notebooks/unused/19-Jun25.html#introduce-yourself",
-    "title": "2025 July 5st – UQ PUG 19",
-    "section": "Introduce yourself",
-    "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library & SMP\nTo share and learn",
-    "crumbs": [
-      "About us",
-      "2025 - Current notebooks",
-      "Unused",
-      "2025 July 5<sup>st</sup> -- UQ PUG 19"
-    ]
-  },
-  {
-    "objectID": "2025 - Current notebooks/unused/19-Jun25.html#questions",
-    "href": "2025 - Current notebooks/unused/19-Jun25.html#questions",
-    "title": "2025 July 5st – UQ PUG 19",
-    "section": "Questions",
-    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…",
-    "crumbs": [
-      "About us",
-      "2025 - Current notebooks",
-      "Unused",
-      "2025 July 5<sup>st</sup> -- UQ PUG 19"
+      "2025 Sep 4<sup>th</sup> -- UQ PUG 21"
     ]
   },
   {
