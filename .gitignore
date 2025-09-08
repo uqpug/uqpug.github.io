@@ -1,9 +1,11 @@
 # Local
 dev/
 
+
 # Quarto
 /.quarto/
 /_site/
 
 # .venv
 .venv/
+my_virtual_environment/

@@ -18,7 +18,8 @@ def int_to_ord(n: int, tag: str | None = "sup") -> str:
     else:    
         return f"{n}<{tag}>{ord_suffix}</{tag}>"
 
-
+# TODO
+# 1. Check Dec-Jan process
 
 TODAY = datetime.today()
 CURRENT_YEAR = TODAY.strftime("%y")
@@ -74,7 +75,7 @@ if not any([nb for nb in notebooks if upcoming_month in nb]):
     for r in replacements:
         upcoming_nb_contents = upcoming_nb_contents.replace(*r)
 
-    with open(upcoming_nb_path, "w") as f:
+    with open(upcoming_nb_path, "x") as f:
         f.write(upcoming_nb_contents)
         
 notebooks = [nb for nb in os.listdir(current_dir) if nb[-2:] == "nb"]
@@ -99,9 +100,26 @@ if not any([nb for nb in notebooks if future_month in nb]):
     for r in replacements:
         future_nb_contents = future_nb_contents.replace(*r)
     
-    with open(future_nb_path, "w") as f:
+    with open(future_nb_path, "x") as f:
         f.write(future_nb_contents)
 
 
+# Update homepage with upcoming date
+with open("index.md") as f:
+    index = f.read()
 
-# Build in Dec-Jan process
+upcoming_string = f"{int_to_ord(upcoming_date.day)} of {upcoming_date.strftime("%b")}"
+
+prev_string_i = index.find("<sup>") - 1
+
+if prev_string_i == -2:
+    print("WARNING: Could not update date in index.md. Check manually.")
+
+else:
+    prev_string = index[prev_string_i:prev_string_i+21]
+
+    index = index.replace(prev_string, upcoming_string)
+
+    with open("index.md", "w") as f:
+        f.write(index)
+
