@@ -14,7 +14,7 @@ format:
           </script>
 ---
 
-Welcome to the UQ Python User Group (UQ PUG). We meet monthly, and our next gathering is on the 2<sup>nd</sup> of Oct. We meet in room 12-N109 (Central Library).
+Welcome to the UQ Python User Group (UQ PUG). We meet monthly, and our next gathering is on the 6<sup>th</sup> of Nov. We meet in room 12-N109 (Central Library).
 
 ## About us
 
