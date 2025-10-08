@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -58,7 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -68,14 +68,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../python-logo-only.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-008ab2ea245a0b832ebad88484efdb71.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d58b9a2750f78c4ba5585652ef45bd1c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -103,7 +104,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
@@ -121,7 +122,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -146,6 +147,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">UQ PUG</span>
     </a>
@@ -157,7 +160,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
 <span class="menu-text">About us</span></a>
   </li>  
   <li class="nav-item">
@@ -196,6 +199,10 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
@@ -280,6 +287,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../../2025 - Current notebooks/23-Nov25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025 Nov 6<sup>th</sup> – UQ PUG 23</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../2025 - Current notebooks/24-Dec25.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2025 Dec 4<sup>th</sup> – UQ PUG 24</span></a>
   </div>
 </li>
       </ul>
@@ -419,14 +432,14 @@ window.Quarto = {
 <p><em>According to PyPI’s <a href="https://hugovk.github.io/top-pypi-packages/">most downloaded packages</a> for February 2025</em></p>
 <p>There’s a lot of boring, utility packages. Let’s import the top 15,000, and look at the first 15</p>
 <div id="cell-3" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"spreadsheets/top-pypi-packages.csv"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">15</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 
 
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -436,77 +449,77 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
+<th data-quarto-table-cell-role="th">0</th>
 <td>1346601849</td>
 <td>boto3</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
+<th data-quarto-table-cell-role="th">1</th>
 <td>670262655</td>
 <td>urllib3</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
+<th data-quarto-table-cell-role="th">2</th>
 <td>609967137</td>
 <td>botocore</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
+<th data-quarto-table-cell-role="th">3</th>
 <td>576250793</td>
 <td>requests</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
+<th data-quarto-table-cell-role="th">4</th>
 <td>563169502</td>
 <td>certifi</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
+<th data-quarto-table-cell-role="th">5</th>
 <td>533963799</td>
 <td>charset-normalizer</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">6</td>
+<th data-quarto-table-cell-role="th">6</th>
 <td>515259652</td>
 <td>setuptools</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">7</td>
+<th data-quarto-table-cell-role="th">7</th>
 <td>512857052</td>
 <td>idna</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">8</td>
+<th data-quarto-table-cell-role="th">8</th>
 <td>492528430</td>
 <td>grpcio-status</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">9</td>
+<th data-quarto-table-cell-role="th">9</th>
 <td>479677890</td>
 <td>typing-extensions</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">10</td>
+<th data-quarto-table-cell-role="th">10</th>
 <td>474695177</td>
 <td>packaging</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">11</td>
+<th data-quarto-table-cell-role="th">11</th>
 <td>454054215</td>
 <td>aiobotocore</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">12</td>
+<th data-quarto-table-cell-role="th">12</th>
 <td>453387776</td>
 <td>python-dateutil</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">13</td>
+<th data-quarto-table-cell-role="th">13</th>
 <td>415989804</td>
 <td>s3transfer</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">14</td>
+<th data-quarto-table-cell-role="th">14</th>
 <td>404306024</td>
 <td>six</td>
 </tr>
@@ -552,9 +565,9 @@ window.Quarto = {
 </tbody>
 </table>
 <div id="cell-5" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> df.head(<span class="dv">15</span>)[<span class="st">"download_count"</span>].<span class="bu">sum</span>()</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> df.head(<span class="dv">15</span>)[<span class="st">"download_count"</span>].<span class="bu">sum</span>()</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Together, these packages been downloaded </span><span class="sc">{</span>count<span class="sc">}</span><span class="ss"> times in the last MONTH. That's 8.5 billion downloads!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Together, these packages been downloaded </span><span class="sc">{</span>count<span class="sc">}</span><span class="ss"> times in the last MONTH. That's 8.5 billion downloads!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Together, these packages been downloaded 8502971755 times in the last MONTH. That's 8.5 billion downloads!</code></pre>
 </div>
@@ -562,12 +575,12 @@ window.Quarto = {
 <p>It’s worth pointing out that a lot of these downloads could be automatic - scripts running and restarting, creating virtual environments every time etc.</p>
 <p>So far, the only ones I want to look at are <code>urllib3</code>/<code>requests</code>. Let’s look to the next 15</p>
 <div id="cell-7" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df[<span class="dv">15</span>:<span class="dv">31</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df[<span class="dv">15</span>:<span class="dv">31</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <div>
 
 
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -577,82 +590,82 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">15</td>
+<th data-quarto-table-cell-role="th">15</th>
 <td>381826344</td>
 <td>numpy</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">16</td>
+<th data-quarto-table-cell-role="th">16</th>
 <td>360961023</td>
 <td>pyyaml</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">17</td>
+<th data-quarto-table-cell-role="th">17</th>
 <td>359178671</td>
 <td>s3fs</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">18</td>
+<th data-quarto-table-cell-role="th">18</th>
 <td>355011082</td>
 <td>pip</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">19</td>
+<th data-quarto-table-cell-role="th">19</th>
 <td>336751364</td>
 <td>fsspec</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">20</td>
+<th data-quarto-table-cell-role="th">20</th>
 <td>325104210</td>
 <td>google-api-core</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">21</td>
+<th data-quarto-table-cell-role="th">21</th>
 <td>309681352</td>
 <td>cryptography</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">22</td>
+<th data-quarto-table-cell-role="th">22</th>
 <td>287715421</td>
 <td>cffi</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">23</td>
+<th data-quarto-table-cell-role="th">23</th>
 <td>283246117</td>
 <td>pydantic</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">24</td>
+<th data-quarto-table-cell-role="th">24</th>
 <td>282364469</td>
 <td>pycparser</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">25</td>
+<th data-quarto-table-cell-role="th">25</th>
 <td>278848477</td>
 <td>pandas</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">26</td>
+<th data-quarto-table-cell-role="th">26</th>
 <td>276988719</td>
 <td>attrs</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">27</td>
+<th data-quarto-table-cell-role="th">27</th>
 <td>262452647</td>
 <td>markupsafe</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">28</td>
+<th data-quarto-table-cell-role="th">28</th>
 <td>260586799</td>
 <td>rsa</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">29</td>
+<th data-quarto-table-cell-role="th">29</th>
 <td>252369285</td>
 <td>pyasn1</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">30</td>
+<th data-quarto-table-cell-role="th">30</th>
 <td>251786378</td>
 <td>wheel</td>
 </tr>
@@ -735,10 +748,10 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="requests"><code>requests</code></h2>
 <p>The <code>requests</code> package lets you send HTTP requests. Typically, these are <code>GET</code>, for getting things, and <code>POST</code>, for sending them.</p>
 <div id="cell-10" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> requests.get(<span class="st">"https://uqpug.github.io/"</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>r</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>r</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>&lt;Response [200]&gt;</code></pre>
 </div>
@@ -749,7 +762,7 @@ window.Quarto = {
 <p>Note - if you’re pulling from an API, usually you’ll get JSON code in response. Don’t use <code>r.text</code> there, use <code>r.json()</code>.</p>
 </blockquote>
 <div id="cell-12" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>r.text</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>r.text</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>'&lt;!DOCTYPE html&gt;\n&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"&gt;&lt;head&gt;\n\n&lt;meta charset="utf-8"&gt;\n&lt;meta name="generator" content="quarto-1.6.42"&gt;\n\n&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"&gt;\n\n\n&lt;title&gt;UQ Python User Group (UQ PUG) – UQPUG (Python User Group)&lt;/title&gt;\n&lt;style&gt;\ncode{white-space: pre-wrap;}\nspan.smallcaps{font-variant: small-caps;}\ndiv.columns{display: flex; gap: min(4vw, 1.5em);}\ndiv.column{flex: auto; overflow-x: auto;}\ndiv.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}\nul.task-list{list-style: none;}\nul.task-list li input[type="checkbox"] {\n  width: 0.8em;\n  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ \n  vertical-align: middle;\n}\n&lt;/style&gt;\n\n\n&lt;script src="site_libs/quarto-nav/quarto-nav.js"&gt;&lt;/script&gt;\n&lt;script src="site_libs/quarto-nav/headroom.min.js"&gt;&lt;/script&gt;\n&lt;script src="site_libs/clipboard/clipboard.min.js"&gt;&lt;/script&gt;\n&lt;script src="site_libs/quarto-search/autocomplete.umd.js"&gt;&lt;/script&gt;\n&lt;script src="site_libs/quarto-search/fuse.min.js"&gt;&lt;/script&gt;\n&lt;script src="site_libs/quarto-search/quarto-search.js"&gt;&lt;/script&gt;\n&lt;meta name="quarto:offset" content="./"&gt;\n&lt;script src="site_libs/quarto-html/quarto.js"&gt;&lt;/script&gt;\n&lt;script src="site_libs/quarto-html/popper.min.js"&gt;&lt;/script&gt;\n&lt;script src="site_libs/quarto-html/tippy.umd.min.js"&gt;&lt;/script&gt;\n&lt;script src="site_libs/quarto-html/anchor.min.js"&gt;&lt;/script&gt;\n&lt;link href="site_libs/quarto-html/tippy.css" rel="stylesheet"&gt;\n&lt;link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"&gt;\n&lt;script src="site_libs/bootstrap/bootstrap.min.js"&gt;&lt;/script&gt;\n&lt;link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"&gt;\n&lt;link href="site_libs/bootstrap/bootstrap-a352ab7406acfd56ea2326799fe2b2a3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"&gt;\n&lt;script id="quarto-search-options" type="application/json"&gt;{\n  "location": "navbar",\n  "copy-button": false,\n  "collapse-after": 3,\n  "panel-placement": "end",\n  "type": "overlay",\n  "limit": 50,\n  "keyboard-shortcut": [\n    "f",\n    "/",\n    "s"\n  ],\n  "show-item-context": false,\n  "language": {\n    "search-no-results-text": "No results",\n    "search-matching-documents-text": "matching documents",\n    "search-copy-link-title": "Copy link to search",\n    "search-hide-matches-text": "Hide additional matches",\n    "search-more-match-text": "more match in this document",\n    "search-more-matches-text": "more matches in this document",\n    "search-clear-button-title": "Clear",\n    "search-text-placeholder": "",\n    "search-detached-cancel-button-title": "Cancel",\n    "search-submit-button-title": "Submit",\n    "search-label": "Search"\n  }\n}&lt;/script&gt;\n\n\n&lt;/head&gt;\n\n&lt;body class="nav-sidebar floating nav-fixed"&gt;\n\n&lt;div id="quarto-search-results"&gt;&lt;/div&gt;\n  &lt;header id="quarto-header" class="headroom fixed-top"&gt;\n    &lt;nav class="navbar navbar-expand-lg " data-bs-theme="dark"&gt;\n      &lt;div class="navbar-container container-fluid"&gt;\n      &lt;div class="navbar-brand-container mx-auto"&gt;\n    &lt;a class="navbar-brand" href="./index.html"&gt;\n    &lt;span class="navbar-title"&gt;UQPUG (Python User Group)&lt;/span&gt;\n    &lt;/a&gt;\n  &lt;/div&gt;\n        &lt;div class="quarto-navbar-tools tools-end"&gt;\n&lt;/div&gt;\n          &lt;div id="quarto-search" class="" title="Search"&gt;&lt;/div&gt;\n      &lt;/div&gt; &lt;!-- /container-fluid --&gt;\n    &lt;/nav&gt;\n  &lt;nav class="quarto-secondary-nav"&gt;\n    &lt;div class="container-fluid d-flex"&gt;\n      &lt;button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"&gt;\n        &lt;i class="bi bi-layout-text-sidebar-reverse"&gt;&lt;/i&gt;\n      &lt;/button&gt;\n        &lt;nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"&gt;&lt;ol class="breadcrumb"&gt;&lt;li class="breadcrumb-item"&gt;&lt;a href="./index.html"&gt;General information&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/nav&gt;\n        &lt;a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"&gt;      \n        &lt;/a&gt;\n    &lt;/div&gt;\n  &lt;/nav&gt;\n&lt;/header&gt;\n&lt;!-- content --&gt;\n&lt;div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar"&gt;\n&lt;!-- sidebar --&gt;\n  &lt;nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"&gt;\n    &lt;div class="sidebar-menu-container"&gt; \n    &lt;ul class="list-unstyled mt-1"&gt;\n        &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./index.html" class="sidebar-item-text sidebar-link active"&gt;\n &lt;span class="menu-text"&gt;General information&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n        &lt;li class="sidebar-item sidebar-item-section"&gt;\n      &lt;div class="sidebar-item-container"&gt; \n            &lt;a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true"&gt;\n &lt;span class="menu-text"&gt;Demonstrations&lt;/span&gt;&lt;/a&gt;\n          &lt;a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section"&gt;\n            &lt;i class="bi bi-chevron-right ms-2"&gt;&lt;/i&gt;\n          &lt;/a&gt; \n      &lt;/div&gt;\n      &lt;ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show"&gt;  \n          &lt;li class="sidebar-item sidebar-item-section"&gt;\n      &lt;div class="sidebar-item-container"&gt; \n            &lt;a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false"&gt;\n &lt;span class="menu-text"&gt;Top Modules&lt;/span&gt;&lt;/a&gt;\n          &lt;a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section"&gt;\n            &lt;i class="bi bi-chevron-right ms-2"&gt;&lt;/i&gt;\n          &lt;/a&gt; \n      &lt;/div&gt;\n      &lt;ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 "&gt;  \n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Demonstrations/top_modules/top_modules.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;The most popular Python modules&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n      &lt;/ul&gt;\n  &lt;/li&gt;\n      &lt;/ul&gt;\n  &lt;/li&gt;\n        &lt;li class="sidebar-item sidebar-item-section"&gt;\n      &lt;div class="sidebar-item-container"&gt; \n            &lt;a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true"&gt;\n &lt;span class="menu-text"&gt;Current notebooks - 2025&lt;/span&gt;&lt;/a&gt;\n          &lt;a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section"&gt;\n            &lt;i class="bi bi-chevron-right ms-2"&gt;&lt;/i&gt;\n          &lt;/a&gt; \n      &lt;/div&gt;\n      &lt;ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show"&gt;  \n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Current notebooks - 2025/16-Mar25.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2025 Mar 6&lt;sup&gt;th&lt;/sup&gt; – UQ PUG 16&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n      &lt;/ul&gt;\n  &lt;/li&gt;\n        &lt;li class="sidebar-item sidebar-item-section"&gt;\n      &lt;div class="sidebar-item-container"&gt; \n            &lt;a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true"&gt;\n &lt;span class="menu-text"&gt;Archive - 2024&lt;/span&gt;&lt;/a&gt;\n          &lt;a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section"&gt;\n            &lt;i class="bi bi-chevron-right ms-2"&gt;&lt;/i&gt;\n          &lt;/a&gt; \n      &lt;/div&gt;\n      &lt;ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show"&gt;  \n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Archive - 2024/05-Feb24.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2024 Feb 7&lt;sup&gt;th&lt;/sup&gt; – UQ PUG 5&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Archive - 2024/06-Mar24.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2024 Mar 7&lt;sup&gt;th&lt;/sup&gt; – UQ PUG 6&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Archive - 2024/07-Apr24.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2024 Apr 11&lt;sup&gt;th&lt;/sup&gt; – UQ PUG 7&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Archive - 2024/08-May24.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2024 May 2&lt;sup&gt;nd&lt;/sup&gt; – UQ PUG 8&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Archive - 2024/09-Jul24.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2024 July 4&lt;sup&gt;th&lt;/sup&gt; – UQ PUG 9&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Archive - 2024/12-Oct24.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2024 Oct 3&lt;sup&gt;rd&lt;/sup&gt; – UQ PUG 12&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Archive - 2024/13-Nov24.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2024 Nov 7&lt;sup&gt;th&lt;/sup&gt; – UQ PUG 13&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Archive - 2024/14-Dec24.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2024 Dec 5&lt;sup&gt;th&lt;/sup&gt; – UQ PUG 14&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n      &lt;/ul&gt;\n  &lt;/li&gt;\n        &lt;li class="sidebar-item sidebar-item-section"&gt;\n      &lt;div class="sidebar-item-container"&gt; \n            &lt;a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true"&gt;\n &lt;span class="menu-text"&gt;Archive - 2023&lt;/span&gt;&lt;/a&gt;\n          &lt;a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section"&gt;\n            &lt;i class="bi bi-chevron-right ms-2"&gt;&lt;/i&gt;\n          &lt;/a&gt; \n      &lt;/div&gt;\n      &lt;ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show"&gt;  \n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Archive - 2023/1-Sep23.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2023 Sep 7&lt;sup&gt;th&lt;/sup&gt; – UQ PUG 1&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Archive - 2023/2-Oct23.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2023 Oct 5&lt;sup&gt;th&lt;/sup&gt; – UQ PUG 2&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Archive - 2023/3-Nov23.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2023 Nov 2&lt;sup&gt;nd&lt;/sup&gt; – UQ PUG 3&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n          &lt;li class="sidebar-item"&gt;\n  &lt;div class="sidebar-item-container"&gt; \n  &lt;a href="./Archive - 2023/4-Dec23.html" class="sidebar-item-text sidebar-link"&gt;\n &lt;span class="menu-text"&gt;2023 Dec 7&lt;sup&gt;th&lt;/sup&gt; – UQ PUG 4&lt;/span&gt;&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/li&gt;\n      &lt;/ul&gt;\n  &lt;/li&gt;\n    &lt;/ul&gt;\n    &lt;/div&gt;\n&lt;/nav&gt;\n&lt;div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"&gt;&lt;/div&gt;\n&lt;!-- margin-sidebar --&gt;\n    &lt;div id="quarto-margin-sidebar" class="sidebar margin-sidebar"&gt;\n        &lt;nav id="TOC" role="doc-toc" class="toc-active"&gt;\n    &lt;h2 id="toc-title"&gt;On this page&lt;/h2&gt;\n   \n  &lt;ul&gt;\n  &lt;li&gt;&lt;a href="#about-us" id="toc-about-us" class="nav-link active" data-scroll-target="#about-us"&gt;About us&lt;/a&gt;\n  &lt;ul class="collapse"&gt;\n  &lt;li&gt;&lt;a href="#who-are-we" id="toc-who-are-we" class="nav-link" data-scroll-target="#who-are-we"&gt;Who are we?&lt;/a&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;a href="#when-do-we-meet" id="toc-when-do-we-meet" class="nav-link" data-scroll-target="#when-do-we-meet"&gt;When do we meet?&lt;/a&gt;&lt;/li&gt;\n  &lt;/ul&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works"&gt;How it works&lt;/a&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;a href="#this-website" id="toc-this-website" class="nav-link" data-scroll-target="#this-website"&gt;This website&lt;/a&gt;&lt;/li&gt;\n  &lt;li&gt;&lt;a href="#general-resources" id="toc-general-resources" class="nav-link" data-scroll-target="#general-resources"&gt;General Resources&lt;/a&gt;&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/nav&gt;\n    &lt;/div&gt;\n&lt;!-- main --&gt;\n&lt;main class="content" id="quarto-document-content"&gt;\n\n&lt;header id="title-block-header" class="quarto-title-block default"&gt;\n&lt;div class="quarto-title"&gt;\n&lt;h1 class="title"&gt;UQ Python User Group (UQ PUG)&lt;/h1&gt;\n&lt;/div&gt;\n\n\n\n&lt;div class="quarto-title-meta"&gt;\n\n    \n  \n    \n  &lt;/div&gt;\n  \n\n\n&lt;/header&gt;\n\n\n&lt;p&gt;Welcome to the UQ Python User Group (UQ PUG). We meet monthly, and our next gathering is on the 6th of March. We meet in room 12-N109 (Central Library).&lt;/p&gt;\n&lt;section id="about-us" class="level2"&gt;\n&lt;h2 class="anchored" data-anchor-id="about-us"&gt;About us&lt;/h2&gt;\n&lt;section id="who-are-we" class="level3"&gt;\n&lt;h3 class="anchored" data-anchor-id="who-are-we"&gt;Who are we?&lt;/h3&gt;\n&lt;p&gt;UQ PUG is a &lt;strong&gt;gathering for Python users of any proficiency&lt;/strong&gt;, to help each other solve problems, share resources and tips, discover new features and hang out as a friendly community.&lt;/p&gt;\n&lt;/section&gt;\n&lt;section id="when-do-we-meet" class="level3"&gt;\n&lt;h3 class="anchored" data-anchor-id="when-do-we-meet"&gt;When do we meet?&lt;/h3&gt;\n&lt;ul&gt;\n&lt;li&gt;Every &lt;strong&gt;first Thursday of the month&lt;/strong&gt; from &lt;strong&gt;10:00 am&lt;/strong&gt; to 11:30am&lt;/li&gt;\n&lt;li&gt;In-person at UQ Central Library 12-N109&lt;/li&gt;\n&lt;li&gt;Find the next gathering on the &lt;a href="https://web.library.uq.edu.au/library-services/training#keyword=Python%20User%20Group;campus=;weekstart="&gt;UQ Library Training Page&lt;/a&gt; and book in through StudentHub&lt;/li&gt;\n&lt;li&gt;Contact us at &lt;a href="mailto:training@library.uq.edu.au"&gt;training@library.uq.edu.au&lt;/a&gt; for any questions or support&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/section&gt;\n&lt;/section&gt;\n&lt;section id="how-it-works" class="level2"&gt;\n&lt;h2 class="anchored" data-anchor-id="how-it-works"&gt;How it works&lt;/h2&gt;\n&lt;p&gt;Each month, we gather at UQ Central Library to help solve each other’s problems and discover new features. We begin with a brief demonstration before diving into group discussion.&lt;/p&gt;\n&lt;p&gt;Bring along your python questions, problems, conundrums, opinions and victories to share with the group. We’ll try our best to help you out!&lt;/p&gt;\n&lt;/section&gt;\n&lt;section id="this-website" class="level2"&gt;\n&lt;h2 class="anchored" data-anchor-id="this-website"&gt;This website&lt;/h2&gt;\n&lt;p&gt;On this website we contain the notebooks from our sessions (currently since Oct 24) and details from specific demonstrations.&lt;/p&gt;\n&lt;/section&gt;\n&lt;section id="general-resources" class="level2"&gt;\n&lt;h2 class="anchored" data-anchor-id="general-resources"&gt;General Resources&lt;/h2&gt;\n&lt;p&gt;Here are a few links to some general resources.&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href="https://docs.python.org/3/"&gt;Python Documentation&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href="https://pypi.org/"&gt;PyPI&lt;/a&gt;, the python package repository&lt;/li&gt;\n&lt;li&gt;&lt;a href="https://www.anaconda.com/"&gt;Anaconda&lt;/a&gt;, an environment manager with python applications (e.g.&amp;nbsp;Spyder) available&lt;/li&gt;\n&lt;li&gt;&lt;a href="https://web.library.uq.edu.au/library-services/training"&gt;UQ Training Sessions&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;Library training email - &lt;a href="mailto:training@library.uq.edu.au"&gt;training@library.uq.edu.au&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href="https://au.linkedin.com/learning/"&gt;Online courses&lt;/a&gt; with LinkedIn Learning (use &lt;a href="https://web.library.uq.edu.au/library-services/training/linkedin-learning-online-courses"&gt;UQ credentials&lt;/a&gt;)&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;a href="googlec027a6a2057eb177.html"&gt;For admin&lt;/a&gt;&lt;/p&gt;\n\n\n&lt;/section&gt;\n\n&lt;/main&gt; &lt;!-- /main --&gt;\n&lt;script id="quarto-html-after-body" type="application/javascript"&gt;\nwindow.document.addEventListener("DOMContentLoaded", function (event) {\n  const toggleBodyColorMode = (bsSheetEl) =&gt; {\n    const mode = bsSheetEl.getAttribute("data-mode");\n    const bodyEl = window.document.querySelector("body");\n    if (mode === "dark") {\n      bodyEl.classList.add("quarto-dark");\n      bodyEl.classList.remove("quarto-light");\n    } else {\n      bodyEl.classList.add("quarto-light");\n      bodyEl.classList.remove("quarto-dark");\n    }\n  }\n  const toggleBodyColorPrimary = () =&gt; {\n    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");\n    if (bsSheetEl) {\n      toggleBodyColorMode(bsSheetEl);\n    }\n  }\n  toggleBodyColorPrimary();  \n  const icon = "\ue9cb";\n  const anchorJS = new window.AnchorJS();\n  anchorJS.options = {\n    placement: \'right\',\n    icon: icon\n  };\n  anchorJS.add(\'.anchored\');\n  const isCodeAnnotation = (el) =&gt; {\n    for (const clz of el.classList) {\n      if (clz.startsWith(\'code-annotation-\')) {                     \n        return true;\n      }\n    }\n    return false;\n  }\n  const onCopySuccess = function(e) {\n    // button target\n    const button = e.trigger;\n    // don\'t keep focus\n    button.blur();\n    // flash "checked"\n    button.classList.add(\'code-copy-button-checked\');\n    var currentTitle = button.getAttribute("title");\n    button.setAttribute("title", "Copied!");\n    let tooltip;\n    if (window.bootstrap) {\n      button.setAttribute("data-bs-toggle", "tooltip");\n      button.setAttribute("data-bs-placement", "left");\n      button.setAttribute("data-bs-title", "Copied!");\n      tooltip = new bootstrap.Tooltip(button, \n        { trigger: "manual", \n          customClass: "code-copy-button-tooltip",\n          offset: [0, -8]});\n      tooltip.show();    \n    }\n    setTimeout(function() {\n      if (tooltip) {\n        tooltip.hide();\n        button.removeAttribute("data-bs-title");\n        button.removeAttribute("data-bs-toggle");\n        button.removeAttribute("data-bs-placement");\n      }\n      button.setAttribute("title", currentTitle);\n      button.classList.remove(\'code-copy-button-checked\');\n    }, 1000);\n    // clear code selection\n    e.clearSelection();\n  }\n  const getTextToCopy = function(trigger) {\n      const codeEl = trigger.previousElementSibling.cloneNode(true);\n      for (const childEl of codeEl.children) {\n        if (isCodeAnnotation(childEl)) {\n          childEl.remove();\n        }\n      }\n      return codeEl.innerText;\n  }\n  const clipboard = new window.ClipboardJS(\'.code-copy-button:not([data-in-quarto-modal])\', {\n    text: getTextToCopy\n  });\n  clipboard.on(\'success\', onCopySuccess);\n  if (window.document.getElementById(\'quarto-embedded-source-code-modal\')) {\n    const clipboardModal = new window.ClipboardJS(\'.code-copy-button[data-in-quarto-modal]\', {\n      text: getTextToCopy,\n      container: window.document.getElementById(\'quarto-embedded-source-code-modal\')\n    });\n    clipboardModal.on(\'success\', onCopySuccess);\n  }\n    var localhostRegex = new RegExp(/^(?:http|https):\\/\\/localhost\\:?[0-9]*\\//);\n    var mailtoRegex = new RegExp(/^mailto:/);\n      var filterRegex = new RegExp("https:\\/\\/uqpug\\.github\\.io\\/");\n    var isInternal = (href) =&gt; {\n        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);\n    }\n    // Inspect non-navigation links and adorn them if external\n \tvar links = window.document.querySelectorAll(\'a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)\');\n    for (var i=0; i&lt;links.length; i++) {\n      const link = links[i];\n      if (!isInternal(link.href)) {\n        // undo the damage that might have been done by quarto-nav.js in the case of\n        // links that we want to consider external\n        if (link.dataset.originalHref !== undefined) {\n          link.href = link.dataset.originalHref;\n        }\n      }\n    }\n  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {\n    const config = {\n      allowHTML: true,\n      maxWidth: 500,\n      delay: 100,\n      arrow: false,\n      appendTo: function(el) {\n          return el.parentElement;\n      },\n      interactive: true,\n      interactiveBorder: 10,\n      theme: \'quarto\',\n      placement: \'bottom-start\',\n    };\n    if (contentFn) {\n      config.content = contentFn;\n    }\n    if (onTriggerFn) {\n      config.onTrigger = onTriggerFn;\n    }\n    if (onUntriggerFn) {\n      config.onUntrigger = onUntriggerFn;\n    }\n    window.tippy(el, config); \n  }\n  const noterefs = window.document.querySelectorAll(\'a[role="doc-noteref"]\');\n  for (var i=0; i&lt;noterefs.length; i++) {\n    const ref = noterefs[i];\n    tippyHover(ref, function() {\n      // use id or data attribute instead here\n      let href = ref.getAttribute(\'data-footnote-href\') || ref.getAttribute(\'href\');\n      try { href = new URL(href).hash; } catch {}\n      const id = href.replace(/^#\\/?/, "");\n      const note = window.document.getElementById(id);\n      if (note) {\n        return note.innerHTML;\n      } else {\n        return "";\n      }\n    });\n  }\n  const xrefs = window.document.querySelectorAll(\'a.quarto-xref\');\n  const processXRef = (id, note) =&gt; {\n    // Strip column container classes\n    const stripColumnClz = (el) =&gt; {\n      el.classList.remove("page-full", "page-columns");\n      if (el.children) {\n        for (const child of el.children) {\n          stripColumnClz(child);\n        }\n      }\n    }\n    stripColumnClz(note)\n    if (id === null || id.startsWith(\'sec-\')) {\n      // Special case sections, only their first couple elements\n      const container = document.createElement("div");\n      if (note.children &amp;&amp; note.children.length &gt; 2) {\n        container.appendChild(note.children[0].cloneNode(true));\n        for (let i = 1; i &lt; note.children.length; i++) {\n          const child = note.children[i];\n          if (child.tagName === "P" &amp;&amp; child.innerText === "") {\n            continue;\n          } else {\n            container.appendChild(child.cloneNode(true));\n            break;\n          }\n        }\n        if (window.Quarto?.typesetMath) {\n          window.Quarto.typesetMath(container);\n        }\n        return container.innerHTML\n      } else {\n        if (window.Quarto?.typesetMath) {\n          window.Quarto.typesetMath(note);\n        }\n        return note.innerHTML;\n      }\n    } else {\n      // Remove any anchor links if they are present\n      const anchorLink = note.querySelector(\'a.anchorjs-link\');\n      if (anchorLink) {\n        anchorLink.remove();\n      }\n      if (window.Quarto?.typesetMath) {\n        window.Quarto.typesetMath(note);\n      }\n      if (note.classList.contains("callout")) {\n        return note.outerHTML;\n      } else {\n        return note.innerHTML;\n      }\n    }\n  }\n  for (var i=0; i&lt;xrefs.length; i++) {\n    const xref = xrefs[i];\n    tippyHover(xref, undefined, function(instance) {\n      instance.disable();\n      let url = xref.getAttribute(\'href\');\n      let hash = undefined; \n      if (url.startsWith(\'#\')) {\n        hash = url;\n      } else {\n        try { hash = new URL(url).hash; } catch {}\n      }\n      if (hash) {\n        const id = hash.replace(/^#\\/?/, "");\n        const note = window.document.getElementById(id);\n        if (note !== null) {\n          try {\n            const html = processXRef(id, note.cloneNode(true));\n            instance.setContent(html);\n          } finally {\n            instance.enable();\n            instance.show();\n          }\n        } else {\n          // See if we can fetch this\n          fetch(url.split(\'#\')[0])\n          .then(res =&gt; res.text())\n          .then(html =&gt; {\n            const parser = new DOMParser();\n            const htmlDoc = parser.parseFromString(html, "text/html");\n            const note = htmlDoc.getElementById(id);\n            if (note !== null) {\n              const html = processXRef(id, note);\n              instance.setContent(html);\n            } \n          }).finally(() =&gt; {\n            instance.enable();\n            instance.show();\n          });\n        }\n      } else {\n        // See if we can fetch a full url (with no hash to target)\n        // This is a special case and we should probably do some content thinning / targeting\n        fetch(url)\n        .then(res =&gt; res.text())\n        .then(html =&gt; {\n          const parser = new DOMParser();\n          const htmlDoc = parser.parseFromString(html, "text/html");\n          const note = htmlDoc.querySelector(\'main.content\');\n          if (note !== null) {\n            // This should only happen for chapter cross references\n            // (since there is no id in the URL)\n            // remove the first header\n            if (note.children.length &gt; 0 &amp;&amp; note.children[0].tagName === "HEADER") {\n              note.children[0].remove();\n            }\n            const html = processXRef(null, note);\n            instance.setContent(html);\n          } \n        }).finally(() =&gt; {\n          instance.enable();\n          instance.show();\n        });\n      }\n    }, function(instance) {\n    });\n  }\n      let selectedAnnoteEl;\n      const selectorForAnnotation = ( cell, annotation) =&gt; {\n        let cellAttr = \'data-code-cell="\' + cell + \'"\';\n        let lineAttr = \'data-code-annotation="\' +  annotation + \'"\';\n        const selector = \'span[\' + cellAttr + \'][\' + lineAttr + \']\';\n        return selector;\n      }\n      const selectCodeLines = (annoteEl) =&gt; {\n        const doc = window.document;\n        const targetCell = annoteEl.getAttribute("data-target-cell");\n        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");\n        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));\n        const lines = annoteSpan.getAttribute("data-code-lines").split(",");\n        const lineIds = lines.map((line) =&gt; {\n          return targetCell + "-" + line;\n        })\n        let top = null;\n        let height = null;\n        let parent = null;\n        if (lineIds.length &gt; 0) {\n            //compute the position of the single el (top and bottom and make a div)\n            const el = window.document.getElementById(lineIds[0]);\n            top = el.offsetTop;\n            height = el.offsetHeight;\n            parent = el.parentElement.parentElement;\n          if (lineIds.length &gt; 1) {\n            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);\n            const bottom = lastEl.offsetTop + lastEl.offsetHeight;\n            height = bottom - top;\n          }\n          if (top !== null &amp;&amp; height !== null &amp;&amp; parent !== null) {\n            // cook up a div (if necessary) and position it \n            let div = window.document.getElementById("code-annotation-line-highlight");\n            if (div === null) {\n              div = window.document.createElement("div");\n              div.setAttribute("id", "code-annotation-line-highlight");\n              div.style.position = \'absolute\';\n              parent.appendChild(div);\n            }\n            div.style.top = top - 2 + "px";\n            div.style.height = height + 4 + "px";\n            div.style.left = 0;\n            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");\n            if (gutterDiv === null) {\n              gutterDiv = window.document.createElement("div");\n              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");\n              gutterDiv.style.position = \'absolute\';\n              const codeCell = window.document.getElementById(targetCell);\n              const gutter = codeCell.querySelector(\'.code-annotation-gutter\');\n              gutter.appendChild(gutterDiv);\n            }\n            gutterDiv.style.top = top - 2 + "px";\n            gutterDiv.style.height = height + 4 + "px";\n          }\n          selectedAnnoteEl = annoteEl;\n        }\n      };\n      const unselectCodeLines = () =&gt; {\n        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];\n        elementsIds.forEach((elId) =&gt; {\n          const div = window.document.getElementById(elId);\n          if (div) {\n            div.remove();\n          }\n        });\n        selectedAnnoteEl = undefined;\n      };\n        // Handle positioning of the toggle\n    window.addEventListener(\n      "resize",\n      throttle(() =&gt; {\n        elRect = undefined;\n        if (selectedAnnoteEl) {\n          selectCodeLines(selectedAnnoteEl);\n        }\n      }, 10)\n    );\n    function throttle(fn, ms) {\n    let throttle = false;\n    let timer;\n      return (...args) =&gt; {\n        if(!throttle) { // first call gets through\n            fn.apply(this, args);\n            throttle = true;\n        } else { // all the others get throttled\n            if(timer) clearTimeout(timer); // cancel #2\n            timer = setTimeout(() =&gt; {\n              fn.apply(this, args);\n              timer = throttle = false;\n            }, ms);\n        }\n      };\n    }\n      // Attach click handler to the DT\n      const annoteDls = window.document.querySelectorAll(\'dt[data-target-cell]\');\n      for (const annoteDlNode of annoteDls) {\n        annoteDlNode.addEventListener(\'click\', (event) =&gt; {\n          const clickedEl = event.target;\n          if (clickedEl !== selectedAnnoteEl) {\n            unselectCodeLines();\n            const activeEl = window.document.querySelector(\'dt[data-target-cell].code-annotation-active\');\n            if (activeEl) {\n              activeEl.classList.remove(\'code-annotation-active\');\n            }\n            selectCodeLines(clickedEl);\n            clickedEl.classList.add(\'code-annotation-active\');\n          } else {\n            // Unselect the line\n            unselectCodeLines();\n            clickedEl.classList.remove(\'code-annotation-active\');\n          }\n        });\n      }\n  const findCites = (el) =&gt; {\n    const parentEl = el.parentElement;\n    if (parentEl) {\n      const cites = parentEl.dataset.cites;\n      if (cites) {\n        return {\n          el,\n          cites: cites.split(\' \')\n        };\n      } else {\n        return findCites(el.parentElement)\n      }\n    } else {\n      return undefined;\n    }\n  };\n  var bibliorefs = window.document.querySelectorAll(\'a[role="doc-biblioref"]\');\n  for (var i=0; i&lt;bibliorefs.length; i++) {\n    const ref = bibliorefs[i];\n    const citeInfo = findCites(ref);\n    if (citeInfo) {\n      tippyHover(citeInfo.el, function() {\n        var popup = window.document.createElement(\'div\');\n        citeInfo.cites.forEach(function(cite) {\n          var citeDiv = window.document.createElement(\'div\');\n          citeDiv.classList.add(\'hanging-indent\');\n          citeDiv.classList.add(\'csl-entry\');\n          var biblioDiv = window.document.getElementById(\'ref-\' + cite);\n          if (biblioDiv) {\n            citeDiv.innerHTML = biblioDiv.innerHTML;\n          }\n          popup.appendChild(citeDiv);\n        });\n        return popup.innerHTML;\n      });\n    }\n  }\n});\n&lt;/script&gt;\n&lt;/div&gt; &lt;!-- /content --&gt;\n\n\n\n\n&lt;/body&gt;&lt;/html&gt;'</code></pre>
 </div>
@@ -761,26 +774,26 @@ window.Quarto = {
 <p>The <code>numpy</code> package is huge. There’s far too much to cover. But we’ll take a look two basics.</p>
 <p>The first is arrays, a vector-like object that beats lists:</p>
 <div id="cell-15" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>array([1, 2, 3, 4])</code></pre>
 </div>
 </div>
 <div id="cell-16" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>basic_list <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>basic_list <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>basic_list <span class="op">*</span> <span class="dv">2</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># This is annoying!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># This is annoying!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>[1, 2, 3, 4, 1, 2, 3, 4]</code></pre>
 </div>
 </div>
 <p>Why does it beat lists? Watch:</p>
 <div id="cell-18" class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]<span class="op">*</span><span class="dv">3</span>)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>])<span class="op">*</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]<span class="op">*</span><span class="dv">3</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>])<span class="op">*</span><span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4]
 [ 3  6  9 12]</code></pre>
@@ -788,11 +801,11 @@ window.Quarto = {
 </div>
 <p>Arrays can be multidimensional - matrices or tensors!</p>
 <div id="cell-20" class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>top_row <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>bottom_row <span class="op">=</span> [<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]</span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>np.array([top_row, bottom_row])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>np.array([top_row, bottom_row])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <pre><code>array([[1, 2, 3],
        [4, 5, 6]])</code></pre>
@@ -802,10 +815,10 @@ window.Quarto = {
 <p><span class="math display">\[\begin{pmatrix}1&amp;2&amp;3\\4&amp;5&amp;6\end{pmatrix}\begin{pmatrix}1&amp;2\\3&amp;4\\5&amp;6\end{pmatrix}\]</span></p>
 <p>We use the <code>@</code> symbol to denote matrix multiplication (with <code>numpy</code>)</p>
 <div id="cell-22" class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>],[<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]])</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>],[<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]])</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">2</span>],[<span class="dv">3</span>,<span class="dv">4</span>],[<span class="dv">5</span>,<span class="dv">6</span>]])</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>A <span class="op">@</span> B</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>A <span class="op">@</span> B</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>array([[22, 28],
        [49, 64]])</code></pre>
@@ -814,12 +827,12 @@ window.Quarto = {
 <p>You can also create really long arrays. This is useful for graphing. Using <code>np.arange(start, stop, interaval)</code>, and <code>matplotlib.pyplot</code> to plot,</p>
 <p><span class="math display">\[ y = \frac{\cos(2π\times x)}{x} \]</span></p>
 <div id="cell-24" class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="fl">0.1</span>, <span class="dv">10</span>, <span class="fl">0.0001</span>)</span>
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.sin(<span class="dv">2</span><span class="op">*</span>np.pi<span class="op">*</span>x) <span class="op">/</span> x</span>
 <span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>plt.plot(x,y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>plt.plot(x,y)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -838,22 +851,22 @@ window.Quarto = {
 <p><span class="math display">\[\text{Key} + \text{Token} = \text{Secret}\]</span></p>
 <p>We make a key that can be used to generate tokens (i.e.&nbsp;encrypted messages). Then, you use the same key to decode the message. Fernet is one technique to do it:</p>
 <div id="cell-26" class="cell" data-execution_count="14">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> cryptography.fernet <span class="im">import</span> Fernet</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> cryptography.fernet <span class="im">import</span> Fernet</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>key <span class="op">=</span> Fernet.generate_key()</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>key</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>key</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
 <pre><code>b'YraYOb2WUiH67-h7s0yP6I-fIJh1Yr6V8f-KV5ahfPE='</code></pre>
 </div>
 </div>
 <p>Now that we have a key, we store it into a <code>Fernet</code> object. Then, we turn our secret into a token:</p>
 <div id="cell-28" class="cell" data-execution_count="15">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Store the key</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Store the key</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> Fernet(key)</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Encrypt our message</span></span>
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>token <span class="op">=</span> f.encrypt(<span class="st">b"my secrets"</span>)</span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>token</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>token</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>b'gAAAAABn03Rf_Sb6onZ48Q3haIiW_u41a62snfHj402ncke3fYypzqv5KogwL3XpUP_Sxps362YLsaW47qcThgXD2oZvwYhsdw=='</code></pre>
 </div>
@@ -863,7 +876,7 @@ window.Quarto = {
 </blockquote>
 <p>Finally, we use the key (stored in <code>f</code>) to decrypt the message from the token</p>
 <div id="cell-30" class="cell" data-execution_count="16">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>f.decrypt(token)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>f.decrypt(token)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>b'my secrets'</code></pre>
 </div>
@@ -924,13 +937,14 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
