@@ -388,7 +388,7 @@
     "href": "2025 - Current notebooks/22-Oct25.html#overview",
     "title": "2025 Oct 2nd – UQ PUG 22",
     "section": "Overview",
-    "text": "Overview\nWelcome to the October UQ PUG!.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nIf you’d like to receive regular updates and post questions during the month, join our Teams channel!\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
+    "text": "Overview\nWelcome to the October UQ PUG! This month we discussed geopandas, a Python package for managing geospatial data. See their\n\nDocumentation\nGetting started\n\nAs well as this helpful list of Python module (nick)naming conventions.\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nIf you’d like to receive regular updates and post questions during the month, join our Teams channel!\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
@@ -400,7 +400,7 @@
     "href": "2025 - Current notebooks/22-Oct25.html#introduce-yourself",
     "title": "2025 Oct 2nd – UQ PUG 22",
     "section": "Introduce yourself",
-    "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nName\nOrganisation/School\nReason for coming",
+    "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nSteph\nLibrary\nHere to help and learn!\n\n\nNick\nLibrary\nHere to help and learn!\n\n\nPrince\nSBMS\nCompleting PhD in cancer biology\n\n\nRuly\nChemical Engineering\n.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
@@ -412,7 +412,7 @@
     "href": "2025 - Current notebooks/22-Oct25.html#questions",
     "title": "2025 Oct 2nd – UQ PUG 22",
     "section": "Questions",
-    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…",
+    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion 1: GenX and Julia\nWe discussed using the GenX, Julia package. Julia is a relatively new and increasingly popular Python-like language due to its performance capabilities.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
@@ -719,7 +719,7 @@
     "href": "2025 - Current notebooks/23-Nov25.html#overview",
     "title": "2025 Nov 6th – UQ PUG 23",
     "section": "Overview",
-    "text": "Overview\nWelcome to the November UQ PUG!\n\nStructure\n\nWe start today by adding our names to the table below\nAdd your questions to this page\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nIf you’d like to receive regular updates and post questions during the month, join our Teams channel!\n\n\nHow to use this document\nThis is a Jupyter Notebook, a document format where everything is separated into cells. Each cell contains either markdown, or python.\n\nThe markdown cells allow you to write formatted text\nThe python cells allow you to write AND run python\n\n\nA few tips\n\nDouble click on a cell to edit it\nCTRL + ENTER to run a cell\nPress + Code or + Markdown in the top menu to create new cells. Alternatively, press the buttons between cells\n\n\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
+    "text": "Overview\nWelcome to the November UQ PUG! This month we discuss Dash, a “low-code framework for rapidly building data apps in Python”.\n\nStructure\nWe’ll work from an interactive document today, so please join in. Notes will then be transferred to this page.\n\nWe start today by adding our names\nThen, add your questions to the document\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nIf you’d like to receive regular updates and post questions during the month, join our Teams channel!\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
