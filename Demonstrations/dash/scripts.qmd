@@ -1,0 +1,22 @@
+# Using `Dash`
+
+In Nov25, we had a demo on using [`Dash`](https://dash.plotly.com/) to create webapps.
+
+:::{.callout-note collapse="true"}
+# [app.py](app.py)
+This is the script we built.
+
+```python
+{{< include _app.py >}}
+```
+:::
+
+:::{.callout-note collapse="true"}
+# [app_fancy.py](app_fancy.py)
+This is a nicer looking dashboard demonstrating some of the things you could do to fix up the formatting.
+
+```python
+{{< include _app_fancy.py >}}
+```
+:::
+
