@@ -520,6 +520,19 @@
     ]
   },
   {
+    "objectID": "Demonstrations/dash/scripts.html",
+    "href": "Demonstrations/dash/scripts.html",
+    "title": "Using Dash",
+    "section": "",
+    "text": "Using Dash\nIn Nov25, we had a demo on using Dash to create webapps.\n\n\n\n\n\n\nNoteapp.py\n\n\n\n\n\nThis is the script we built.\nfrom dash import Dash, html, dash_table, dcc, callback, Output, Input\nimport pandas as pd\nimport seaborn as sns\nimport plotly.express as px\n\ndf = pd.read_csv(\"datasets/Players2024.csv\")\n\napp = Dash()\n\napp.layout = [\n    html.Div(children=\"Players 2024.csv data\"),\n    dcc.RadioItems(options=df[\"positions\"].unique(), value=\"Attack\", id=\"radio_button\"),\n    dash_table.DataTable(data=df.to_dict(\"records\"), page_size=10, id=\"table\"),\n    dcc.Graph(figure=sns.relplot(df, x=\"age\", y=\"height_cm\")),\n]\n\n\n@callback(\n    Output(component_id=\"table\", component_property=\"data\"),\n    Input(component_id=\"radio_button\", component_property=\"value\"),\n)\ndef update_table(position_chosen):\n    return df[df[\"positions\"] == position_chosen].to_dict(\"records\")\n\n\napp.run(debug=True)\n\n\n\n\n\n\n\n\n\nNoteapp_fancy.py\n\n\n\n\n\nThis is a nicer looking dashboard demonstrating some of the things you could do to fix up the formatting.\nfrom dash import Dash, html, dash_table, dcc, callback, Output, Input\nimport pandas as pd\nimport plotly.express as px\nimport dash_bootstrap_components as dbc\n\ndf = pd.read_csv(\"datasets/Players2024.csv\")\n\ndf = df[df[\"positions\"] != \"Missing\"]\ndf = df[df[\"height_cm\"] &gt; 100]\n\napp = Dash()\n\nexternal_stylesheets = [dbc.themes.CERULEAN]\napp = Dash(__name__, external_stylesheets=external_stylesheets)\n\napp.layout = dbc.Container(\n    [\n        dbc.Row(\n            [\n                html.Div(children=\"Players2024.csv data\"),\n            ]\n        ),\n        dbc.Row(\n            [\n                dbc.RadioItems(\n                    options=df[\"positions\"].unique(), value=\"Attack\", id=\"radio_button\"\n                ),\n            ]\n        ),\n        dbc.Row(\n            [\n                dbc.Col(\n                    [\n                        dash_table.DataTable(\n                            data=None,\n                            page_size=10,\n                            style_table={\"overflowX\": \"auto\"},\n                            id=\"table\",\n                        ),\n                    ],\n                    width=6,\n                ),\n                dbc.Col(\n                    [\n                        dcc.Graph(figure={}, id=\"graph\"),\n                    ],\n                    width=6,\n                ),\n            ]\n        ),\n    ],\n    fluid=True,\n)\n\n\n# Build in the callback(s)\n@callback(\n    Output(component_id=\"graph\", component_property=\"figure\"),\n    Input(component_id=\"radio_button\", component_property=\"value\"),\n)\ndef update_graph(position_chosen):\n    position = df[df[\"positions\"] == position_chosen]\n    fig = px.scatter(position, \"age\", \"height_cm\", range_y=[150, 210])\n    return fig\n\n\n@callback(\n    Output(component_id=\"table\", component_property=\"data\"),\n    Input(component_id=\"radio_button\", component_property=\"value\"),\n)\ndef update_table(position_chosen):\n    return df[df[\"positions\"] == position_chosen].to_dict(\"records\")\n\n\nif __name__ == \"__main__\":\n    app.run(debug=True)",
+    "crumbs": [
+      "About us",
+      "Demonstrations",
+      "Dash",
+      "Using `Dash`"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "UQ Python User Group",
@@ -719,7 +732,7 @@
     "href": "2025 - Current notebooks/23-Nov25.html#overview",
     "title": "2025 Nov 6th – UQ PUG 23",
     "section": "Overview",
-    "text": "Overview\nWelcome to the November UQ PUG! This month we discuss Dash, a “low-code framework for rapidly building data apps in Python”.\n\nStructure\nWe’ll work from an interactive document today, so please join in. Notes will then be transferred to this page.\n\nWe start today by adding our names\nThen, add your questions to the document\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nIf you’d like to receive regular updates and post questions during the month, join our Teams channel!\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
+    "text": "Overview\nWelcome to the November UQ PUG! This month we discuss Dash, a “low-code framework for rapidly building data apps in Python”.\nTo see details of the demonstration, go to the dedicated page.\n\nStructure\nWe’ll work from an interactive document today, so please join in. Notes will then be transferred to this page.\n\nWe start today by adding our names\nThen, add your questions to the document\nThis month’s presentation\nFinally, we spend the rest of the session answering the questions you’ve brought!\n\n\n\nTeams\nIf you’d like to receive regular updates and post questions during the month, join our Teams channel!\n\n\nTraining Resources\nWe offer Python training sessions and resources, you can find our introductory guide here.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
@@ -731,7 +744,7 @@
     "href": "2025 - Current notebooks/23-Nov25.html#introduce-yourself",
     "title": "2025 Nov 6th – UQ PUG 23",
     "section": "Introduce yourself",
-    "text": "Introduce yourself\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nName\nOrganisation/School\nReason for coming",
+    "text": "Introduce yourself\n\n\n\n\n\n\n\n\nWhat’s your name?\nWhere are you from?\nWhy are you here?\n\n\n\n\nCameron\nUQ Library + SMP\nTo help and share\n\n\nClarrisa Womack\nUQ 2024 BSc (Bioinformatics) graduate\nKeep up to date with Python\n\n\nCollins Adoko\nUQ PhD student started RQ2 2025\nBasically to learn some programming skills for my numerical modelling projects\n\n\nAn\nPhD student of ADP\nTo learn Python for data analysis\n\n\nXuetong\nPhD student AGFS\nTo learn how to process my metabolomic data\n\n\nElliot\nPhD studnet chemical engineering\nAnalysing high frequency time series data in Python\n\n\nEmma\nUQ student psychological science\nlearning programming for data analysis\n\n\nSteph\nTech trainer at the library, previously in plant science\n$ $",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",
@@ -743,7 +756,7 @@
     "href": "2025 - Current notebooks/23-Nov25.html#questions",
     "title": "2025 Nov 6th – UQ PUG 23",
     "section": "Questions",
-    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…\n\n\n\n\nQuestion | Name\nAdd more details here, then press CTRL + ENTER when you’re done\n\n# Put any code you'd like to run here!\n\n\nAnswers\n\nAnswer 1\nAnswer 2\n…",
+    "text": "Questions\nIf you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.\nIf you think you can help, feel free to contribute to the answers section!\n\nLoad data from UQ RDM to Dash? | Elliot\nIs it possible for it to load data directly from UQ RDM to dash using some kind of security protocol?\n\nAnswers\n\nPossibly? Might be tricky, need an API - ask RCC as they connect HPCs to RDM. They a weekly drop-in session called “Hacky Hour” https://uqz.zoom.us/j/84792230624, every Tuesday, 1 pm.\n\n\n\n\nAny suggestions on exporting / publishing dashboards? | Steph\n\nAnswers\n\nhttps://dash.plotly.com/deployment - there’s a free cloud service called Plotly Cloud you can deploy to. Up to 80MiB.",
     "crumbs": [
       "About us",
       "2025 - Current notebooks",

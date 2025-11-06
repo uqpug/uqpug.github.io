@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -185,12 +150,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Notebooks</span></a>
+ <span class="menu-text">Dash</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Demonstrations/dash/scripts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using <code>Dash</code></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Notebooks</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Demonstrations/notebooks/notebooks.html" class="sidebar-item-text sidebar-link">
@@ -201,13 +183,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">Top Modules</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Demonstrations/top_modules/top_modules.html" class="sidebar-item-text sidebar-link">
@@ -220,13 +202,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
  <span class="menu-text">2025 - Current notebooks</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../2025 - Current notebooks/16-Mar25.html" class="sidebar-item-text sidebar-link">
@@ -267,13 +249,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
  <span class="menu-text">2024 - Archive</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../2024 - Archive/05-Feb24.html" class="sidebar-item-text sidebar-link">
@@ -326,13 +308,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
  <span class="menu-text">2023 - Archive</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../2023 - Archive/1-Sep23.html" class="sidebar-item-text sidebar-link">
@@ -378,10 +360,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#introduce-yourself" id="toc-introduce-yourself" class="nav-link" data-scroll-target="#introduce-yourself">Introduce yourself</a></li>
   <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
   <ul class="collapse">
-  <li><a href="#question-name" id="toc-question-name" class="nav-link" data-scroll-target="#question-name">Question | Name</a></li>
-  <li><a href="#question-name-1" id="toc-question-name-1" class="nav-link" data-scroll-target="#question-name-1">Question | Name</a></li>
-  <li><a href="#question-name-2" id="toc-question-name-2" class="nav-link" data-scroll-target="#question-name-2">Question | Name</a></li>
-  <li><a href="#question-name-3" id="toc-question-name-3" class="nav-link" data-scroll-target="#question-name-3">Question | Name</a></li>
+  <li><a href="#load-data-from-uq-rdm-to-dash-elliot" id="toc-load-data-from-uq-rdm-to-dash-elliot" class="nav-link" data-scroll-target="#load-data-from-uq-rdm-to-dash-elliot">Load data from UQ RDM to Dash? | Elliot</a></li>
+  <li><a href="#any-suggestions-on-exporting-publishing-dashboards-steph" id="toc-any-suggestions-on-exporting-publishing-dashboards-steph" class="nav-link" data-scroll-target="#any-suggestions-on-exporting-publishing-dashboards-steph">Any suggestions on exporting / publishing dashboards? | Steph</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -412,6 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>Welcome to the November UQ PUG! This month we discuss <a href="https://dash.plotly.com/tutorial"><strong>Dash</strong></a>, a “low-code framework for rapidly building data apps in Python”.</p>
+<p>To see details of the demonstration, <a href="../Demonstrations/dash/scripts.html">go to the dedicated page</a>.</p>
 <section id="structure" class="level3">
 <h3 class="anchored" data-anchor-id="structure">Structure</h3>
 <p>We’ll work from an interactive document today, so please <a href="https://pad.education/p/uqpug">join in</a>. Notes will then be transferred to this page.</p>
@@ -434,6 +415,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introduce-yourself" class="level2">
 <h2 class="anchored" data-anchor-id="introduce-yourself">Introduce yourself</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>What’s your name?</th>
@@ -443,9 +429,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td>Name</td>
-<td>Organisation/School</td>
-<td>Reason for coming</td>
+<td>Cameron</td>
+<td>UQ Library + SMP</td>
+<td>To help and share</td>
+</tr>
+<tr class="even">
+<td>Clarrisa Womack</td>
+<td>UQ 2024 BSc (Bioinformatics) graduate</td>
+<td>Keep up to date with Python</td>
+</tr>
+<tr class="odd">
+<td>Collins Adoko</td>
+<td>UQ PhD student started RQ2 2025</td>
+<td>Basically to learn some programming skills for my numerical modelling projects</td>
+</tr>
+<tr class="even">
+<td>An</td>
+<td>PhD student of ADP</td>
+<td>To learn Python for data analysis</td>
+</tr>
+<tr class="odd">
+<td>Xuetong</td>
+<td>PhD student AGFS</td>
+<td>To learn how to process my metabolomic data</td>
+</tr>
+<tr class="even">
+<td>Elliot</td>
+<td>PhD studnet chemical engineering</td>
+<td>Analysing high frequency time series data in Python</td>
+</tr>
+<tr class="odd">
+<td>Emma</td>
+<td>UQ student psychological science</td>
+<td>learning programming for data analysis</td>
+</tr>
+<tr class="even">
+<td>Steph</td>
+<td>Tech trainer at the library, previously in plant science</td>
+<td>$ $</td>
 </tr>
 </tbody>
 </table>
@@ -454,63 +475,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <p>If you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.</p>
 <p>If you think you can help, feel free to contribute to the answers section!</p>
-<section id="question-name" class="level3">
-<h3 class="anchored" data-anchor-id="question-name">Question | Name</h3>
-<p>Add more details here, then press CTRL + ENTER when you’re done</p>
-<div id="cell-5" class="cell" data-execution_count="10">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put any code you'd like to run here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<section id="load-data-from-uq-rdm-to-dash-elliot" class="level3">
+<h3 class="anchored" data-anchor-id="load-data-from-uq-rdm-to-dash-elliot">Load data from UQ RDM to Dash? | Elliot</h3>
+<p>Is it possible for it to load data directly from UQ RDM to dash using some kind of security protocol?</p>
 <section id="answers" class="level4">
 <h4 class="anchored" data-anchor-id="answers">Answers</h4>
 <ul>
-<li>Answer 1</li>
-<li>Answer 2</li>
-<li>…</li>
+<li>Possibly? Might be tricky, need an API - ask RCC as they connect HPCs to RDM. They a weekly drop-in session called “Hacky Hour” https://uqz.zoom.us/j/84792230624, every Tuesday, 1 pm.</li>
 </ul>
 </section>
 </section>
-<section id="question-name-1" class="level3">
-<h3 class="anchored" data-anchor-id="question-name-1">Question | Name</h3>
-<p>Add more details here, then press CTRL + ENTER when you’re done</p>
-<div id="cell-8" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put any code you'd like to run here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<section id="any-suggestions-on-exporting-publishing-dashboards-steph" class="level3">
+<h3 class="anchored" data-anchor-id="any-suggestions-on-exporting-publishing-dashboards-steph">Any suggestions on exporting / publishing dashboards? | Steph</h3>
 <section id="answers-1" class="level4">
 <h4 class="anchored" data-anchor-id="answers-1">Answers</h4>
 <ul>
-<li>Answer 1</li>
-<li>Answer 2</li>
-<li>…</li>
-</ul>
-</section>
-</section>
-<section id="question-name-2" class="level3">
-<h3 class="anchored" data-anchor-id="question-name-2">Question | Name</h3>
-<p>Add more details here, then press CTRL + ENTER when you’re done</p>
-<div id="cell-11" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put any code you'd like to run here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<section id="answers-2" class="level4">
-<h4 class="anchored" data-anchor-id="answers-2">Answers</h4>
-<ul>
-<li>Answer 1</li>
-<li>Answer 2</li>
-<li>…</li>
-</ul>
-</section>
-</section>
-<section id="question-name-3" class="level3">
-<h3 class="anchored" data-anchor-id="question-name-3">Question | Name</h3>
-<p>Add more details here, then press CTRL + ENTER when you’re done</p>
-<div id="cell-14" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put any code you'd like to run here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<section id="answers-3" class="level4">
-<h4 class="anchored" data-anchor-id="answers-3">Answers</h4>
-<ul>
-<li>Answer 1</li>
-<li>Answer 2</li>
-<li>…</li>
+<li>https://dash.plotly.com/deployment - there’s a free cloud service called Plotly Cloud you can deploy to. Up to 80MiB.</li>
 </ul>
 
 
