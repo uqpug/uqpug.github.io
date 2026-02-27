@@ -9,3 +9,4 @@ dev/
 # .venv
 .venv/
 my_virtual_environment/
+**/*.quarto_ipynb

@@ -1,12 +1,10 @@
 project:
   type: website
-  pre-render: prepare.py
+  # pre-render: prepare.py # Doesn't really work anymore...?
   render:
     - index.md
     - "Demonstrations/!(2024)"
-    - "2025 - Current notebooks/!(unused)"    
-    - "2024 - Archive/*"
-    - "2023 - Archive/*"
+    - "Notebooks/*"
     - googlec027a6a2057eb177.html
     
 
@@ -28,11 +26,13 @@ website:
             href: https://uqrug.netlify.app/
   sidebar:
     collapse-level: 1
-    contents:
-      - auto: "Demonstrations"
-      - auto: "2025 - Current notebooks"
-      - auto: "2024 - Archive"
-      - auto: "2023 - Archive"
+    contents: 
+      - section: "Notebooks"
+        contents: Notebooks/*
+      - section: "Demonstrations"
+        contents: Demonstrations/**/*
+      - section: "Archives"
+        contents: Notebooks/Archive/*/*
     
 
 format:
