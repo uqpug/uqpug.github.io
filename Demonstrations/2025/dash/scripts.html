@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>UQ Python User Group – UQ PUG</title>
+<title>scripts – UQ PUG</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,28 +20,63 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./python-logo-only.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-29e30ad51269866b34b1e3bc15e2871e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../python-logo-only.svg" rel="icon" type="image/svg+xml">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-29e30ad51269866b34b1e3bc15e2871e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,14 +104,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script type="application/ld+json">
-{
-  "@context" : "https://schema.org",
-  "@type" : "WebSite",
-  "name" : "UQ Python User Group",
-  "url" : "https://uqpug.github.io/"
-}
-</script>
 
 
 </head>
@@ -88,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">UQ PUG</span>
     </a>
   </div>
@@ -99,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">About us</span></a>
   </li>  
   <li class="nav-item">
@@ -128,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">UQ Python User Group</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Demonstrations</li><li class="breadcrumb-item">2025</li><li class="breadcrumb-item"><a href="../../../Demonstrations/2025/dash/scripts.html">Dash</a></li><li class="breadcrumb-item"><a href="../../../Demonstrations/2025/dash/scripts.html">Using <code>Dash</code></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -151,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/26-Mar26.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/26-Mar26.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2026 Mar 2<sup>nd</sup> – UQ PUG 26</span></a>
   </div>
 </li>
@@ -159,34 +186,34 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Demonstrations</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">2025</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Dash</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Demonstrations/2025/dash/scripts.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Demonstrations/2025/dash/scripts.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Using <code>Dash</code></span></a>
   </div>
 </li>
@@ -203,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Demonstrations/2025/notebooks/notebooks.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Demonstrations/2025/notebooks/notebooks.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Jupyter notebooks</span></a>
   </div>
 </li>
@@ -220,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Demonstrations/2025/top_modules/top_modules.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Demonstrations/2025/top_modules/top_modules.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The most popular Python modules</span></a>
   </div>
 </li>
@@ -250,25 +277,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2023/01-Sep23.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2023/01-Sep23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2023 Sep 7<sup>th</sup> – UQ PUG 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2023/02-Oct23.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2023/02-Oct23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2023 Oct 5<sup>th</sup> – UQ PUG 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2023/03-Nov23.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2023/03-Nov23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2023 Nov 2<sup>nd</sup> – UQ PUG 3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2023/04-Dec23.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2023/04-Dec23.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2023 Dec 7<sup>th</sup> – UQ PUG 4</span></a>
   </div>
 </li>
@@ -285,49 +312,49 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2024/05-Feb24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2024/05-Feb24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 Feb 7<sup>th</sup> – UQ PUG 5</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2024/06-Mar24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2024/06-Mar24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 Mar 7<sup>th</sup> – UQ PUG 6</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2024/07-Apr24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2024/07-Apr24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 Apr 11<sup>th</sup> – UQ PUG 7</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2024/08-May24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2024/08-May24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 May 2<sup>nd</sup> – UQ PUG 8</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2024/09-Jul24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2024/09-Jul24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 July 4<sup>th</sup> – UQ PUG 9</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2024/12-Oct24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2024/12-Oct24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 Oct 3<sup>rd</sup> – UQ PUG 12</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2024/13-Nov24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2024/13-Nov24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 Nov 7<sup>th</sup> – UQ PUG 13</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2024/14-Dec24.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2024/14-Dec24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024 Dec 5<sup>th</sup> – UQ PUG 14</span></a>
   </div>
 </li>
@@ -344,37 +371,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2025/16-Mar25.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2025/16-Mar25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025 Mar 6<sup>th</sup> – UQ PUG 16</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2025/17-Apr25.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2025/17-Apr25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025 Apr 3<sup>rd</sup> – UQ PUG 17</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2025/21-Sep25.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2025/21-Sep25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025 Sep 4<sup>th</sup> – UQ PUG 21</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2025/22-Oct25.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2025/22-Oct25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025 Oct 2<sup>nd</sup> – UQ PUG 22</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2025/23-Nov25.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2025/23-Nov25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025 Nov 6<sup>th</sup> – UQ PUG 23</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Notebooks/Archive/2025/24-Dec25.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../Notebooks/Archive/2025/24-Dec25.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025 Dec 4<sup>th</sup> – UQ PUG 24</span></a>
   </div>
 </li>
@@ -392,108 +419,155 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#about-us" id="toc-about-us" class="nav-link active" data-scroll-target="#about-us">About us</a>
-  <ul class="collapse">
-  <li><a href="#who-are-we" id="toc-who-are-we" class="nav-link" data-scroll-target="#who-are-we">Who are we?</a></li>
-  <li><a href="#when-do-we-meet" id="toc-when-do-we-meet" class="nav-link" data-scroll-target="#when-do-we-meet">When do we meet?</a></li>
-  </ul></li>
-  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">How it works</a></li>
-  <li><a href="#this-website" id="toc-this-website" class="nav-link" data-scroll-target="#this-website">This website</a></li>
-  <li><a href="#general-resources" id="toc-general-resources" class="nav-link" data-scroll-target="#general-resources">General Resources</a>
-  <ul class="collapse">
-  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Datasets</a></li>
-  </ul></li>
+  <li><a href="#using-dash" id="toc-using-dash" class="nav-link active" data-scroll-target="#using-dash">Using <code>Dash</code></a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Demonstrations</li><li class="breadcrumb-item">2025</li><li class="breadcrumb-item"><a href="../../../Demonstrations/2025/dash/scripts.html">Dash</a></li><li class="breadcrumb-item"><a href="../../../Demonstrations/2025/dash/scripts.html">Using <code>Dash</code></a></li></ol></nav></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">UQ Python User Group</h1>
+
+
+
+<section id="using-dash" class="level1">
+<h1>Using <code>Dash</code></h1>
+<p>In Nov25, we had a demo on using <a href="https://dash.plotly.com/"><code>Dash</code></a> to create webapps.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><a href="app.py">app.py</a>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This is the script we built.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dash <span class="im">import</span> Dash, html, dash_table, dcc, callback, Output, Input</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"datasets/Players2024.csv"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>app <span class="op">=</span> Dash()</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>app.layout <span class="op">=</span> [</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    html.Div(children<span class="op">=</span><span class="st">"Players 2024.csv data"</span>),</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    dcc.RadioItems(options<span class="op">=</span>df[<span class="st">"positions"</span>].unique(), value<span class="op">=</span><span class="st">"Attack"</span>, <span class="bu">id</span><span class="op">=</span><span class="st">"radio_button"</span>),</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    dash_table.DataTable(data<span class="op">=</span>df.to_dict(<span class="st">"records"</span>), page_size<span class="op">=</span><span class="dv">10</span>, <span class="bu">id</span><span class="op">=</span><span class="st">"table"</span>),</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    dcc.Graph(figure<span class="op">=</span>sns.relplot(df, x<span class="op">=</span><span class="st">"age"</span>, y<span class="op">=</span><span class="st">"height_cm"</span>)),</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="at">@callback</span>(</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    Output(component_id<span class="op">=</span><span class="st">"table"</span>, component_property<span class="op">=</span><span class="st">"data"</span>),</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    Input(component_id<span class="op">=</span><span class="st">"radio_button"</span>, component_property<span class="op">=</span><span class="st">"value"</span>),</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> update_table(position_chosen):</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df[df[<span class="st">"positions"</span>] <span class="op">==</span> position_chosen].to_dict(<span class="st">"records"</span>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>app.run(debug<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><a href="app_fancy.py">app_fancy.py</a>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This is a nicer looking dashboard demonstrating some of the things you could do to fix up the formatting.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dash <span class="im">import</span> Dash, html, dash_table, dcc, callback, Output, Input</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> dash_bootstrap_components <span class="im">as</span> dbc</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"datasets/Players2024.csv"</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[df[<span class="st">"positions"</span>] <span class="op">!=</span> <span class="st">"Missing"</span>]</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[df[<span class="st">"height_cm"</span>] <span class="op">&gt;</span> <span class="dv">100</span>]</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>app <span class="op">=</span> Dash()</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>external_stylesheets <span class="op">=</span> [dbc.themes.CERULEAN]</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>app <span class="op">=</span> Dash(<span class="va">__name__</span>, external_stylesheets<span class="op">=</span>external_stylesheets)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>app.layout <span class="op">=</span> dbc.Container(</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    [</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        dbc.Row(</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>            [</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>                html.Div(children<span class="op">=</span><span class="st">"Players2024.csv data"</span>),</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>            ]</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>        dbc.Row(</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>            [</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>                dbc.RadioItems(</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>                    options<span class="op">=</span>df[<span class="st">"positions"</span>].unique(), value<span class="op">=</span><span class="st">"Attack"</span>, <span class="bu">id</span><span class="op">=</span><span class="st">"radio_button"</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>                ),</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>            ]</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>        dbc.Row(</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>            [</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>                dbc.Col(</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>                    [</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>                        dash_table.DataTable(</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>                            data<span class="op">=</span><span class="va">None</span>,</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>                            page_size<span class="op">=</span><span class="dv">10</span>,</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>                            style_table<span class="op">=</span>{<span class="st">"overflowX"</span>: <span class="st">"auto"</span>},</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>                            <span class="bu">id</span><span class="op">=</span><span class="st">"table"</span>,</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>                        ),</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>                    ],</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>                    width<span class="op">=</span><span class="dv">6</span>,</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>                ),</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>                dbc.Col(</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>                    [</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>                        dcc.Graph(figure<span class="op">=</span>{}, <span class="bu">id</span><span class="op">=</span><span class="st">"graph"</span>),</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>                    ],</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>                    width<span class="op">=</span><span class="dv">6</span>,</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>                ),</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>            ]</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    fluid<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="co"># Build in the callback(s)</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="at">@callback</span>(</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>    Output(component_id<span class="op">=</span><span class="st">"graph"</span>, component_property<span class="op">=</span><span class="st">"figure"</span>),</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>    Input(component_id<span class="op">=</span><span class="st">"radio_button"</span>, component_property<span class="op">=</span><span class="st">"value"</span>),</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> update_graph(position_chosen):</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>    position <span class="op">=</span> df[df[<span class="st">"positions"</span>] <span class="op">==</span> position_chosen]</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>    fig <span class="op">=</span> px.scatter(position, <span class="st">"age"</span>, <span class="st">"height_cm"</span>, range_y<span class="op">=</span>[<span class="dv">150</span>, <span class="dv">210</span>])</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> fig</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="at">@callback</span>(</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>    Output(component_id<span class="op">=</span><span class="st">"table"</span>, component_property<span class="op">=</span><span class="st">"data"</span>),</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>    Input(component_id<span class="op">=</span><span class="st">"radio_button"</span>, component_property<span class="op">=</span><span class="st">"value"</span>),</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> update_table(position_chosen):</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df[df[<span class="st">"positions"</span>] <span class="op">==</span> position_chosen].to_dict(<span class="st">"records"</span>)</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>    app.run(debug<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
 </div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Welcome to the UQ Python User Group (UQ PUG). We meet monthly, and our next gathering is on the 2<sup>nd</sup> of Mar.&nbsp;We meet in room 12-N109 (Central Library).</p>
-<section id="about-us" class="level2">
-<h2 class="anchored" data-anchor-id="about-us">About us</h2>
-<section id="who-are-we" class="level3">
-<h3 class="anchored" data-anchor-id="who-are-we">Who are we?</h3>
-<p>UQ PUG is a <strong>gathering for Python users of any proficiency</strong>, to help each other solve problems, share resources and tips, discover new features and hang out as a friendly community.</p>
-</section>
-<section id="when-do-we-meet" class="level3">
-<h3 class="anchored" data-anchor-id="when-do-we-meet">When do we meet?</h3>
-<ul>
-<li>Every <strong>first Thursday of the month</strong> from <strong>10:00 am</strong> to 11:30am</li>
-<li>In-person at UQ Central Library 12-N109</li>
-<li>Find the next gathering on the <a href="https://web.library.uq.edu.au/library-services/training#keyword=Python%20User%20Group;campus=;weekstart=">UQ Library Training Page</a> and book in through StudentHub</li>
-<li>Contact us at <a href="mailto:training@library.uq.edu.au">training@library.uq.edu.au</a> for any questions or support</li>
-</ul>
-</section>
-</section>
-<section id="how-it-works" class="level2">
-<h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
-<p>Each month, we gather at UQ Central Library to help solve each other’s problems and discover new features. We begin with a brief demonstration before diving into group discussion.</p>
-<p>Bring along your python questions, problems, conundrums, opinions and victories to share with the group. We’ll try our best to help you out!</p>
-</section>
-<section id="this-website" class="level2">
-<h2 class="anchored" data-anchor-id="this-website">This website</h2>
-<p>On this website we contain the notebooks from our sessions (currently since Oct 24) and details from specific demonstrations.</p>
-</section>
-<section id="general-resources" class="level2">
-<h2 class="anchored" data-anchor-id="general-resources">General Resources</h2>
-<p>Here are a few links to some general resources.</p>
-<ul>
-<li><a href="https://docs.python.org/3/">Python Documentation</a></li>
-<li><a href="https://pypi.org/">PyPI</a>, the python package repository</li>
-<li><a href="https://www.anaconda.com/">Anaconda</a>, an environment manager with python applications (e.g.&nbsp;Spyder) available</li>
-<li><a href="https://web.library.uq.edu.au/library-services/training">UQ Training Sessions</a></li>
-<li>Library training email - <a href="mailto:training@library.uq.edu.au">training@library.uq.edu.au</a></li>
-<li><a href="https://au.linkedin.com/learning/">Online courses</a> with LinkedIn Learning (use <a href="https://web.library.uq.edu.au/library-services/training/linkedin-learning-online-courses">UQ credentials</a>)</li>
-</ul>
-<section id="datasets" class="level3">
-<h3 class="anchored" data-anchor-id="datasets">Datasets</h3>
-<p>We’ve also got a few datasets to play with. These get used in our library training sessions:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Dataset</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="datasets/BMI_data.csv">BMI data</a></td>
-<td>Fake BMI data for five people.</td>
-</tr>
-<tr class="even">
-<td><a href="datasets/Players2024.csv">Players 2024</a></td>
-<td>A dataset of 2024 soccer players’ clubs, heights and ages.</td>
-</tr>
-<tr class="odd">
-<td><a href="datasets/gapminder.csv">Gapminder</a></td>
-<td>International GDP, life expectancy and population statistics.</td>
-</tr>
-</tbody>
-</table>
-<p><a href="googlec027a6a2057eb177.html">For admin</a></p>
-
-
-</section>
 </section>
 
 </main> <!-- /main -->
