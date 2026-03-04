@@ -5,6 +5,7 @@ project:
     - index.md
     - "Demonstrations/!(2024)"
     - "Notebooks/*"
+    - "ThePythonTutorial/*.*"
     - googlec027a6a2057eb177.html
     
 
@@ -27,8 +28,10 @@ website:
   sidebar:
     collapse-level: 1
     contents: 
-      - section: "Notebooks"
+      - section: "Monthly PUGs"
         contents: Notebooks/*
+      - section: "The Python Tutorial"
+        contents: ThePythonTutorial/*.*
       - section: "Demonstrations"
         contents: Demonstrations/**/*
       - section: "Archives"
