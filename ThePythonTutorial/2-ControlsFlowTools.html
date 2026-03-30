@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction to Python, the interpreter and coding style – UQ PUG</title>
+<title>More Control Flow Tools (Part I) – UQ PUG</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -157,7 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ThePythonTutorial/1-Introduction.html">The Python Tutorial</a></li><li class="breadcrumb-item"><a href="../ThePythonTutorial/1-Introduction.html">Introduction to Python, the interpreter and coding style</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ThePythonTutorial/1-Introduction.html">The Python Tutorial</a></li><li class="breadcrumb-item"><a href="../ThePythonTutorial/2-ControlsFlowTools.html">More Control Flow Tools (Part I)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -203,13 +203,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../ThePythonTutorial/1-Introduction.html" class="sidebar-item-text sidebar-link active">
+  <a href="../ThePythonTutorial/1-Introduction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction to Python, the interpreter and coding style</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../ThePythonTutorial/2-ControlsFlowTools.html" class="sidebar-item-text sidebar-link">
+  <a href="../ThePythonTutorial/2-ControlsFlowTools.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">More Control Flow Tools (Part I)</span></a>
   </div>
 </li>
@@ -450,26 +450,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#structure-of-this-series" id="toc-structure-of-this-series" class="nav-link active" data-scroll-target="#structure-of-this-series">Structure of this series</a></li>
-  <li><a href="#whetting-your-appetite" id="toc-whetting-your-appetite" class="nav-link" data-scroll-target="#whetting-your-appetite">1. Whetting Your Appetite</a></li>
-  <li><a href="#using-the-python-interpreter" id="toc-using-the-python-interpreter" class="nav-link" data-scroll-target="#using-the-python-interpreter">2. Using the Python Interpreter</a></li>
-  <li><a href="#an-informal-introduction-to-python" id="toc-an-informal-introduction-to-python" class="nav-link" data-scroll-target="#an-informal-introduction-to-python">3. An Informal Introduction to Python</a>
-  <ul class="collapse">
-  <li><a href="#arithmetic" id="toc-arithmetic" class="nav-link" data-scroll-target="#arithmetic">Arithmetic</a></li>
-  <li><a href="#text" id="toc-text" class="nav-link" data-scroll-target="#text">Text</a></li>
-  <li><a href="#lists-and-assignment" id="toc-lists-and-assignment" class="nav-link" data-scroll-target="#lists-and-assignment">Lists and assignment</a></li>
-  <li><a href="#fibonacci" id="toc-fibonacci" class="nav-link" data-scroll-target="#fibonacci">Fibonacci</a></li>
-  </ul></li>
-  <li><a href="#intermezzo-coding-style" id="toc-intermezzo-coding-style" class="nav-link" data-scroll-target="#intermezzo-coding-style">4.10 Intermezzo: Coding Style</a></li>
+  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro">Intro</a></li>
+  <li><a href="#if-statements" id="toc-if-statements" class="nav-link" data-scroll-target="#if-statements">4.1 <code>if</code> Statements</a></li>
+  <li><a href="#for-statements" id="toc-for-statements" class="nav-link" data-scroll-target="#for-statements">4.2 <code>for</code> Statements</a></li>
+  <li><a href="#the-range-function" id="toc-the-range-function" class="nav-link" data-scroll-target="#the-range-function">4.3 The <code>range()</code> Function</a></li>
+  <li><a href="#break-and-continue-statements" id="toc-break-and-continue-statements" class="nav-link" data-scroll-target="#break-and-continue-statements">4.4 <code>break</code> and <code>continue</code> Statements</a></li>
+  <li><a href="#else-clauses-on-loops" id="toc-else-clauses-on-loops" class="nav-link" data-scroll-target="#else-clauses-on-loops">4.5 <code>else</code> Clauses on Loops</a></li>
+  <li><a href="#pass-statements" id="toc-pass-statements" class="nav-link" data-scroll-target="#pass-statements">4.6 <code>pass</code> Statements</a></li>
+  <li><a href="#match-statements" id="toc-match-statements" class="nav-link" data-scroll-target="#match-statements">4.7 <code>match</code> Statements</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ThePythonTutorial/1-Introduction.html">The Python Tutorial</a></li><li class="breadcrumb-item"><a href="../ThePythonTutorial/1-Introduction.html">Introduction to Python, the interpreter and coding style</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ThePythonTutorial/1-Introduction.html">The Python Tutorial</a></li><li class="breadcrumb-item"><a href="../ThePythonTutorial/2-ControlsFlowTools.html">More Control Flow Tools (Part I)</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Introduction to Python, the interpreter and coding style</h1>
+<h1 class="title">More Control Flow Tools (Part I)</h1>
 </div>
 
 
@@ -486,331 +483,308 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Welcome to our nine-part walkthrough of <a href="https://docs.python.org/3/tutorial/index.html">The Python Tutorial</a>!</p>
-<p>This is the <em>official</em> guide for Python, produced and maintained by the developer community. For those interested, the tutorial materials themselves <a href="https://github.com/python/cpython/tree/main/Doc/tutorial">live on Github</a>. You can tell it’s official because</p>
+<p>Today, we’re discussing <a href="https://docs.python.org/3/tutorial/controlflow.html">sections 4.1-4.7</a> of The Python Tutorial. These are</p>
 <ul>
-<li>The Python Software Foundation holds the copyright (see bottom of tutorial page)</li>
-<li>It’s hosted on the <a href="https://python.org/">python.org</a> domain</li>
+<li>4.1 <code>if</code> Statements</li>
+<li>4.2 <code>for</code> Statements</li>
+<li>4.3 The <code>range()</code> Function</li>
+<li>4.4 <code>break</code> and <code>continue</code> Statements</li>
+<li>4.5 <code>else</code> Clauses on Loops</li>
+<li>4.6 <code>pass</code> Statements</li>
+<li>4.7 <code>match</code> Statements</li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Third-party tutorials
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>When you search “Python tutorial” online, there’s a lot of results. Some are decent educational materials, others are pretty poor quality and some are AI generated. Only <a href="https://docs.python.org/3/tutorial/index.html">The Python Tutorial</a> is the official one!</p>
-</div>
-</div>
-<p>You might be concerned by the banner at the top of the page, which reads</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Tip:</strong> This tutorial is designed for programmers that are new to the Python language, not beginners who are new to programming.</p>
-</div>
-</div>
-<p>Certainly, this <em>tutorial</em> is <strong>not</strong> a beginner’s guide to programming. This can make it challenging for newcomers. However, it’s a great, succinct overview of the language, with all the important features covered. So, don’t stress - we’ll just walk you through the important bits.</p>
-<section id="structure-of-this-series" class="level2">
-<h2 class="anchored" data-anchor-id="structure-of-this-series">Structure of this series</h2>
-<p>We’re only going to spend 20 minutes each month on each section. That’s not a lot of time. This means that,</p>
-<ul>
-<li>We’re only going to demonstrate key concepts/features</li>
-<li>You should have a play on your own</li>
-</ul>
-<p>That said, we <em>will</em> cover some important things, and hopefully by November, you’ll have a good, comprehensive handle on <em>how Python actually works</em>.</p>
-<p>Here’s a summary of what we’re planning to cover:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 79%">
-<col style="width: 10%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Month</td>
-<td>Overview</td>
-<td>Section</td>
-</tr>
-<tr class="even">
-<td>March</td>
-<td>Introduction to Python, the interpreter and coding style.</td>
-<td>1-3 and 4.10</td>
-</tr>
-<tr class="odd">
-<td>April</td>
-<td>Control flow tools Conditionals (if, else, elif) Loops (for and while, break and continue) Match-case</td>
-<td>4.1-4.7</td>
-</tr>
-<tr class="even">
-<td>May</td>
-<td>Functions Defining vs calling Default vs keyword vs positional arguments</td>
-<td>4.8-4.9</td>
-</tr>
-<tr class="odd">
-<td>June</td>
-<td>Data Structures Lists, tuples, sets, dicts Fancy looping And how pandas DataFrames fit into all this</td>
-<td>5</td>
-</tr>
-<tr class="even">
-<td>July</td>
-<td>Modules How and where to write them How to import them And how PyPI fits into this</td>
-<td>6</td>
-</tr>
-<tr class="odd">
-<td>August</td>
-<td>Input and Output Format strings Reading and writing files</td>
-<td>7</td>
-</tr>
-<tr class="even">
-<td>September</td>
-<td>Errors and Exceptions Syntax vs everything else Handling and raising them</td>
-<td>8</td>
-</tr>
-<tr class="odd">
-<td>October</td>
-<td>Classes What are they—do I need them? How to write them Attributes vs variables, methods vs functions Who is self? Am I object-oriented? This is a complex topic. We’ll only scratch the surface, but it’ll help explain a lot of Python behaviour.</td>
-<td>9</td>
-</tr>
-<tr class="even">
-<td>November</td>
-<td>Brief Tour of the Standard Library Modules like os, glob, sys, math, datetime, urllib</td>
-<td>10</td>
-</tr>
-<tr class="odd">
-<td>December</td>
-<td>Something fun :)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="whetting-your-appetite" class="level2">
-<h2 class="anchored" data-anchor-id="whetting-your-appetite"><a href="https://docs.python.org/3/tutorial/appetite.html">1. Whetting Your Appetite</a></h2>
-<p>Why <em>Python</em>?</p>
-<p>The first section of the tutorial gives us a bit of motivation. Let’s compare with some other popular languages.</p>
-<p>As of Feb 2026, the <a href="https://www.tiobe.com/tiobe-index/">TIOBE index</a> puts Python in pole position:</p>
-<p>Top 50%:</p>
-<ol type="1">
-<li>Python (22%)</li>
-<li>C (11%)</li>
-<li>C++ (9%)</li>
-<li>Java (8%)</li>
-<li>C# (7%)</li>
-</ol>
-<p>Bottom 50%:</p>
-<ol start="6" type="1">
-<li>JavaScript (3%)</li>
-<li>Visual Basic (3%)</li>
-<li>R (2%)</li>
-<li>…</li>
-</ol>
-<p>What are some uses/features of these other languages?</p>
-<ul>
-<li><strong>C/C++/C#/Java (35%)</strong>: Software development. Need to write/compile/test/recompile every time. Big, heavy, complex languages. Python itself is written in them.</li>
-<li><strong>JavaScript</strong> (3%): Websites. Good for running code on web servers, but less support for code beyond this.</li>
-<li><strong>Visual Basic</strong> (3%): Windows-oriented, and a bit out of date. Used to be more popular!</li>
-<li><strong>R</strong> (2%): Data science/Statistics. Good for its purpose! A bit complex to use for programming.</li>
-</ul>
-<p>Some reasons to choose Python</p>
-<ul>
-<li>Its very readable (this is intentional)</li>
-<li>Its much simpler than C/C++/C#/Java</li>
-<li>Its <em>interpreted</em>, not compiled. You don’t turn code into binary before running.</li>
-<li>Its portable, running on different OSs</li>
-<li>Its broad, meaning that its suitable for different purposes: software, websites, scripting, data etc.</li>
-<li>Its popular! This means there’s a lot of support.</li>
-</ul>
-<p>And of course, it’s one big reference to Monty Python!</p>
-</section>
-<section id="using-the-python-interpreter" class="level2">
-<h2 class="anchored" data-anchor-id="using-the-python-interpreter"><a href="docs.python.org/3/tutorial/interpreter.html">2. Using the Python Interpreter</a></h2>
-<p>You might be used to running Python from an IDE (like Spyder), but the simplest way to run Python code is from the <em>interpreter</em>.</p>
-<p>This is the same as running it from the <em>console</em> or in your <em>terminal</em>. It’s the thing that <em>interprets</em> your code for the computer.</p>
-<p>How you do this depends on your machine. Open up a terminal/shell, then type</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Mac/Linux/Unix</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div>
-</div>
-<p>If that doesn’t work for you, it’s probably because your computer doesn’t know that you have Python installed, because it hasn’t been added to its default search path for applications. That can happen during installation, particularly if it’s not your machine.</p>
-<p>Don’t worry - if you’ve got Python working in an IDE, then just use the console.</p>
-<p>You know you’re in the Python interpreter when you see</p>
-<pre><code>&gt;&gt;&gt;</code></pre>
-<p>rather than <code>$</code> (bash) or <code>&gt;</code> (Windows).</p>
-</section>
-<section id="an-informal-introduction-to-python" class="level2">
-<h2 class="anchored" data-anchor-id="an-informal-introduction-to-python"><a href="https://docs.python.org/3/tutorial/introduction.html">3. An Informal Introduction to Python</a></h2>
-<p>We’ll go over a few key Python things in the interpreter.</p>
-<ul>
-<li>Arithmetic</li>
-<li>Text</li>
-<li>Fibonacci!</li>
-</ul>
-<section id="arithmetic" class="level3">
-<h3 class="anchored" data-anchor-id="arithmetic">Arithmetic</h3>
-<p>The interpreter can act as a calculator</p>
-<div id="afdfeafc" class="cell" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="2">
-<pre><code>2</code></pre>
-</div>
-</div>
-<p>Some weird operators:</p>
-<div id="7841ce50" class="cell" data-execution_count="3">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Powers</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="op">**</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<pre><code>32</code></pre>
-</div>
-</div>
-<div id="8a4b4076" class="cell" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Floor division</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> <span class="op">//</span> <span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="4">
-<pre><code>1</code></pre>
-</div>
-</div>
-<div id="f43743a8" class="cell" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Modulo/remainder</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="dv">11</span> <span class="op">%</span> <span class="dv">10</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="5">
-<pre><code>1</code></pre>
-</div>
+<p>Next month, we’ll cover 4.8-4.9: Functions</p>
+<section id="intro" class="level2">
+<h2 class="anchored" data-anchor-id="intro">Intro</h2>
+<p>The goal of this section is to control how we run certain <em>sections</em> of code.</p>
+<p>In Python, you create a section of code by <strong>indenting it</strong>:</p>
+<div id="69769d48" class="cell" data-execution_count="44">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Outside any section</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">True</span>:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    ...</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Inside a section</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># See? It's indented!</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Outside any section</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="text" class="level3">
-<h3 class="anchored" data-anchor-id="text">Text</h3>
-<p>Use strings to store literal text</p>
-<div id="01888d74" class="cell" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Single quotes are same as double quotes</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co">'Hello world'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="6">
-<pre><code>'Hello world'</code></pre>
-</div>
-</div>
-<div id="a021ec3f" class="cell" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Double quotes are same as single quotes</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">"Hello world"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="7">
-<pre><code>'Hello world'</code></pre>
-</div>
-</div>
-<p>Use a backslash to include special characters. Need to use <code>print()</code> to see their effect.</p>
-<div id="60453f45" class="cell" data-execution_count="8">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># \n means newline</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Line1</span><span class="ch">\n</span><span class="st">Line2"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="if-statements" class="level2">
+<h2 class="anchored" data-anchor-id="if-statements">4.1 <code>if</code> Statements</h2>
+<p>Conditionals: for running (indented) code only under certain conditions</p>
+<ul>
+<li><code>if</code>: always necessary</li>
+<li><code>elif</code>: optional, additional conditions (only if the previous fail)</li>
+<li><code>else</code>: optional, catches anything that fails</li>
+</ul>
+<div id="08310e4a" class="cell" data-execution_count="45">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Just a single if</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>i_feel <span class="op">=</span> <span class="st">"happy"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> i_feel <span class="op">==</span> <span class="st">"happy"</span>:</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"I feel happy"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Line1
-Line2</code></pre>
+<pre><code>I feel happy</code></pre>
 </div>
 </div>
-<div id="f1ffdbf8" class="cell" data-execution_count="9">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># \t means tab</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"col1</span><span class="ch">\t</span><span class="st">col2"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="17100669" class="cell" data-execution_count="46">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># if-elif-else</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>i_feel <span class="op">=</span> <span class="st">"happy"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> i_feel <span class="op">==</span> <span class="st">"happy"</span>:</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"I feel happy"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> i_feel <span class="op">==</span> <span class="st">"unhappy"</span>:</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"I feel unhappy"</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"I don't feel happy or unhappy"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>col1    col2</code></pre>
+<pre><code>I feel happy</code></pre>
 </div>
 </div>
-<p>This is bad news if you use Windows, because file paths have backslashes.</p>
-<p>Prefix your string with an <code>r</code>, i.e.&nbsp;<code>r"..."</code>, to ignore the backslashes</p>
-<div id="5665b036" class="cell" data-execution_count="10">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="vs">r"C:</span><span class="er">\</span><span class="vs">Users</span><span class="er">\</span><span class="vs">path</span><span class="ch">\t</span><span class="vs">o</span><span class="dv">\s</span><span class="vs">cript</span><span class="dv">.</span><span class="vs">py"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="for-statements" class="level2">
+<h2 class="anchored" data-anchor-id="for-statements">4.2 <code>for</code> Statements</h2>
+<p><code>for</code> statements let you run an indented block multiple times, once for each element in an <em>iterable</em> (something with multiple elements, like a list).</p>
+<div id="fea56ac4" class="cell" data-execution_count="47">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Measure some strings:</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> [<span class="st">'cat'</span>, <span class="st">'window'</span>, <span class="st">'defenestrate'</span>]</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> w <span class="kw">in</span> words:</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(w, <span class="bu">len</span>(w))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>C:\Users\path\to\script.py</code></pre>
+<pre><code>cat 3
+window 6
+defenestrate 12</code></pre>
 </div>
 </div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>It’s possible to modify the iterable during the list. This can make things unpredictable, don’t do it. If you have to, use a copy of the object.</p>
+<div id="e4735161" class="cell" data-execution_count="48">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Measure some strings:</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> [<span class="st">'cat'</span>, <span class="st">'window'</span>, <span class="st">'defenestrate'</span>]</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> w <span class="kw">in</span> words.copy():</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(w, <span class="bu">len</span>(w))</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    words.append(w)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(words)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>cat 3
+window 6
+defenestrate 12
+['cat', 'window', 'defenestrate', 'cat', 'window', 'defenestrate']</code></pre>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Trailing backslash
+</div>
+</section>
+<section id="the-range-function" class="level2">
+<h2 class="anchored" data-anchor-id="the-range-function">4.3 The <code>range()</code> Function</h2>
+<p>It’s common to loop over a range of numbers. The <code>range()</code> function makes that simpler. It represents a list of <strong>integers</strong> from <code>start</code> to <code>stop</code> every <code>step</code>:</p>
+<p><i></i></p><i>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># default start=0 and step=1</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">range</span>(stop) </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># default step=1</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="bu">range</span>(start, stop) </span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># with everything specified</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="bu">range</span>(start, stop, step)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</i><p><i></i></p>
+<div id="ec280549" class="cell" data-execution_count="49">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="op">-</span><span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">2</span>):</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-10
+-8
+-6
+-4
+-2
+0
+2
+4
+6
+8</code></pre>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>You can’t have trailing backslashes, <em>even in a raw string</em>:</p>
-<div id="0898ec8a" class="cell" data-execution_count="11">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="vs">r"C:</span><span class="er">\</span><span class="vs">Users</span><span class="er">\</span><span class="vs">path</span><span class="ch">\t</span><span class="vs">o</span><span class="ch">\"</span><span class="er">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>range()</code> objects have some weird properties</p>
+<ul>
+<li><code>start</code> is included but <code>stop</code> is excluded</li>
+<li>You can use functions like <code>sum()</code> to add up the range</li>
+<li>They don’t store all the numbers at once (makes them very efficient but you can’t index/subset them like lists. More on this next month)</li>
+</ul>
+</section>
+<section id="break-and-continue-statements" class="level2">
+<h2 class="anchored" data-anchor-id="break-and-continue-statements">4.4 <code>break</code> and <code>continue</code> Statements</h2>
+<p>Helper statements for loops.</p>
+<p><code>break</code> exits the loop:</p>
+<div id="25e89579" class="cell" data-execution_count="50">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>fruits <span class="op">=</span> [<span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"cherry"</span>]</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> fruit <span class="kw">in</span> fruits:</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(fruit)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">break</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>apple</code></pre>
+</div>
+</div>
+<p><code>continue</code> skips to the start of the next iteration. These are both useful in conjunction with conditionals:</p>
+<div id="e46dae27" class="cell" data-execution_count="51">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> fruit <span class="kw">in</span> fruits:</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> fruit <span class="op">==</span> <span class="st">"banana"</span>:</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"yuck!"</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(fruit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>apple
+yuck!
+cherry</code></pre>
+</div>
+</div>
+</section>
+<section id="else-clauses-on-loops" class="level2">
+<h2 class="anchored" data-anchor-id="else-clauses-on-loops">4.5 <code>else</code> Clauses on Loops</h2>
+<p>This is an odd but useful one. 99% of the time <code>else</code> statements are in <code>if</code> blocks and catch anything that fails the conditions.</p>
+<p>When <code>else</code> follows a loop, it catches anything that <strong>didn’t <code>break</code> out of the loop</strong>. If the loop ends without <code>break</code>, the <code>else</code> condition will run.</p>
+<p>Let’s see where this is useful:</p>
+<div id="d301050b" class="cell" data-execution_count="52">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>fruits <span class="op">=</span> [<span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"cherry"</span>]</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> fruit <span class="kw">in</span> fruits:</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> fruit <span class="op">==</span> <span class="st">"banana"</span>:</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"yuck! I hate bananas."</span>)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="co"># else connected to for loop, not if statement (compare indentation)</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Phew! no bananas"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>yuck! I hate bananas.</code></pre>
+</div>
+</div>
+<p>They also work for <code>while</code> loops. Remember them? They’re like conditionals+loops combined, they run an indented block until a condition is false.</p>
+</section>
+<section id="pass-statements" class="level2">
+<h2 class="anchored" data-anchor-id="pass-statements">4.6 <code>pass</code> Statements</h2>
+<p>These are simpler - <code>pass</code> statements do nothing. Nothing at all!</p>
+<div id="96eccf03" class="cell" data-execution_count="53">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="cf">pass</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="9e6ea9a2" class="cell" data-execution_count="54">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"banana"</span> <span class="kw">in</span> fruits:</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="5aa7c54b" class="cell" data-execution_count="55">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> fruit <span class="kw">in</span> fruits:</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Why have them then? Because empty indented blocks throw an error:</p>
+<div id="c68a519a" class="cell" data-execution_count="56">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"banana"</span> <span class="kw">in</span> fruits:</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># do this later</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <div class="ansi-escaped-output">
-<pre><span class="ansi-cyan-fg ansi-bold">  Cell </span><span class="ansi-green-fg ansi-bold">In[11], line 1</span>
-<span class="ansi-yellow-fg ansi-bold">    print(r"C:\Users\path\to\")</span>
-<span class="ansi-white-fg ansi-bold">          ^</span>
-<span class="ansi-red-fg ansi-bold">SyntaxError</span><span class="ansi-red-fg ansi-bold">:</span> unterminated string literal (detected at line 1)
+<pre><span class="ansi-cyan-fg ansi-bold">  Cell </span><span class="ansi-green-fg ansi-bold">In[56], line 2</span>
+<span class="ansi-yellow-fg ansi-bold">    # do this later</span>
+<span class="ansi-white-fg ansi-bold">                   ^</span>
+<span class="ansi-red-fg ansi-bold">SyntaxError</span><span class="ansi-red-fg ansi-bold">:</span> incomplete input
 </pre>
 </div>
 </div>
 </div>
-</div>
-</div>
-</section>
-<section id="lists-and-assignment" class="level3">
-<h3 class="anchored" data-anchor-id="lists-and-assignment">Lists and assignment</h3>
-<p>Use <code>=</code> to define/assign to variables</p>
-<div id="6133fc63" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>my_sentence <span class="op">=</span> <span class="st">"Hello world"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>Use lists to store multiple values together.</p>
-<p>Use square brackets to index and slice</p>
-<div id="f46fbf09" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lists are created with square brackets []</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>my_list <span class="op">=</span> [<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>]</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Pick out values with square brackets, count from 0</span></span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(my_list[<span class="dv">0</span>])</span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Slice to get a range from start:end (excludes end!!)</span></span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(my_list[<span class="dv">0</span>:<span class="dv">2</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>With <code>pass</code>, we can set up the framework but leave the implementation for later.</p>
+<div id="fc9df528" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"banana"</span> <span class="kw">in</span> fruits:</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span> <span class="co"># do this later</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="fibonacci" class="level3">
-<h3 class="anchored" data-anchor-id="fibonacci">Fibonacci</h3>
-<p>Let’s write a small program and analyse it!</p>
-<div id="04901cdf" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fibonacci series:</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co"># the sum of two elements defines the next</span></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>a, b <span class="op">=</span> <span class="dv">0</span>, <span class="dv">1</span></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> a <span class="op">&lt;</span> <span class="dv">10</span>:</span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(a)</span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>    a, b <span class="op">=</span> b, a<span class="op">+</span>b</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="match-statements" class="level2">
+<h2 class="anchored" data-anchor-id="match-statements">4.7 <code>match</code> Statements</h2>
+<p>These are for pattern matching, and are the most advanced feature we’ll look at today. You don’t need to use these - an <code>if</code> stack can always do the job. But it’s useful and can be quick.</p>
+<p>You <code>match something</code> to a <code>case</code> (usually multiple):</p>
+<p><i></i></p><i>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="cf">match</span> something:</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> possibility_1:</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>        <span class="co"># some code</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> possibility_2:</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>        <span class="co"># some code</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</i><p><i></i></p>
+<p>A ‘possibility’ of <code>_</code> will match anything (it’s a wildcard). Cases are checked in order and only one is matched.</p>
+<div id="0c79331d" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>status <span class="op">=</span> <span class="dv">418</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="cf">match</span> status:</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="dv">400</span>:</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Bad request"</span>)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="dv">404</span>:</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Not found"</span>)</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="dv">418</span>:</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"I'm a teapot"</span>)</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> _:</span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Something's wrong with the internet"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>0
-1
-1
-2
-3
-5
-8</code></pre>
+<pre><code>I'm a teapot</code></pre>
 </div>
 </div>
-<p>Some features</p>
-<ul>
-<li>Multiple assignment: <code>a, b = 0, 1</code> and <code>a, b = b, a+b</code></li>
-<li>Loops: <code>while a &lt; 10:</code></li>
-</ul>
-</section>
-</section>
-<section id="intermezzo-coding-style" class="level2">
-<h2 class="anchored" data-anchor-id="intermezzo-coding-style"><a href="https://docs.python.org/3/tutorial/controlflow.html#intermezzo-coding-style">4.10 Intermezzo: Coding Style</a></h2>
-<p>This section is at the <em>end</em> of chapter 4, but I want to mention it here.</p>
-<p>It outlines some key style guides to keep in mind as you program. Take a look!</p>
+<p>Combine several options with vertical bar <code>|</code> (“or”)</p>
+<div id="9153a889" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>status <span class="op">=</span> <span class="dv">401</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="cf">match</span> status:</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="dv">400</span>:</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Bad request"</span>)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="dv">401</span> <span class="op">|</span> <span class="dv">403</span> <span class="op">|</span> <span class="dv">404</span>:</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Not allowed"</span>)</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="dv">404</span>:</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Not found"</span>)</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="dv">418</span>:</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"I'm a teapot"</span>)</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> _:</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Something's wrong with the internet"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Not allowed</code></pre>
+</div>
+</div>
+<p>So far so good. It gets weird though. You can implicitly <em>assign to variables</em> if you put them in the patterns!</p>
+<div id="a976e993" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>point <span class="op">=</span> (<span class="dv">3</span>, <span class="dv">4</span>)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="cf">match</span> point:</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>    case (x, y):</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(x, y)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>3 4</code></pre>
+</div>
+</div>
+<p>This magically created the variables <code>x</code> and <code>y</code> <em>and</em> assigned their values!</p>
+<p>A more complex example is given in The Python Tutorial</p>
+<div id="b5ec52bf" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>point <span class="op">=</span> (<span class="dv">3</span>, <span class="dv">4</span>)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="cf">match</span> point:</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>    case (<span class="dv">0</span>, <span class="dv">0</span>):</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Origin"</span>)</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>    case (<span class="dv">0</span>, y):</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Y=</span><span class="sc">{</span>y<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>    case (x, <span class="dv">0</span>):</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"X=</span><span class="sc">{</span>x<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>    case (x, y):</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"X=</span><span class="sc">{</span>x<span class="sc">}</span><span class="ss">, Y=</span><span class="sc">{</span>y<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> _:</span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Not a point!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>X=3, Y=4</code></pre>
+</div>
+</div>
+<p>Lastly: guards. Let’s say the pattern matches but you still want to exclude specific cases. Use <code>if</code> to do this:</p>
+<div id="11b3b87d" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>point <span class="op">=</span> (<span class="dv">3</span>, <span class="dv">4</span>)</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="cf">match</span> point:</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>    case (x,y) <span class="cf">if</span> x <span class="op">==</span> y:</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Y=X at </span><span class="sc">{</span>x<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>    case (x, y):</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Not on the diagonal"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Not on the diagonal</code></pre>
+</div>
+</div>
 
 
 </section>
