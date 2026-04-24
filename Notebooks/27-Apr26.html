@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -75,10 +75,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-cc006c338752cced789b65cf42787295.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-04828c24a4de90e8e639dc49f30237f4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -190,6 +190,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">2026 Apr 2<sup>nd</sup> – UQ PUG 27</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Notebooks/28-May26.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2026 May 7<sup>th</sup> – UQ PUG 28</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -211,6 +217,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../ThePythonTutorial/2-ControlsFlowTools.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">More Control Flow Tools (Part I)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ThePythonTutorial/3-Functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">More Control Flow Tools (Part II)</span></a>
   </div>
 </li>
       </ul>
@@ -459,10 +471,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#introduce-yourself" id="toc-introduce-yourself" class="nav-link" data-scroll-target="#introduce-yourself">Introduce yourself</a></li>
   <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
   <ul class="collapse">
-  <li><a href="#question-name" id="toc-question-name" class="nav-link" data-scroll-target="#question-name">Question | Name</a></li>
-  <li><a href="#question-name-1" id="toc-question-name-1" class="nav-link" data-scroll-target="#question-name-1">Question | Name</a></li>
-  <li><a href="#question-name-2" id="toc-question-name-2" class="nav-link" data-scroll-target="#question-name-2">Question | Name</a></li>
-  <li><a href="#question-name-3" id="toc-question-name-3" class="nav-link" data-scroll-target="#question-name-3">Question | Name</a></li>
+  <li><a href="#if-elif-without-else" id="toc-if-elif-without-else" class="nav-link" data-scroll-target="#if-elif-without-else"><code>if</code>…, <code>elif</code>… without <code>else</code>?</a></li>
+  <li><a href="#modifying-iterable-during-for-loop" id="toc-modifying-iterable-during-for-loop" class="nav-link" data-scroll-target="#modifying-iterable-during-for-loop">Modifying iterable during <code>for</code> loop</a></li>
+  <li><a href="#workflows" id="toc-workflows" class="nav-link" data-scroll-target="#workflows">Workflows</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -527,6 +538,11 @@ This is a [Jupyter Notebook](https://jupyter.org/), a document format where ever
 <section id="introduce-yourself" class="level2">
 <h2 class="anchored" data-anchor-id="introduce-yourself">Introduce yourself</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>What’s your name?</th>
@@ -540,6 +556,36 @@ This is a [Jupyter Notebook](https://jupyter.org/), a document format where ever
 <td>Organisation/School</td>
 <td>Reason for coming</td>
 </tr>
+<tr class="even">
+<td>Cameron</td>
+<td>Library + SMP</td>
+<td>Teach and help out with all things Python</td>
+</tr>
+<tr class="odd">
+<td>Damchen</td>
+<td>Master of Data Science</td>
+<td>Wanted to learn Python more</td>
+</tr>
+<tr class="even">
+<td>Νayomi</td>
+<td>Medicine</td>
+<td>Refresh myself with the python basics to use python in image data analysis</td>
+</tr>
+<tr class="odd">
+<td>Irene</td>
+<td>Health and Rehabilitation Science</td>
+<td>learn Python for future data analysis and research (eg machine learning)</td>
+</tr>
+<tr class="even">
+<td>Zhuan Yi Neoh</td>
+<td>QAAFI</td>
+<td>Using python for data analysis and statistics analysis</td>
+</tr>
+<tr class="odd">
+<td>Steph</td>
+<td>Library</td>
+<td>Here to learn, and help if I can :)</td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -547,63 +593,118 @@ This is a [Jupyter Notebook](https://jupyter.org/), a document format where ever
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <p>If you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.</p>
 <p>If you think you can help, feel free to contribute to the answers section!</p>
-<section id="question-name" class="level3">
-<h3 class="anchored" data-anchor-id="question-name">Question | Name</h3>
-<p>Add more details here, then press CTRL + ENTER when you’re done</p>
-<div id="cell-5" class="cell" data-execution_count="10">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put any code you'd like to run here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="if-elif-without-else" class="level3">
+<h3 class="anchored" data-anchor-id="if-elif-without-else"><code>if</code>…, <code>elif</code>… without <code>else</code>?</h3>
+<p>Can we use an <code>if</code> and <code>elif</code> without <code>else</code>?</p>
+<div id="cell-5" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Yes! </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">==</span> <span class="dv">2</span>:</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"x=2"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> x <span class="op">==</span> <span class="dv">1</span>:</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"x=1"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>x=1</code></pre>
 </div>
+</div>
+</section>
+<section id="modifying-iterable-during-for-loop" class="level3">
+<h3 class="anchored" data-anchor-id="modifying-iterable-during-for-loop">Modifying iterable during <code>for</code> loop</h3>
+<p>Why is the iterable of a for loop modifyable?</p>
 <section id="answers" class="level4">
 <h4 class="anchored" data-anchor-id="answers">Answers</h4>
-<ul>
-<li>Answer 1</li>
-<li>Answer 2</li>
-<li>…</li>
-</ul>
-</section>
-</section>
-<section id="question-name-1" class="level3">
-<h3 class="anchored" data-anchor-id="question-name-1">Question | Name</h3>
-<p>Add more details here, then press CTRL + ENTER when you’re done</p>
+<p>It’s because, behind the scenes, a <code>for</code> loop converts the iterable into an iterator, and then calls <code>next(...)</code> on that iterator at the end of each iteration.</p>
+<p>Best illustrated with an example.</p>
+<p>Take the following loop:</p>
 <div id="cell-8" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put any code you'd like to run here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>nums <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> nums:</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1
+2
+3</code></pre>
 </div>
+</div>
+<p>Behind the scenes, it</p>
+<ol type="1">
+<li>Makes an iterator out of <code>nums</code> with <code>iter(nums)</code></li>
+<li>Makes <code>i</code> the first value in the iterator with <code>next(&lt;iterator&gt;)</code></li>
+<li>Runs one iteration of the loop</li>
+<li>Makes <code>i</code> the <em>next</em> value in the iterator with <code>next(&lt;iterator&gt;)</code> and runs the next iteration</li>
+<li>Continues the run-<code>next</code> loop until <code>next(&lt;iterator&gt;)</code> yields a <code>StopIteration</code> error</li>
+</ol>
+<p>Writing this out manually,</p>
+<div id="cell-10" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>nums <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>it <span class="op">=</span> <span class="bu">iter</span>(nums) <span class="co"># 1.</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># First iteration</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="bu">next</span>(it)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(i)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Second iteration</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="bu">next</span>(it)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(i)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Third iteration</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="bu">next</span>(it)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(i)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Fourth iteration (nothing left in nums)</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="bu">next</span>(it)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1
+2
+3</code></pre>
+</div>
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg ansi-bold">StopIteration</span>                             Traceback (most recent call last)
+Cell <span class="ansi-green-fg ansi-bold">In[4], line 17</span>
+<span class="ansi-green-fg">     14</span> <span style="color:rgb(0,135,0)">print</span>(i)
+<span class="ansi-green-fg">     16</span> <span style="font-style:italic;color:rgb(95,135,135)"># Fourth iteration (nothing left in nums)</span>
+<span class="ansi-green-fg ansi-bold">---&gt; 17</span> i <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">next</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">it</span><span class="ansi-yellow-bg">)</span>
+
+<span class="ansi-red-fg ansi-bold">StopIteration</span>: </pre>
+</div>
+</div>
+</div>
+<p>When you actually run the loop, instead of printing the <code>StopIteration</code> error it quits the loop.</p>
+</section>
+</section>
+<section id="workflows" class="level3">
+<h3 class="anchored" data-anchor-id="workflows">Workflows</h3>
+<p>Advice for a good workflow of using Python (i.e.&nbsp;a flowchart of steps for data science, and how to make sure code is right)</p>
 <section id="answers-1" class="level4">
 <h4 class="anchored" data-anchor-id="answers-1">Answers</h4>
+<p>We had a bit of a discussion with a few ideas.</p>
 <ul>
-<li>Answer 1</li>
-<li>Answer 2</li>
-<li>…</li>
+<li>See Hadley Wickham et al.’s <a href="https://r4ds.hadley.nz/intro.html">data science process</a>:</li>
 </ul>
-</section>
-</section>
-<section id="question-name-2" class="level3">
-<h3 class="anchored" data-anchor-id="question-name-2">Question | Name</h3>
-<p>Add more details here, then press CTRL + ENTER when you’re done</p>
-<div id="cell-11" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put any code you'd like to run here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://r4ds.hadley.nz/diagrams/data-science/base.png" class="img-fluid figure-img"></p>
+<figcaption>A diagram displaying the data science cycle: Import -&gt; Tidy -&gt; Understand (which has the phases Transform -&gt; Visualize -&gt; Model in a cycle) -&gt; Communicate. Surrounding all of these is Program.</figcaption>
+</figure>
 </div>
-<section id="answers-2" class="level4">
-<h4 class="anchored" data-anchor-id="answers-2">Answers</h4>
 <ul>
-<li>Answer 1</li>
-<li>Answer 2</li>
-<li>…</li>
+<li>Folder structure can help a lot; <a href="https://github.com/uqpug/uqpug.github.io/tree/main/Demonstrations/example_data_analysis_project">see our example</a>, which looks like,</li>
 </ul>
-</section>
-</section>
-<section id="question-name-3" class="level3">
-<h3 class="anchored" data-anchor-id="question-name-3">Question | Name</h3>
-<p>Add more details here, then press CTRL + ENTER when you’re done</p>
-<div id="cell-14" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put any code you'd like to run here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<section id="answers-3" class="level4">
-<h4 class="anchored" data-anchor-id="answers-3">Answers</h4>
+<pre><code>some_project_folder/
+    data/
+        data_1.csv
+        data_2.csv
+    plots/
+        plot_1.png
+        plot_2.png
+    analysis_1.py
+    analysis_2.py
+    common_functions.py</code></pre>
 <ul>
-<li>Answer 1</li>
-<li>Answer 2</li>
-<li>…</li>
+<li>Note the <a href="../Demonstrations/example_data_analysis_project/common_functions.py">common_functions.py</a> file: for large projects with analyses that reuse code, it can be helpful to move repeated sections into a common file which you then import with <code>import common_functions</code></li>
 </ul>
 
 
