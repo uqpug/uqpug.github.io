@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -75,10 +40,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-04828c24a4de90e8e639dc49f30237f4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6e11c51ed482812dc885446ef5854813.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -196,6 +161,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">2026 May 7<sup>th</sup> – UQ PUG 28</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Notebooks/29-Jun26.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2026 June 4<sup>th</sup> – UQ PUG 29</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -223,6 +194,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../ThePythonTutorial/3-Functions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">More Control Flow Tools (Part II)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ThePythonTutorial/4-DataStructures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Structures</span></a>
   </div>
 </li>
       </ul>
@@ -468,13 +445,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#teams" id="toc-teams" class="nav-link" data-scroll-target="#teams">Teams</a></li>
   <li><a href="#training-resources" id="toc-training-resources" class="nav-link" data-scroll-target="#training-resources">Training Resources</a></li>
   </ul></li>
-  <li><a href="#introduce-yourself" id="toc-introduce-yourself" class="nav-link" data-scroll-target="#introduce-yourself">Introduce yourself</a></li>
   <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
   <ul class="collapse">
-  <li><a href="#question-name" id="toc-question-name" class="nav-link" data-scroll-target="#question-name">Question | Name</a></li>
-  <li><a href="#question-name-1" id="toc-question-name-1" class="nav-link" data-scroll-target="#question-name-1">Question | Name</a></li>
-  <li><a href="#question-name-2" id="toc-question-name-2" class="nav-link" data-scroll-target="#question-name-2">Question | Name</a></li>
-  <li><a href="#question-name-3" id="toc-question-name-3" class="nav-link" data-scroll-target="#question-name-3">Question | Name</a></li>
+  <li><a href="#installing-modules-duncan" id="toc-installing-modules-duncan" class="nav-link" data-scroll-target="#installing-modules-duncan">Installing modules | Duncan</a></li>
+  <li><a href="#calling-c-headers-from-python" id="toc-calling-c-headers-from-python" class="nav-link" data-scroll-target="#calling-c-headers-from-python">Calling C headers from Python</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -536,87 +510,47 @@ This is a [Jupyter Notebook](https://jupyter.org/), a document format where ever
 <p>We offer Python training sessions and resources, you can find our introductory guide <a href="https://github.com/uqlibrary/technology-training/blob/master/Python/python_intro/python_intro.md">here</a>.</p>
 </section>
 </section>
-<section id="introduce-yourself" class="level2">
-<h2 class="anchored" data-anchor-id="introduce-yourself">Introduce yourself</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>What’s your name?</th>
-<th>Where are you from?</th>
-<th>Why are you here?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Name</td>
-<td>Organisation/School</td>
-<td>Reason for coming</td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <p>If you have any Python questions you’d like to explore with the group, please put your question and name in the sections below.</p>
 <p>If you think you can help, feel free to contribute to the answers section!</p>
-<section id="question-name" class="level3">
-<h3 class="anchored" data-anchor-id="question-name">Question | Name</h3>
-<p>Add more details here, then press CTRL + ENTER when you’re done</p>
-<div id="cell-5" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put any code you'd like to run here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<section id="installing-modules-duncan" class="level3">
+<h3 class="anchored" data-anchor-id="installing-modules-duncan">Installing modules | Duncan</h3>
+<p>How to install modules with a restricted Microsoft store?</p>
 <section id="answers" class="level4">
 <h4 class="anchored" data-anchor-id="answers">Answers</h4>
-<ul>
-<li>Answer 1</li>
-<li>Answer 2</li>
-<li>…</li>
-</ul>
+<p>How you install modules depends on how Python was installed.</p>
+<p>Most people either have a ‘<code>pip</code>’ install or a ‘<code>conda</code>’ install. If you’ve used Anaconda, you’ll have the latter. One way to check is to run</p>
+<pre><code>pip</code></pre>
+<p>in a <strong>terminal</strong> (not a Python console, e.g.&nbsp;Powershell). If you get <em>nothing</em>, it’s probably worked. If you get something to the tune of “Command not found”, then you don’t have pip, and should try <code>conda</code>.</p>
+<p>To install your packages with <code>pip</code>:</p>
+<pre><code>pip install requests beautifulsoup4 lxml
+pip install playwright
+playwright install</code></pre>
+<p>To install your packages with <code>conda</code></p>
+<pre><code>conda install requests beautifulsoup4 lxml
+conda install playwright
+playwright install</code></pre>
+<p>Note for others: <code>playwright</code> is itself a separate program with its own installation command (<code>playwright install</code>) which Duncan needed to use.</p>
 </section>
 </section>
-<section id="question-name-1" class="level3">
-<h3 class="anchored" data-anchor-id="question-name-1">Question | Name</h3>
-<p>Add more details here, then press CTRL + ENTER when you’re done</p>
-<div id="cell-8" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put any code you'd like to run here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<section id="calling-c-headers-from-python" class="level3">
+<h3 class="anchored" data-anchor-id="calling-c-headers-from-python">Calling C headers from Python</h3>
+<p>Can we call C headers (similar to Python modules but written in and for the language C) from Python?</p>
 <section id="answers-1" class="level4">
 <h4 class="anchored" data-anchor-id="answers-1">Answers</h4>
+<p>Yes, with some work.</p>
+<p>Python, as an <em>interpreted language</em>, needs to be written in some form of <em>compiled language</em>. This is referred to as the Python <em>distribution</em> - most people have CPython, Python written in C. The reason is that Python (can) interpret commands on-the-fly using a REPL (read-eval-print-loop); this is what you do when running line-by-line in the shell. For this to work, it needs to run a program behind the scenes to interpret your Python code, and <em>this program</em> needs to be written in something that the computer understands (machine code). Languages like C get <em>compiled</em>, which means the C code is converted into machine code (a binary file) which you then run whenever you like.</p>
+<p>All of this is to say that most people use a distribution of Python written in C. If you are one of those people, there is some interfacing that you can do.</p>
 <ul>
-<li>Answer 1</li>
-<li>Answer 2</li>
-<li>…</li>
-</ul>
-</section>
-</section>
-<section id="question-name-2" class="level3">
-<h3 class="anchored" data-anchor-id="question-name-2">Question | Name</h3>
-<p>Add more details here, then press CTRL + ENTER when you’re done</p>
-<div id="cell-11" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put any code you'd like to run here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<section id="answers-2" class="level4">
-<h4 class="anchored" data-anchor-id="answers-2">Answers</h4>
+<li><strong>Python in C</strong>: Yes. You <em>can</em> call Python modules and functions from C code from the header <code>Python.h</code></li>
+<li><strong>C in Python</strong>: Maybe. You <em>can’t</em> directly call C headers and functions from your code. Instead, you need to
 <ul>
-<li>Answer 1</li>
-<li>Answer 2</li>
-<li>…</li>
+<li>Use the <a href="https://docs.python.org/3/library/ctypes.html#module-ctypes"><code>ctypes</code></a> module or <a href="https://cffi.readthedocs.io/"><code>cffi</code></a> library</li>
+<li>Write an extension (in C) to CPython which exposes C headers to your Python distribution. This <em>modifies Python itself</em>.</li>
+</ul></li>
 </ul>
-</section>
-</section>
-<section id="question-name-3" class="level3">
-<h3 class="anchored" data-anchor-id="question-name-3">Question | Name</h3>
-<p>Add more details here, then press CTRL + ENTER when you’re done</p>
-<div id="cell-14" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put any code you'd like to run here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<section id="answers-3" class="level4">
-<h4 class="anchored" data-anchor-id="answers-3">Answers</h4>
-<ul>
-<li>Answer 1</li>
-<li>Answer 2</li>
-<li>…</li>
-</ul>
+<p>For more information, including examples on extending your CPython distribution, have a look at the <a href="https://docs.python.org/3/extending/extending.html#">official guide</a>.</p>
 
 
 </section>
